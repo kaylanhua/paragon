@@ -21,6 +21,7 @@ export default function Home() {
   const parallaxRef = React.useRef<any>(null);
   const [offset, setOffset] = useState(0);
 
+  // GHOST SCROLLING LMAO
   // useEffect(() => {
   //   let incr = 0.01;
   //   const intervalId = setInterval(() => {
@@ -40,18 +41,21 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col justify-between p-24">
+      <Parallax ref={parallaxRef} pages={2} style={{ top: '0', left: '0' }}>
+        <div className="flex flex-col lg:flex-row">
+            <ParallaxLayer offset={0} speed={0.5}>
+                <Image src="/virtual_space.png" width="500" height="500" alt="test1"/>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0.2} speed={1}>
+                <Image src="/virtual_space.png" width="100" height="100" alt="test2"/>
+            </ParallaxLayer>
+        </div>
+      
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <Image
-          src="/path/to/your/image.jpg"
-          alt="Descriptive text"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
         <h1>PARAGON POLICY FELLOWSHIP</h1>
         <br />
         <br />
-        <h2>BRIDGING STUDENTS TO TECH POLICY</h2>
+        <h2>BRINGING STUDENTS TO TECH POLICY</h2>
         <p>
           SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE
           AND LOCAL GOVERNMENTS.
@@ -106,28 +110,8 @@ export default function Home() {
         → If you’re interested in joining our organizing team, please reach out
         to us at paragonfellowship@gmail.com.
       </div>
-
-      <Parallax ref={parallaxRef} pages={2} style={{ top: '0', left: '0' }}>
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-2">
-            <h1>PARAGON POLICY FELLOWSHIP</h1>
-            <br />
-            <br />
-            <h2>BRINGING STUDENTS TO TECH POLICY</h2>
-            <p>SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE AND LOCAL GOVERNMENTS.</p>
-          </div>
-          
-          <div className="flex-1">
-            <ParallaxLayer offset={0} speed={0.5}>
-                <Image src="/virtual_space.png" width="500" height="500" alt="test1"/>
-            </ParallaxLayer>
-            <ParallaxLayer offset={0.2} speed={1}>
-                <Image src="/virtual_space.png" width="100" height="100" alt="test2"/>
-            </ParallaxLayer>
-          </div>
-        </div>
-          
       </Parallax>
+      
       
     </main>
 
