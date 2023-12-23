@@ -1,7 +1,8 @@
 "use client";
-import Image from "next/image";
-// import { useClient } from "next/react-server";
 import Carousel from "../components/Carousel";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Image from "next/image";
+import React, { useEffect, useState } from 'react';
 
 export default function Home() {
   const carouselItems = [
@@ -16,7 +17,27 @@ export default function Home() {
     { image: "/Yale.png", alt: "Yale" },
     // Add more items as needed
   ];
-  // useClient();
+  
+  const parallaxRef = React.useRef<any>(null);
+  const [offset, setOffset] = useState(0);
+
+  // useEffect(() => {
+  //   let incr = 0.01;
+  //   const intervalId = setInterval(() => {
+  //     setOffset((prevOffset) => {
+  //       if (prevOffset >= 0.3 ||  prevOffset < 0) {
+  //         incr = -1 * incr;
+  //       }
+  //       return prevOffset + incr;
+  //     });
+  //     if (parallaxRef.current) {
+  //       parallaxRef.current.scrollTo(offset);
+  //     }
+  //   }, 100);
+
+  //   return () => clearInterval(intervalId);
+  // }, [offset]);
+
   return (
     <main className="flex min-h-screen flex-col justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -36,8 +57,8 @@ export default function Home() {
           AND LOCAL GOVERNMENTS.
         </p>
       </div>
-      <h2 class="text-left text-5xl font-medium">ABOUT</h2>
-      <div class="pt-3 pb-10">
+      <h2 className="text-left text-5xl font-medium">ABOUT</h2>
+      <div className="pt-3 pb-10">
         The Paragon Fellowship aims to connect students with opportunities in
         tech policy research. Fellows will work on term-time tech policy
         projects where they dedicate about 5 hours/week during the semester to
@@ -85,6 +106,29 @@ export default function Home() {
         → If you’re interested in joining our organizing team, please reach out
         to us at paragonfellowship@gmail.com.
       </div>
+
+      <Parallax ref={parallaxRef} pages={2} style={{ top: '0', left: '0' }}>
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex-2">
+            <h1>PARAGON POLICY FELLOWSHIP</h1>
+            <br />
+            <br />
+            <h2>BRINGING STUDENTS TO TECH POLICY</h2>
+            <p>SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE AND LOCAL GOVERNMENTS.</p>
+          </div>
+          
+          <div className="flex-1">
+            <ParallaxLayer offset={0} speed={0.5}>
+                <Image src="/virtual_space.png" width="500" height="500" alt="test1"/>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0.2} speed={1}>
+                <Image src="/virtual_space.png" width="100" height="100" alt="test2"/>
+            </ParallaxLayer>
+          </div>
+        </div>
+          
+      </Parallax>
+      
     </main>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
