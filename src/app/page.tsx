@@ -40,29 +40,40 @@ export default function Home() {
   // }, [offset]);
 
   return (
-    <main className="flex min-h-screen flex-col justify-between p-24">
+    <main className="flex min-h-screen justify-between p-24">
       <Parallax ref={parallaxRef} pages={2} style={{ top: '0', left: '0' }}>
-        <div className="flex flex-col lg:flex-row">
+        {/* <div className="flex-2 flex-col lg:flex-col">
             <ParallaxLayer offset={0} speed={0.5}>
                 <Image src="/virtual_space.png" width="500" height="500" alt="test1"/>
             </ParallaxLayer>
             <ParallaxLayer offset={0.2} speed={1}>
                 <Image src="/virtual_space.png" width="100" height="100" alt="test2"/>
             </ParallaxLayer>
-        </div>
+        </div> */}
       
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <h1>PARAGON POLICY FELLOWSHIP</h1>
+      <div className="z-10 max-w-5xl w-1/2 items-center justify-between font-mono text-sm lg:flex-col">
+        <h1 className="text-6xl font-bold">PARAGON POLICY FELLOWSHIP</h1>
+        <h2 className="text-l font-bold">BRINGING STUDENTS TO TECH POLICY</h2>
         <br />
         <br />
-        <h2>BRINGING STUDENTS TO TECH POLICY</h2>
         <p>
           SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE
           AND LOCAL GOVERNMENTS.
         </p>
+        <br />
+        <form style={{ display: 'flex', alignItems: 'center' }}>
+          <input type="text" style={{backgroundColor: 'transparent', border: 'none', borderBottom: '1px solid #fff', marginRight: '10px', padding: '5px 0', width: '60%'}} placeholder="Enter your college email" />
+          <button type="submit" style={{backgroundColor: 'transparent', border: 'none'}}>
+            {/* placeholder */}
+            <img src="/right-arrow.png" alt="Submit" style={{width: '20px', height: '20px'}} />
+          </button>
+        </form>
       </div>
-      <h2 className="text-left text-5xl font-medium">ABOUT</h2>
-      <div className="pt-3 pb-10">
+      <br />
+      <br />
+      <div style={{ paddingTop: '100px' }}>
+        <h2 className="text-left text-5xl font-medium">ABOUT</h2>
+        <div className="pt-3 pb-10">
         The Paragon Fellowship aims to connect students with opportunities in
         tech policy research. Fellows will work on term-time tech policy
         projects where they dedicate about 5 hours/week during the semester to
@@ -109,6 +120,7 @@ export default function Home() {
       <div className="pt-7">
         → If you’re interested in joining our organizing team, please reach out
         to us at paragonfellowship@gmail.com.
+      </div>
       </div>
       </Parallax>
       
