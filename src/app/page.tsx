@@ -1,8 +1,24 @@
+"use client";
 import Image from "next/image";
+// import { useClient } from "next/react-server";
+import Carousel from "../components/Carousel";
 
 export default function Home() {
+  const carouselItems = [
+    { image: `/harv_logo.png`, alt: "Harvard" },
+    { image: "/brown.png", alt: "Brown" },
+    { image: "/IIT.jpeg", alt: "IIT" },
+    { image: "/penn.png", alt: "UPenn" },
+    { image: "/stanford.png", alt: "Stanford" },
+    { image: "/GT.png", alt: "Georgia Tech" },
+    { image: "/RISD.svg", alt: "RISD" },
+    { image: "/UGA.png", alt: "UGA" },
+    { image: "/Yale.png", alt: "Yale" },
+    // Add more items as needed
+  ];
+  // useClient();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <Image
           src="/path/to/your/image.jpg"
@@ -15,7 +31,59 @@ export default function Home() {
         <br />
         <br />
         <h2>BRIDGING STUDENTS TO TECH POLICY</h2>
-        <p>SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE AND LOCAL GOVERNMENTS.</p>
+        <p>
+          SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE
+          AND LOCAL GOVERNMENTS.
+        </p>
+      </div>
+      <h2 class="text-left text-5xl font-medium">ABOUT</h2>
+      <div class="pt-3 pb-10">
+        The Paragon Fellowship aims to connect students with opportunities in
+        tech policy research. Fellows will work on term-time tech policy
+        projects where they dedicate about 5 hours/week during the semester to
+        produce a policy brief on the applications of digital technology in
+        state and local governments. Eventually, we hope to bring these fellows
+        together in an annual summit to share ideas and create a more robust,
+        nationwide community.
+      </div>
+      <hr class="pt-10" />
+      <h2 class="text-left text-2xl font-medium">
+        WHAT DOES A PROJECT LOOK LIKE?
+      </h2>
+      <div class="pb-10">
+        Environmental permits are known to be a time-consuming and complicated
+        process. AI adoption in this process could significantly increase the
+        productivity of government officials. To help state and local
+        governments explore such AI use cases, Paragon fellows could produce a
+        policy brief that identifies opportunities for AI integration into each
+        phase of the permitting process, including streamlining compliance
+        checks or automating application analysis.
+      </div>
+      <h2 class="text-left text-2xl font-medium">WHAT IS THE IMPACT?</h2>
+      <div class="pb-10">
+        Our success will cultivate the next generation of science and tech
+        policy leaders. By connecting students with state and local governments,
+        we empower them to chart a career path in tech policy and address the
+        most pressing issues in their communities and, eventually, the nation.
+      </div>
+      <h2 class="text-left text-2xl font-medium">WHO ARE WE?</h2>
+      <div class="pb-10">
+        Started by two former White House OSTP interns, we saw a gap between
+        students interested in science and tech policy issues and local
+        governments with an increasing need to build tech capacity. Our
+        objective is to make science and tech policy research more accessible to
+        students of any background and to create a supportive community among
+        those interested in exploring this intersection.
+        <br></br>
+        <br></br>
+        The organizing team includes students from:
+      </div>
+      <div className="container mx-auto">
+        <Carousel items={carouselItems} />
+      </div>
+      <div className="pt-7">
+        → If you’re interested in joining our organizing team, please reach out
+        to us at paragonfellowship@gmail.com.
       </div>
     </main>
 
@@ -126,5 +194,5 @@ export default function Home() {
     //     </a>
     //   </div>
     // </main>
-  )
+  );
 }
