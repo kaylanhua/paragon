@@ -60,13 +60,17 @@ export default function Home() {
               ),
             }}
           >
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row" style={{ zIndex: 1 }}>
               <ParallaxLayer offset={offset} speed={0.1}>
-                <div style={{ marginTop: "-1000px", marginLeft: "-1000px" }}>
+                <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
                   <div className="flex-row">
-                    {Array.from({ length: 5 }, (_, index) => (
-                      <div key={index} className="flex">
-                        {Array.from({ length: 20 }, (_, index) => (
+                    {Array.from({ length: 50 }, (_, index) => (
+                      <div
+                        key={index}
+                        className="flex"
+                        style={{ marginBottom: "30px" }}
+                      >
+                        {Array.from({ length: 3 }, (_, index) => (
                           <Image
                             key={index}
                             src="/virtual_space.png"
@@ -80,33 +84,48 @@ export default function Home() {
                   </div>
                 </div>
               </ParallaxLayer>
-              {/* <ParallaxLayer offset={offset + 0.2} speed={0.5}>
-                <div className="flex">
-                  <Image
-                    src="/virtual_space.png"
-                    width="3000"
-                    height="3000"
-                    alt="test1"
-                  />
-                  <Image
-                    src="/virtual_space.png"
-                    width="3000"
-                    height="3000"
-                    alt="test1"
-                  />
-                  <Image
-                    src="/virtual_space.png"
-                    width="3000"
-                    height="3000"
-                    alt="test1"
-                  />
+            </div>
+          </animated.div>
+          <animated.div
+            style={{
+              position: "fixed",
+              width: "100%",
+              height: "100%",
+              willChange: "transform",
+              transform: horizontalSpring.offset.to(
+                (o) => `translateY(-${o * 20}%) rotate(45deg)`
+              ),
+            }}
+          >
+            <div className="flex flex-col lg:flex-row">
+              <ParallaxLayer offset={offset} speed={0.1} style={{ zIndex: 2 }}>
+                <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
+                  <div className="flex-row">
+                    {Array.from({ length: 5 }, (_, index) => (
+                      <div
+                        key={index}
+                        className="flex"
+                        style={{ marginBottom: "20px" }}
+                      >
+                        {Array.from({ length: 20 }, (_, index) => (
+                          <Image
+                            key={index}
+                            src="/virtual_space.png"
+                            width="2500"
+                            height="2500"
+                            alt={`test${index + 1}`}
+                          />
+                        ))}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </ParallaxLayer> */}
+              </ParallaxLayer>
             </div>
           </animated.div>
 
-          <div className="z-10 max-w-5xl w-1/2 items-center justify-between font-mono text-sm lg:flex-col">
-            <h1 className="text-6xl font-bold">PARAGON POLICY FELLOWSHIP</h1>
+          <div className="z-10 max-w-7xl w-1/2 items-center justify-between font-mono text-sm lg:flex-col">
+            <h1 className="text-7xl font-bold">PARAGON POLICY FELLOWSHIP</h1>
             <h2 className="text-l font-bold">
               BRINGING STUDENTS TO THE FOREFRONT OF TECH POLICY
             </h2>
