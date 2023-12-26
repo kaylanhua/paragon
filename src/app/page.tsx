@@ -4,6 +4,8 @@ import EmailForm from "../components/EmailForm";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { useSpring, animated } from "@react-spring/web";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState, useRef } from "react";
 
 export default function Home() {
@@ -124,7 +126,7 @@ export default function Home() {
             paddingTop: "200px",
             paddingBottom: "200px",
             zIndex: 3,
-            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
             height: "100%",
           }}
         >
@@ -200,8 +202,19 @@ export default function Home() {
             </div>
             <br></br>
             <div className="pt-7 font-semibold pb-20">
-              → If you’re interested in joining our organizing team, please
-              reach out to us at paragonfellowship@gmail.com.
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                style={{ width: "20px", height: "20px", paddingRight: "10px" }}
+              />
+              If you’re interested in joining our organizing team, please reach
+              out to us at{" "}
+              <a
+                href={`mailto:paragonfellowship@gmail.com`}
+                style={{ textDecoration: "underline", color: "#fff" }}
+              >
+                paragonfellowship@gmail.com
+              </a>
+              .
             </div>
           </div>
         </ParallaxLayer>
