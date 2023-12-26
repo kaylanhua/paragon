@@ -142,35 +142,11 @@ export default function Home() {
               STATE AND LOCAL GOVERNMENTS.
             </h3>
             <br />
-            <form style={{ display: "flex", alignItems: "center" }}>
-              <input
-                type="text"
-                style={{
-                  backgroundColor: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid #fff",
-                  marginRight: "10px",
-                  padding: "5px 0",
-                  width: "60%",
-                }}
-                placeholder="Enter your college email"
-              />
-              <button
-                type="submit"
-                style={{ backgroundColor: "transparent", border: "none" }}
-              >
-                {/* placeholder */}
-                <img
-                  src="/right-arrow.png"
-                  alt="Submit"
-                  style={{ width: "20px", height: "20px" }}
-                />
-              </button>
-            </form>
+            <br />
+            <EmailForm />
           </div>
           <br />
           <br />
-          {/* <br /> */}
           <div className="text-lg" style={{ paddingTop: "200px" }}>
             <h2 className="text-left text-5xl font-bold">ABOUT</h2>
             <div className="pt-5 pb-10">

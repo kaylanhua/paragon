@@ -1,7 +1,10 @@
 // EmailForm.tsx
 
 import { useState, FormEvent } from "react";
-import { db } from "../firebase";
+import { db } from "./firebase";
+import { collection, addDoc } from "firebase/firestore";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const EmailForm = () => {
   const [email, setEmail] = useState<string>("");
@@ -21,10 +24,7 @@ const EmailForm = () => {
       const docRef = await addDoc(collection(db, "emails"), {
         email: email,
       });
-
-      console.log("Email added with ID: ", docRef.id);
-      alert("Email submitted and stored in Firebase!");
-      setEmail(""); // Clear the input field after submission
+      setEmail("Got it! Thank you for your interest."); // Clear the input field after submission
     } catch (error) {
       console.error("Error adding email: ", error);
       alert("Error submitting email. Please try again.");
@@ -34,7 +34,12 @@ const EmailForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      style={{ display: "flex", alignItems: "center" }}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        borderBottom: "1px solid #fff",
+        width: "40%",
+      }}
     >
       <input
         type="text"
@@ -43,10 +48,10 @@ const EmailForm = () => {
         style={{
           backgroundColor: "transparent",
           border: "none",
-          borderBottom: "1px solid #fff",
           marginRight: "10px",
           padding: "5px 0",
-          width: "60%",
+          width: "95%",
+          outline: "none",
         }}
         placeholder="Enter your college email"
       />
@@ -54,9 +59,8 @@ const EmailForm = () => {
         type="submit"
         style={{ backgroundColor: "transparent", border: "none" }}
       >
-        <img
-          src="/right-arrow.png"
-          alt="Submit"
+        <FontAwesomeIcon
+          icon={faArrowRight}
           style={{ width: "20px", height: "20px" }}
         />
       </button>
