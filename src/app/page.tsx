@@ -40,6 +40,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen justify-between p-24">
       <Parallax pages={2} style={{ top: "0", left: "0" }}>
+        <div style={{ padding: "100px", paddingTop: "200px"}}>
         <animated.div
           style={{
             position: "fixed",
@@ -109,7 +110,7 @@ export default function Home() {
         </div>
         <br />
         <br />
-        <div style={{ paddingTop: "100px" }}>
+        <div style={{ paddingTop: "200px", paddingBottom: "100px" }}>
           <h2 className="text-left text-5xl font-medium">ABOUT</h2>
           <div className="pt-3 pb-10">
             The Paragon Fellowship aims to connect students with opportunities
@@ -162,6 +163,7 @@ export default function Home() {
             → If you’re interested in joining our organizing team, please reach
             out to us at paragonfellowship@gmail.com.
           </div>
+        </div>
         </div>
       </Parallax>
     </main>
