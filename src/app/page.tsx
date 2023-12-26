@@ -1,5 +1,6 @@
 "use client";
 import Carousel from "../components/Carousel";
+import EmailForm from "../components/EmailForm";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { useSpring, animated } from "@react-spring/web";
 import Image from "next/image";
