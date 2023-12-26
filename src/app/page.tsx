@@ -27,17 +27,17 @@ export default function Home() {
     from: { offset: 0 },
     to: async (next) => {
       while (true) {
-        await next({ offset: 50 });
+        await next({ offset: 100 });
         // await next({ offset: 0 });
       }
     },
     // onRest: () => setOffset(0),
-    config: { duration: 120000 },
+    config: { duration: 300000, immediate: true },
   });
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setOffset((prevOffset) => prevOffset + 0.001);
-    }, 5000);
+      setOffset((prevOffset) => prevOffset + 0.0001);
+    }, 500);
 
     return () => clearInterval(intervalId);
   }, [horizontalSpring]);
@@ -64,7 +64,7 @@ export default function Home() {
               <ParallaxLayer offset={offset} speed={0.1}>
                 <div style={{ marginTop: "-1000px", marginLeft: "-1000px" }}>
                   <div className="flex-row">
-                    {Array.from({ length: 10 }, (_, index) => (
+                    {Array.from({ length: 5 }, (_, index) => (
                       <div key={index} className="flex">
                         {Array.from({ length: 20 }, (_, index) => (
                           <Image
