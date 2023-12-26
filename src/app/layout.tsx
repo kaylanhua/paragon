@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Paragon Policy",
+  title: "Paragon Policy Fellowship",
   description:
     "a fellowship to connect students with tech policy opportunities",
 };
