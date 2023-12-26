@@ -43,98 +43,103 @@ export default function Home() {
   }, [horizontalSpring]);
 
   return (
-    <main className="flex min-h-screen justify-between font-mono p-24">
-      <Parallax pages={2} style={{ top: "0", left: "0" }}>
-        <div style={{ padding: "100px", paddingTop: "200px" }}>
-          <animated.div
-            style={{
-              position: "fixed",
-              width: "100%",
-              height: "100%",
-              willChange: "transform",
-              transform: horizontalSpring.offset.to(
-                (o) =>
-                  `translateY(-${o * 10}%) translateX(-${
-                    o * 10
-                  }%) rotate(25deg)`
-              ),
-            }}
-          >
-            <div className="flex flex-col lg:flex-row" style={{ zIndex: 1 }}>
-              <ParallaxLayer offset={offset} speed={0.1}>
-                <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
-                  <div className="flex-row">
-                    {Array.from({ length: 50 }, (_, index) => (
-                      <div
+    <main className="flex justify-between font-mono">
+      <Parallax pages={2.1} style={{ top: "0", left: "0" }}>
+        {/* <animated.div
+          style={{
+            zIndex: 1,
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            willChange: "transform",
+            transform: horizontalSpring.offset.to(
+              (o) =>
+                `translateY(-${o * 10}%) translateX(-${o * 10}%) rotate(25deg)`
+            ),
+          }}
+        >
+          <ParallaxLayer offset={offset} speed={0.1}>
+            <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
+              <div className="flex-row">
+                {Array.from({ length: 50 }, (_, index) => (
+                  <div
+                    key={index}
+                    className="flex"
+                    style={{ marginBottom: "-50px" }}
+                  >
+                    {Array.from({ length: 3 }, (_, index) => (
+                      <Image
                         key={index}
-                        className="flex"
-                        style={{ marginBottom: "30px" }}
-                      >
-                        {Array.from({ length: 3 }, (_, index) => (
-                          <Image
-                            key={index}
-                            src="/virtual_space.png"
-                            width="2000"
-                            height="2000"
-                            alt={`test${index + 1}`}
-                          />
-                        ))}
-                      </div>
+                        src="/virtual_space.png"
+                        width="2000"
+                        height="2000"
+                        alt={`test${index + 1}`}
+                      />
                     ))}
                   </div>
-                </div>
-              </ParallaxLayer>
+                ))}
+              </div>
             </div>
-          </animated.div>
-          <animated.div
-            style={{
-              position: "fixed",
-              width: "100%",
-              height: "100%",
-              willChange: "transform",
-              transform: horizontalSpring.offset.to(
-                (o) => `translateY(-${o * 20}%) rotate(45deg)`
-              ),
-            }}
-          >
-            <div className="flex flex-col lg:flex-row">
-              <ParallaxLayer offset={offset} speed={0.1} style={{ zIndex: 2 }}>
-                <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
-                  <div className="flex-row">
-                    {Array.from({ length: 5 }, (_, index) => (
-                      <div
+          </ParallaxLayer>
+        </animated.div> */}
+        <animated.div
+          style={{
+            zIndex: 2,
+            position: "fixed",
+            width: "100%",
+            height: "100vh",
+            // overflow: "hidden",
+            willChange: "transform",
+            transform: horizontalSpring.offset.to(
+              (o) => `translateY(-${o * 20}%) rotate(45deg)`
+            ),
+          }}
+        >
+          <ParallaxLayer offset={offset} speed={0.1} style={{ zIndex: 2 }}>
+            <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
+              <div className="flex-row">
+                {Array.from({ length: 5 }, (_, index) => (
+                  <div key={index} className="flex">
+                    {Array.from({ length: 20 }, (_, index) => (
+                      <Image
                         key={index}
-                        className="flex"
-                        style={{ marginBottom: "20px" }}
-                      >
-                        {Array.from({ length: 20 }, (_, index) => (
-                          <Image
-                            key={index}
-                            src="/virtual_space.png"
-                            width="2500"
-                            height="2500"
-                            alt={`test${index + 1}`}
-                          />
-                        ))}
-                      </div>
+                        src="/virtual_space.png"
+                        width="2500"
+                        height="2500"
+                        alt={`test${index + 1}`}
+                      />
                     ))}
                   </div>
-                </div>
-              </ParallaxLayer>
+                ))}
+              </div>
             </div>
-          </animated.div>
+          </ParallaxLayer>
+        </animated.div>
 
-          <div className="z-10 max-w-7xl w-1/2 items-center justify-between font-mono text-sm lg:flex-col">
-            <h1 className="text-7xl font-bold">PARAGON POLICY FELLOWSHIP</h1>
-            <h2 className="text-l font-bold">
+        <ParallaxLayer
+          style={{
+            paddingLeft: "150px",
+            paddingRight: "150px",
+            paddingTop: "200px",
+            paddingBottom: "200px",
+            zIndex: 3,
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            height: "100%",
+          }}
+        >
+          <div className="z-3 max-w-7xl items-center justify-between font-mono mb-2">
+            <h1 className="text-7xl font-bold pb-10">
+              PARAGON POLICY FELLOWSHIP
+            </h1>
+            <h2 className="text-3xl font-bold">
               BRINGING STUDENTS TO THE FOREFRONT OF TECH POLICY
             </h2>
             <br />
             <br />
-            <p>
+            <h3 className="text-lg">
               SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH
               STATE AND LOCAL GOVERNMENTS.
-            </p>
+            </h3>
             <br />
             <form style={{ display: "flex", alignItems: "center" }}>
               <input
@@ -164,9 +169,10 @@ export default function Home() {
           </div>
           <br />
           <br />
-          <div style={{ paddingTop: "200px", paddingBottom: "100px" }}>
-            <h2 className="text-left text-5xl font-medium">ABOUT</h2>
-            <div className="pt-3 pb-10">
+          {/* <br /> */}
+          <div className="text-lg" style={{ paddingTop: "200px" }}>
+            <h2 className="text-left text-5xl font-bold">ABOUT</h2>
+            <div className="pt-5 pb-10">
               The Paragon Fellowship aims to connect students with opportunities
               in tech policy research. Fellows will work on term-time tech
               policy projects where they dedicate about 5 hours/week during the
@@ -176,7 +182,7 @@ export default function Home() {
               and create a more robust, nationwide community.
             </div>
             <hr className="pt-10" />
-            <h2 className="text-left text-2xl font-medium">
+            <h2 className="text-left text-2xl font-bold pb-5">
               WHAT DOES A PROJECT LOOK LIKE?
             </h2>
             <div className="pb-10">
@@ -189,7 +195,7 @@ export default function Home() {
               process, including streamlining compliance checks or automating
               application analysis.
             </div>
-            <h2 className="text-left text-2xl font-medium">
+            <h2 className="text-left text-2xl font-bold pb-5">
               WHAT IS THE IMPACT?
             </h2>
             <div className="pb-10">
@@ -199,7 +205,7 @@ export default function Home() {
               and address the most pressing issues in their communities and,
               eventually, the nation.
             </div>
-            <h2 className="text-left text-2xl font-medium">WHO ARE WE?</h2>
+            <h2 className="text-left text-2xl font-bold pb-5">WHO ARE WE?</h2>
             <div className="pb-10">
               Started by two former White House OSTP interns, we saw a gap
               between students interested in science and tech policy issues and
@@ -215,12 +221,13 @@ export default function Home() {
             <div className="container mx-auto">
               <Carousel items={carouselItems} />
             </div>
-            <div className="pt-7">
+            <br></br>
+            <div className="pt-7 font-semibold pb-20">
               → If you’re interested in joining our organizing team, please
               reach out to us at paragonfellowship@gmail.com.
             </div>
           </div>
-        </div>
+        </ParallaxLayer>
       </Parallax>
     </main>
   );
