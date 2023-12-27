@@ -103,12 +103,12 @@ export default function Home() {
             ),
           }}
         >
-          <ParallaxLayer offset={offset} speed={0.5} style={{ zIndex: 2 }}>
+          <ParallaxLayer offset={offset} speed={0.3} style={{ zIndex: 2 }}>
             <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
               <div className="flex-row">
                 {Array.from({ length: 3 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 20 }, (_, index) => (
+                    {Array.from({ length: 30 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
