@@ -162,8 +162,8 @@ export default function Home() {
               researching and writing a policy brief on key science policy
               issues for their state and local governments, anything from
               broadband infrastructure, renewable energy, to AI procurement.
-              It's a hands-on, project-based experience, designed to focus on
-              local community engagement to enhance students' network and
+              It&apos;s hands-on, project-based experience, designed to focus on
+              local community engagement to enhance students&apos; network and
               impact.
             </div>
             <hr className="pt-10" />
