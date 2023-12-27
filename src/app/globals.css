@@ -50,12 +50,12 @@ body {
 
 @media screen and (min-width: 1200px) {
   .parallax-container {
-    height: 130vh !important;
+    height: 120vh !important;
   }
 }
 
 @media screen and (min-width: 1508px) {
   .parallax-container {
-    height: 120vh !important;
+    height: 110vh !important;
   }
 }
