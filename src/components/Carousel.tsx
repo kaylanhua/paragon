@@ -12,7 +12,7 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ items }) => {
   // Ensure enough duplicates to create a seamless infinite scroll
-  const duplicatedItems = Array.from({ length: 10 }, () => items).flat();
+  const duplicatedItems = Array.from({ length: 100 }, () => items).flat();
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
