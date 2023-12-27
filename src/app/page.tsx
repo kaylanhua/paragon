@@ -14,7 +14,7 @@ export default function Home() {
     { image: "/brown.png", alt: "Brown" },
     { image: "/IIT.jpeg", alt: "IIT" },
     { image: "/penn.png", alt: "UPenn" },
-    { image: "/stanford.png", alt: "Stanford" },
+    // { image: "/stanford.png", alt: "Stanford" },
     { image: "/GT.png", alt: "Georgia Tech" },
     { image: "/RISD.svg", alt: "RISD" },
     { image: "/UGA.png", alt: "UGA" },
