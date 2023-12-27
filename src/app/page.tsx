@@ -25,23 +25,19 @@ export default function Home() {
   const [offset, setOffset] = useState(0);
   const speed = 0.1;
 
-  const [horizontalSpring, api] = useSpring(
-    () => ({
-      from: { offset: 0 },
-      // to: { offset: 1 },
-      to: async (next) => {
-        while (true) {
-          await next({ offset: 100 });
-          // await next({ offset: 0 });
-        }
-      },
-      config: { duration: 1, immediate: true },
-      loop: {
-        reverse: true,
-      },
-    }),
-    []
-  );
+  const [horizontalSpring, api] = useSpring(() => ({
+    from: { offset: 0 },
+    // to: { offset: 1 },
+    to: async (next) => {
+      while (true) {
+        await next({ offset: 100 });
+      }
+    },
+    config: { duration: 30000, immediate: true },
+    loop: {
+      reverse: true,
+    },
+  }));
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOffset((prevOffset) => prevOffset + 0.0001);
@@ -111,7 +107,7 @@ export default function Home() {
               <div className="flex-row">
                 {Array.from({ length: 5 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 20 }, (_, index) => (
+                    {Array.from({ length: 5 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
