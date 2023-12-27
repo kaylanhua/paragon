@@ -160,10 +160,10 @@ export default function Home() {
               The Paragon Fellowship aims to connect students with opportunities
               in the tech policy space. Fellows will spend 5-10 hours a week
               researching and writing a policy brief on key science policy
-              issues for their local governments, anything from broadband
-              infrastructure to AI use cases. It's a hands-on, project-based
-              experience, designed to focus on local community engagement to
-              enhance their network and impact.
+              issues for their state and local governments, anything from
+              broadband infrastructure, renewable energy, to AI procurement.
+              It's a hands-on, project-based experience, designed to focus on
+              local community engagement to enhance their network and impact.
             </div>
             <hr className="pt-10" />
             <h2 className="text-left text-2xl font-bold pb-5">
