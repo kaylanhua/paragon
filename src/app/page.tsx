@@ -25,18 +25,20 @@ export default function Home() {
   const [offset, setOffset] = useState(0);
   const speed = 0.1;
 
-  const horizontalSpring = useSpring({
-    offset: offset,
+  const [horizontalSpring, api] = useSpring(() => ({
     from: { offset: 0 },
+    // to: { offset: 1 },
     to: async (next) => {
       while (true) {
         await next({ offset: 100 });
         // await next({ offset: 0 });
       }
     },
-    // onRest: () => setOffset(0),
-    config: { duration: 300000, immediate: true },
-  });
+    config: { duration: 1, immediate: true },
+    loop: {
+      reverse: true,
+    },
+  }), []);
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOffset((prevOffset) => prevOffset + 0.0001);
@@ -48,43 +50,6 @@ export default function Home() {
   return (
     <main className="flex justify-between font-mono">
       <Parallax pages={2.1} style={{ top: "0", left: "0" }}>
-        {/* <animated.div
-          style={{
-            zIndex: 1,
-            position: "fixed",
-            width: "100%",
-            height: "100%",
-            willChange: "transform",
-            transform: horizontalSpring.offset.to(
-              (o) =>
-                `translateY(-${o * 10}%) translateX(-${o * 10}%) rotate(25deg)`
-            ),
-          }}
-        >
-          <ParallaxLayer offset={offset} speed={0.1}>
-            <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
-              <div className="flex-row">
-                {Array.from({ length: 50 }, (_, index) => (
-                  <div
-                    key={index}
-                    className="flex"
-                    style={{ marginBottom: "-50px" }}
-                  >
-                    {Array.from({ length: 3 }, (_, index) => (
-                      <Image
-                        key={index}
-                        src="/virtual_space.png"
-                        width="2000"
-                        height="2000"
-                        alt={`test${index + 1}`}
-                      />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </ParallaxLayer>
-        </animated.div> */}
         <animated.div
           style={{
             zIndex: 2,
@@ -98,7 +63,7 @@ export default function Home() {
             ),
           }}
         >
-          <ParallaxLayer offset={offset} speed={0.1} style={{ zIndex: 2 }}>
+          <ParallaxLayer offset={offset} speed={0.7} style={{ zIndex: 2 }}>
             <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
               <div className="flex-row">
                 {Array.from({ length: 5 }, (_, index) => (
