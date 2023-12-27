@@ -15,47 +15,47 @@ body {
 .parallax-container {
   overflow: visible !important;
   height: max-content;
-  height: 260vh !important;
+  height: 250vh !important;
 }
 
 @media screen and (min-width: 500px) {
   .parallax-container {
-    height: 280vh !important;
+    height: 270vh !important;
   }
 }
 
 @media screen and (min-width: 600px) {
   .parallax-container {
-    height: 240vh !important;
+    height: 230vh !important;
   }
 }
 
 @media screen and (min-width: 750px) {
   .parallax-container {
-    height: 190vh !important;
+    height: 180vh !important;
   }
 }
 
 @media screen and (min-width: 800px) {
   .parallax-container {
-    height: 170vh !important;
+    height: 160vh !important;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .parallax-container {
-    height: 160vh !important;
+    height: 150vh !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .parallax-container {
-    height: 140vh !important;
+    height: 130vh !important;
   }
 }
 
 @media screen and (min-width: 1508px) {
   .parallax-container {
-    height: 130vh !important;
+    height: 120vh !important;
   }
 }
