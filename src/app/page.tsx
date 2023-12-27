@@ -158,7 +158,7 @@ export default function Home() {
             <h2 className="text-left text-5xl font-bold">ABOUT</h2>
             <div className="pt-5 pb-10">
               The Paragon Fellowship aims to connect students with opportunities
-              in the tech policy space. Fellows will spend 5-10 hours a week
+              in the tech policy space. Fellows will spend 5 hours a week
               researching and writing a policy brief on key science policy
               issues for their state and local governments, anything from
               broadband infrastructure, renewable energy, to AI procurement.
@@ -171,16 +171,19 @@ export default function Home() {
               WHAT DOES A PROJECT LOOK LIKE?
             </h2>
             <div className="pb-10">
-              Fellows are expected to write a 5-10 page long policy brief on a
-              topic that government leaders are concerned of in their
-              communities. One example is applications of AI in the
-              environmental permitting process. Permitting is known to be a
-              time-consuming and complicated process and stands to benefit
-              significantly from AI in improving its efficiency. To help local
-              governments explore such use cases, Paragon fellows could produce
-              a policy brief that identifies opportunities for AI integration
-              into each phase of the permitting process, including streamlining
-              compliance checks or automating application analysis.
+              Fellows will work in groups with others from their region to write
+              a 5-10 page long policy brief on a topic that concern their
+              communities. During this process, fellows will receive support and
+              mentorship from local goverment leaders and our organizing team.
+              <br></br>
+              One sample topic is the applications of AI in the environmental
+              permitting process. Permitting is known to be a time-consuming and
+              complicated process and stands to benefit significantly from AI in
+              improving its efficiency. To help local governments explore such
+              use cases, Paragon fellows could produce a policy brief that
+              identifies opportunities for AI integration into each phase of the
+              permitting process, including streamlining compliance checks or
+              automating application analysis.
             </div>
             <h2 className="text-left text-2xl font-bold pb-5">
               WHAT IS THE IMPACT?
