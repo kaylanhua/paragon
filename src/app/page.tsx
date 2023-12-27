@@ -200,9 +200,7 @@ export default function Home() {
               Our objective is to make science and tech policy research more
               accessible to students of any background and to create a
               supportive community among those interested in exploring this
-              intersection. Having found our path into tech policy through local
-              governments, we hope to share our experience with others
-              interested in exploring this career path.
+              intersection.
               <br></br>
               <br></br>
               The organizing team includes students from:
