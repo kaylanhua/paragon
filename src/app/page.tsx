@@ -160,11 +160,12 @@ export default function Home() {
               The Paragon Fellowship aims to connect students with opportunities
               in the tech policy space. Fellows will spend 5 hours a week
               researching and writing a policy brief on key science policy
-              issues for their state and local governments, anything from
-              broadband infrastructure, renewable energy, to AI procurement.
-              It&apos;s hands-on, project-based experience, designed to
-              introduce students to the tech policy landscape and enhance their
-              network and impact through local community engagement.
+              issues for their state and local governments, with topics ranging
+              from broadband infrastructure, renewable energy, to AI
+              procurement. Paragon is a hands-on, project-based experience,
+              designed to introduce students to the tech policy landscape and
+              enhance their network and impact through local community
+              engagement.
             </div>
             <hr className="pt-10" />
             <h2 className="text-left text-2xl font-bold pb-5">
@@ -174,23 +175,24 @@ export default function Home() {
               Fellows will work in groups with others from their region to write
               a 5-10 page long policy brief on a topic that concern their
               communities. During this process, fellows will receive support and
-              mentorship from local goverment leaders and our organizing team.
+              mentorship from local government leaders, faculty advisors, and
+              our organizing team.
               <br></br>
-              One sample topic is the applications of AI in the environmental
-              permitting process. Permitting is known to be a time-consuming and
-              complicated process and stands to benefit significantly from AI in
-              improving its efficiency. To help local governments explore such
-              use cases, Paragon fellows could produce a policy brief that
-              identifies opportunities for AI integration into each phase of the
-              permitting process, including streamlining compliance checks or
-              automating application analysis.
+              As an example, Paragon fellows could investigate the applications
+              of AI in the environmental permitting process. Permitting is known
+              to be a time-consuming and complicated process and stands to
+              benefit significantly from AI to improve its efficiency. To help
+              local governments explore such use cases, Paragon fellows could
+              produce a policy brief that identifies opportunities for AI
+              integration into each phase of the permitting process, including
+              streamlining compliance checks or automating application analysis.
             </div>
             <h2 className="text-left text-2xl font-bold pb-5">
               WHAT IS THE IMPACT?
             </h2>
             <div className="pb-10">
               Our success will cultivate the next generation of science and tech
-              policy leaders. Current opportunities for students to explore
+              policy leaders. Currently, opportunities for students to explore
               science and tech policy are limited and highly competitive,
               creating a barrier of entry. By connecting students with state and
               local governments, we empower them to chart a career path in tech
