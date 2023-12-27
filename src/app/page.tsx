@@ -33,7 +33,7 @@ export default function Home() {
         await next({ offset: 100 });
       }
     },
-    config: { duration: 200000, immediate: true },
+    config: { duration: 300000, immediate: true },
     loop: {
       reverse: true,
     },
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex-row">
                 {Array.from({ length: 4 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 8 }, (_, index) => (
+                    {Array.from({ length: 10 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
