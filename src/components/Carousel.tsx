@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 interface CarouselItem {
   image: string;
@@ -38,7 +39,7 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
             key={index}
             className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 snap-center"
           >
-            <img
+            <Image
               src={item.image}
               alt={item.alt}
               className="w-full h-full object-contain transform scale-80 pl-5"

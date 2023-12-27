@@ -25,6 +25,7 @@ export default function Home() {
   const [offset, setOffset] = useState(0);
   const speed = 0.1;
 
+<<<<<<< HEAD
   const [horizontalSpring, api] = useSpring(
     () => ({
       from: { offset: 0 },
@@ -42,6 +43,22 @@ export default function Home() {
     }),
     []
   );
+=======
+  const [horizontalSpring, api] = useSpring(() => ({
+    from: { offset: 0 },
+    to: { offset: 1 },
+    // to: async (next) => {
+    //   while (true) {
+    //     await next({ offset: 100 });
+    //     // await next({ offset: 0 });
+    //   }
+    // },
+    config: { duration: 1, immediate: true },
+    loop: {
+      reverse: true,
+    },
+  }), []);
+>>>>>>> dfecc0d (Image)
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOffset((prevOffset) => prevOffset + 0.0001);
@@ -112,7 +129,7 @@ export default function Home() {
             ),
           }}
         >
-          <ParallaxLayer offset={offset} speed={0.7} style={{ zIndex: 2 }}>
+          <ParallaxLayer offset={offset} speed={0.5} style={{ zIndex: 2 }}>
             <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
               <div className="flex-row">
                 {Array.from({ length: 5 }, (_, index) => (
