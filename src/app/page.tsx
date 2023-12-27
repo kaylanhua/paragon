@@ -158,36 +158,39 @@ export default function Home() {
             <h2 className="text-left text-5xl font-bold">ABOUT</h2>
             <div className="pt-5 pb-10">
               The Paragon Fellowship aims to connect students with opportunities
-              in tech policy research. Fellows will work on term-time projects
-              where they dedicate about 5 hours/week during the semester to
-              produce a policy brief on key science policy issues in their state
-              and local governments, anything from renewable energy to AI uses.
-              This opportunity is meant to be accessible to students of various
-              disciplines who may not have had prior experience working in
-              government.
+              in the tech policy space. It provides a hands-on, project-based
+              experience, with a focus on local community engagement to enhance
+              their network and impact. Fellows will work on term-time projects
+              where they dedicate about 5-10 hours/week to produce a policy
+              brief on key science policy issues in their state and local
+              governments, anything from renewable energy to AI procurement.
             </div>
             <hr className="pt-10" />
             <h2 className="text-left text-2xl font-bold pb-5">
               WHAT DOES A PROJECT LOOK LIKE?
             </h2>
             <div className="pb-10">
-              Environmental permits are known to be a time-consuming and
-              complicated process. AI adoption in this process could
-              significantly increase the productivity of government officials.
-              To help state and local governments explore such AI use cases,
-              Paragon fellows could produce a policy brief that identifies
-              opportunities for AI integration into each phase of the permitting
-              process, including streamlining compliance checks or automating
-              application analysis.
+              Fellows are expected to write a 5-10 page long policy brief on a
+              topic that government leaders are concerned of in their
+              communities. One example is applications of AI in the
+              environmental permitting process. Permitting is known to be a
+              time-consuming and complicated process and stands to benefit
+              significantly from AI in improving its efficiency. To help local
+              governments explore such use cases, Paragon fellows could produce
+              a policy brief that identifies opportunities for AI integration
+              into each phase of the permitting process, including streamlining
+              compliance checks or automating application analysis.
             </div>
             <h2 className="text-left text-2xl font-bold pb-5">
               WHAT IS THE IMPACT?
             </h2>
             <div className="pb-10">
               Our success will cultivate the next generation of science and tech
-              policy leaders. By connecting students with state and local
-              governments, we empower them to chart a career path in tech policy
-              and address the most pressing issues in their communities.
+              policy leaders. Current opportunities for students to explore
+              science and tech policy are limited and highly competitive,
+              creating a barrier of entry. By connecting students with state and
+              local governments, we empower them to chart a career path in tech
+              policy and address the most pressing issues in their communities.
             </div>
             <h2 className="text-left text-2xl font-bold pb-5">WHO ARE WE?</h2>
             <div className="pb-10">
@@ -197,7 +200,9 @@ export default function Home() {
               Our objective is to make science and tech policy research more
               accessible to students of any background and to create a
               supportive community among those interested in exploring this
-              intersection.
+              intersection. Having found our path into tech policy through local
+              governments, we hope to share our experience with others
+              interested in exploring this career path.
               <br></br>
               <br></br>
               The organizing team includes students from:
