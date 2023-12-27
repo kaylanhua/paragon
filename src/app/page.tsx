@@ -25,20 +25,23 @@ export default function Home() {
   const [offset, setOffset] = useState(0);
   const speed = 0.1;
 
-  const [horizontalSpring, api] = useSpring(() => ({
-    from: { offset: 0 },
-    to: { offset: 1 },
-    // to: async (next) => {
-    //   while (true) {
-    //     await next({ offset: 100 });
-    //     // await next({ offset: 0 });
-    //   }
-    // },
-    config: { duration: 1, immediate: true },
-    loop: {
-      reverse: true,
-    },
-  }), []);
+  const [horizontalSpring, api] = useSpring(
+    () => ({
+      from: { offset: 0 },
+      to: { offset: 1 },
+      // to: async (next) => {
+      //   while (true) {
+      //     await next({ offset: 100 });
+      //     // await next({ offset: 0 });
+      //   }
+      // },
+      config: { duration: 1, immediate: true },
+      loop: {
+        reverse: true,
+      },
+    }),
+    []
+  );
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOffset((prevOffset) => prevOffset + 0.0001);
@@ -112,9 +115,9 @@ export default function Home() {
           <ParallaxLayer offset={offset} speed={0.5} style={{ zIndex: 2 }}>
             <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
               <div className="flex-row">
-                {Array.from({ length: 5 }, (_, index) => (
+                {Array.from({ length: 1 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 20 }, (_, index) => (
+                    {Array.from({ length: 5 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
@@ -164,12 +167,13 @@ export default function Home() {
             <h2 className="text-left text-5xl font-bold">ABOUT</h2>
             <div className="pt-5 pb-10">
               The Paragon Fellowship aims to connect students with opportunities
-              in tech policy research. Fellows will work on term-time tech
-              policy projects where they dedicate about 5 hours/week during the
-              semester to produce a policy brief on the applications of digital
-              technology in state and local governments. Eventually, we hope to
-              bring these fellows together in an annual summit to share ideas
-              and create a more robust, nationwide community.
+              in tech policy research. Fellows will work on term-time projects
+              where they dedicate about 5 hours/week during the semester to
+              produce a policy brief on key science policy issues in their state
+              and local governments, anything from renewable energy to AI uses.
+              This opportunity is meant to be accessible to students of various
+              disciplines who may not have had prior experience working in
+              government.
             </div>
             <hr className="pt-10" />
             <h2 className="text-left text-2xl font-bold pb-5">
