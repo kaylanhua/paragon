@@ -25,17 +25,16 @@ export default function Home() {
   const [offset, setOffset] = useState(0);
   const speed = 0.1;
 
-<<<<<<< HEAD
   const [horizontalSpring, api] = useSpring(
     () => ({
       from: { offset: 0 },
-      // to: { offset: 1 },
-      to: async (next) => {
-        while (true) {
-          await next({ offset: 100 });
-          // await next({ offset: 0 });
-        }
-      },
+      to: { offset: 1 },
+      // to: async (next) => {
+      //   while (true) {
+      //     await next({ offset: 100 });
+      //     // await next({ offset: 0 });
+      //   }
+      // },
       config: { duration: 1, immediate: true },
       loop: {
         reverse: true,
@@ -43,22 +42,6 @@ export default function Home() {
     }),
     []
   );
-=======
-  const [horizontalSpring, api] = useSpring(() => ({
-    from: { offset: 0 },
-    to: { offset: 1 },
-    // to: async (next) => {
-    //   while (true) {
-    //     await next({ offset: 100 });
-    //     // await next({ offset: 0 });
-    //   }
-    // },
-    config: { duration: 1, immediate: true },
-    loop: {
-      reverse: true,
-    },
-  }), []);
->>>>>>> dfecc0d (Image)
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOffset((prevOffset) => prevOffset + 0.0001);
