@@ -28,13 +28,13 @@ export default function Home() {
   const [horizontalSpring, api] = useSpring(
     () => ({
       from: { offset: 0 },
-      to: { offset: 1 },
-      // to: async (next) => {
-      //   while (true) {
-      //     await next({ offset: 100 });
-      //     // await next({ offset: 0 });
-      //   }
-      // },
+      // to: { offset: 1 },
+      to: async (next) => {
+        while (true) {
+          await next({ offset: 100 });
+          // await next({ offset: 0 });
+        }
+      },
       config: { duration: 1, immediate: true },
       loop: {
         reverse: true,
@@ -49,11 +49,6 @@ export default function Home() {
 
     return () => clearInterval(intervalId);
   }, [horizontalSpring]);
-
-  // const calculateParallaxHeight = () => {
-  //   // Calculate the height of the Parallax based on the window height
-  //   return window.innerHeight * 1.5; // Adjust the multiplier as needed
-  // };
 
   return (
     <main className="flex justify-between font-mono">
@@ -105,7 +100,6 @@ export default function Home() {
             position: "fixed",
             width: "100%",
             height: "100vh",
-            // overflow: "hidden",
             willChange: "transform",
             transform: horizontalSpring.offset.to(
               (o) => `translateY(-${o * 20}%) rotate(45deg)`
@@ -115,9 +109,9 @@ export default function Home() {
           <ParallaxLayer offset={offset} speed={0.5} style={{ zIndex: 2 }}>
             <div style={{ marginTop: "-500px", marginLeft: "-500px" }}>
               <div className="flex-row">
-                {Array.from({ length: 1 }, (_, index) => (
+                {Array.from({ length: 5 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 5 }, (_, index) => (
+                    {Array.from({ length: 20 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
