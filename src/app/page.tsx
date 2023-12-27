@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex-row">
                 {Array.from({ length: 4 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 10 }, (_, index) => (
+                    {Array.from({ length: 5 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
