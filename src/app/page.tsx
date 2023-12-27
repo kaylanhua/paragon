@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex-row">
                 {Array.from({ length: 3 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 15 }, (_, index) => (
+                    {Array.from({ length: 20 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
@@ -158,12 +158,12 @@ export default function Home() {
             <h2 className="text-left text-5xl font-bold">ABOUT</h2>
             <div className="pt-5 pb-10">
               The Paragon Fellowship aims to connect students with opportunities
-              in the tech policy space. It provides a hands-on, project-based
-              experience, with a focus on local community engagement to enhance
-              their network and impact. Fellows will work on term-time projects
-              where they dedicate about 5-10 hours/week to produce a policy
-              brief on key science policy issues in their state and local
-              governments, anything from renewable energy to AI procurement.
+              in the tech policy space. Fellows will spend 5-10 hours a week
+              researching and writing a policy brief on key science policy
+              issues for their local governments, anything from broadband
+              infrastructure to AI use cases. It's a hands-on, project-based
+              experience, designed to focus on local community engagement to
+              enhance their network and impact.
             </div>
             <hr className="pt-10" />
             <h2 className="text-left text-2xl font-bold pb-5">
