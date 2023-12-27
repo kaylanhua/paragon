@@ -18,6 +18,18 @@ body {
   height: 250vh !important;
 }
 
+@media screen and (min-width: 500px) {
+  .parallax-container {
+    height: 270vh !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .parallax-container {
+    height: 230vh !important;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .parallax-container {
     height: 180vh !important;
