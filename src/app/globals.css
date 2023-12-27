@@ -10,10 +10,11 @@
 body {
   color: white;
   background: #15224d;
+  overflow: auto !important;
 }
 
 .parallax-container {
-  overflow: visible !important;
+  overflow: auto !important;
   height: max-content;
   height: 250vh !important;
 }
