@@ -163,7 +163,8 @@ export default function Home() {
               issues for their state and local governments, anything from
               broadband infrastructure, renewable energy, to AI procurement.
               It's a hands-on, project-based experience, designed to focus on
-              local community engagement to enhance their network and impact.
+              local community engagement to enhance students' network and
+              impact.
             </div>
             <hr className="pt-10" />
             <h2 className="text-left text-2xl font-bold pb-5">
