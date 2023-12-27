@@ -4,10 +4,46 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-color: #15224D;
+  --background-color: #15224d;
 }
 
 body {
   color: white;
-  background: #15224D;
+  background: #15224d;
+}
+
+.parallax-container {
+  overflow: visible !important;
+  height: max-content;
+  height: 250vh !important;
+}
+
+@media screen and (min-width: 750px) {
+  .parallax-container {
+    height: 180vh !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .parallax-container {
+    height: 160vh !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .parallax-container {
+    height: 150vh !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .parallax-container {
+    height: 130vh !important;
+  }
+}
+
+@media screen and (min-width: 1508px) {
+  .parallax-container {
+    height: 120vh !important;
+  }
 }
