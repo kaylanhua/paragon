@@ -33,11 +33,12 @@ export default function Home() {
         await next({ offset: 100 });
       }
     },
-    config: { duration: 30000, immediate: true },
+    config: { duration: 100000, immediate: true },
     loop: {
       reverse: true,
     },
   }));
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOffset((prevOffset) => prevOffset + 0.0001);
@@ -107,7 +108,7 @@ export default function Home() {
               <div className="flex-row">
                 {Array.from({ length: 5 }, (_, index) => (
                   <div key={index} className="flex">
-                    {Array.from({ length: 5 }, (_, index) => (
+                    {Array.from({ length: 10 }, (_, index) => (
                       <Image
                         key={index}
                         src="/virtual_space.png"
