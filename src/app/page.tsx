@@ -195,8 +195,7 @@ export default function Home() {
               Our success will cultivate the next generation of science and tech
               policy leaders. By connecting students with state and local
               governments, we empower them to chart a career path in tech policy
-              and address the most pressing issues in their communities and,
-              eventually, the nation.
+              and address the most pressing issues in their communities.
             </div>
             <h2 className="text-left text-2xl font-bold pb-5">WHO ARE WE?</h2>
             <div className="pb-10">
