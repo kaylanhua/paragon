@@ -134,12 +134,12 @@ export default function Home() {
             <h1 className="text-7xl font-bold pb-10">
               PARAGON POLICY FELLOWSHIP
             </h1>
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-2xl font-bold">
               BRINGING STUDENTS TO THE FOREFRONT OF TECH POLICY
             </h2>
             <br />
             <br />
-            <h3 className="text-lg">
+            <h3 className="text-lg max-w-lg">
               SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH
               STATE AND LOCAL GOVERNMENTS.
             </h3>
