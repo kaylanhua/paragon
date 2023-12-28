@@ -11,6 +11,7 @@ body {
   color: white;
   background: #15224d;
   overflow: auto !important;
+  font-family: sans-serif !important;
 }
 
 .parallax-container {

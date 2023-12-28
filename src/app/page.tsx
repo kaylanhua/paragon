@@ -26,11 +26,11 @@ export default function Home() {
     return (
         <>
             <main className="bg-black bg-opacity-35">
-                <Section className="z-3 max-w-7xl justify-center h-screen font-mono mb-2">
-                    <H1 className="pb-10">
+                <Section className="z-3 max-w-7xl justify-center h-screen font-sans mb-2">
+                    <H1 className="pb-10 max-w-3xl">
                         PARAGON POLICY FELLOWSHIP
                     </H1>
-                    <H3>
+                    <H3 className="max-w-2xl">
                         BRINGING STUDENTS TO THE FOREFRONT OF TECH POLICY
                     </H3>
                     <br />
@@ -44,7 +44,7 @@ export default function Home() {
                     <EmailForm />
                 </Section>
                 <Section>
-                    <div className="text-lg" style={{ paddingTop: "200px" }}>
+                    <div className="text-lg font-sans" style={{ paddingTop: "200px" }}>
                         <H2>ABOUT</H2>
                         <Text className="pt-5 pb-10">
                             The Paragon Fellowship aims to connect students with opportunities
@@ -54,7 +54,7 @@ export default function Home() {
                             from broadband infrastructure, renewable energy, to AI
                             procurement. Paragon is a hands-on, project-based experience,
                             designed to introduce students to the tech policy landscape and
-                            enhance their network and impact through local community
+                            grow their network and impact through local community
                             engagement.
                         </Text>
                         <hr className="pt-10" />
@@ -67,6 +67,7 @@ export default function Home() {
                             communities. During this process, fellows will receive support and
                             mentorship from local government leaders, faculty advisors, and
                             our organizing team.
+                            <br></br>
                             <br></br>
                             As an example, Paragon fellows could investigate the applications
                             of AI in the environmental permitting process. Permitting is known
