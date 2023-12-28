@@ -1,10 +1,10 @@
 // EmailForm.tsx
 
-import { useState, FormEvent } from "react";
-import { db } from "./firebase";
-import { collection, addDoc } from "firebase/firestore";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { addDoc, collection } from "firebase/firestore";
+import { FormEvent, useState } from "react";
+import { db } from "./firebase";
 
 const EmailForm = () => {
   const [email, setEmail] = useState<string>("");
@@ -34,12 +34,7 @@ const EmailForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        borderBottom: "1px solid #fff",
-        width: "40%",
-      }}
+      className="flex items-center border-b-[1px] border-b-white md:w-[40%] w-[100%]"
     >
       <input
         type="text"
