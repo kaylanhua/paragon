@@ -33,8 +33,8 @@ export default function Home() {
           <br />
           <br />
           <H4 className="max-w-lg">
-            SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE
-            AND LOCAL GOVERNMENTS.
+            SHAPE THE FUTURE OF SCIENCE AND TECHNOLOGY THROUGH SEMESTER PROJECTS
+            WITH STATE AND LOCAL GOVERNMENTS.
           </H4>
           <br />
           <br />
