@@ -48,7 +48,7 @@ const EmailForm = () => {
           width: "95%",
           outline: "none",
         }}
-        placeholder="Enter your college email"
+        placeholder="Enter your college email to indicate interest"
       />
       <button
         type="submit"
