@@ -84,7 +84,7 @@ export default function Home() {
             </Text>
             <H3 className="pb-5">WHO ARE WE?</H3>
             <Text className="pb-10">
-              Started by two former <a href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap
+              Started by two former <a href="https://www.whitehouse.gov/ostp/" style={{ textDecoration: "underline"}}>White House OSTP</a> interns, we saw a gap
               between students interested in tech policy issues and
               local governments with an increasing need to build tech capacity.
               Our objective is to make science and tech policy research more
