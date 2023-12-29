@@ -49,9 +49,10 @@ export default function Home() {
               researching and writing a policy brief on key science policy
               issues for their state and local governments, with topics ranging
               from broadband infrastructure, renewable energy, to AI
-              procurement. Paragon is a hands-on, project-based experience,
-              designed to introduce students to the tech policy landscape and
-              grow their network and impact through local community engagement.
+              procurement. The fellowship is a hands-on, project-based
+              experience, designed to introduce students to the tech policy
+              landscape and grow their network and impact through local
+              community engagement.
             </Text>
             <hr className="pt-10" />
             <H3 className="pb-5">WHAT DOES A PROJECT LOOK LIKE?</H3>
@@ -64,15 +65,14 @@ export default function Home() {
               <br></br>
               <br></br>
               Policy brief topics will range from immediate issues that
-              governments face today, to significant, future issues they may not
-              have the capacity to explore. For instance, environmental
-              permitting is known to be time-consuming and complicated process.
-              For a project, fellows could investigate the applications of AI in
-              this process. Fellows would produce a policy brief identifying
-              opportunities, and outlining a realistic strategy for AI
+              governments face today, to looming future issues they may not have
+              the capacity to explore. For instance, environmental permitting is
+              known to be time-consuming and complicated process. As a project,
+              fellows could investigate the applications of AI in the permitting
+              process. Fellows would produce a policy brief identifying
+              opportunities and outlining a realistic strategy for AI
               integration in different phases of the permitting process, from
-              streamlining compliance checks to automating application analysis
-              as their final product.
+              streamlining compliance checks to automating application analysis.
             </Text>
             <H3 className="pb-5">WHAT IS THE IMPACT?</H3>
             <Text className="pb-10">
