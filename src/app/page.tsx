@@ -45,14 +45,13 @@ export default function Home() {
             <H2>ABOUT</H2>
             <Text className="pt-5 pb-10">
               The Paragon Fellowship aims to connect students with opportunities
-              in the tech policy space. Fellows will spend 5 hours a week
-              researching and writing a policy brief on key science policy
-              issues for their state and local governments, with topics ranging
-              from broadband infrastructure, renewable energy, to AI
-              procurement. The fellowship is a hands-on, project-based
-              experience, designed to introduce students to the tech policy
-              landscape and grow their network and impact through local
-              community engagement.
+              in the science and tech policy space. Fellows will spend 5 hours a
+              week researching and writing a policy brief on key issues for
+              their state and local governments, with topics ranging from
+              broadband infrastructure, renewable energy, to AI procurement. The
+              fellowship is a hands-on, project-based experience, designed to
+              introduce students to the tech policy landscape and grow their
+              network and impact through local community engagement.
             </Text>
             <hr className="pt-10" />
             <H3 className="pb-5">WHAT DOES A PROJECT LOOK LIKE?</H3>
