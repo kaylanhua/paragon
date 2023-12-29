@@ -28,13 +28,13 @@ export default function Home() {
         <Section className="z-3 max-w-7xl justify-center h-screen font-sans mb-2">
           <H1 className="pb-10 max-w-3xl">PARAGON POLICY FELLOWSHIP</H1>
           <H3 className="max-w-2xl">
-            BRINGING STUDENTS TO THE FOREFRONT OF TECH POLICY
+            BRINGING STUDENTS TO THE FOREFRONT OF SCIENCE AND TECH POLICY
           </H3>
           <br />
           <br />
           <H4 className="max-w-lg">
-            SHAPE THE FUTURE OF SCIENCE AND TECHNOLOGY THROUGH SEMESTER PROJECTS
-            WITH STATE AND LOCAL GOVERNMENTS.
+            SHAPE THE FUTURE OF TECHNOLOGY THROUGH SEMESTER PROJECTS WITH STATE
+            AND LOCAL GOVERNMENTS.
           </H4>
           <br />
           <br />
