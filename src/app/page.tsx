@@ -58,17 +58,17 @@ export default function Home() {
             <H3 className="pb-5">WHAT DOES A PROJECT LOOK LIKE?</H3>
             <Text className="pb-10">
               Fellows will work in groups with others from their region to write
-              a 5-10 page long policy brief on a topic that concern their
-              communities. During this process, fellows will receive support and
-              mentorship from local government leaders, faculty advisors, and
-              our organizing team.
+              a policy brief on a topic that concerns their communities. During
+              this process, fellows will receive support and mentorship from
+              local government leaders, faculty advisors, and our organizing
+              team.
               <br></br>
               <br></br>
-              Policy brief topics will range from immediate issues that
-              governments face today, to looming future issues they may not have
-              the capacity to explore. For instance, environmental permitting is
-              known to be time-consuming and complicated process. As a project,
-              fellows could investigate the applications of AI in the permitting
+              Policy topics will range from immediate issues that governments
+              face today, to future issues they may not have the capacity to
+              explore. For instance, environmental permitting is known to be
+              time-consuming and complicated process. In their project, fellows
+              could investigate the applications of AI in the permitting
               process. Fellows would produce a policy brief identifying
               opportunities and outlining a realistic strategy for AI
               integration in different phases of the permitting process, from
@@ -85,13 +85,19 @@ export default function Home() {
             </Text>
             <H3 className="pb-5">WHO ARE WE?</H3>
             <Text className="pb-10">
-              Started by two former White House OSTP interns, we saw a gap
-              between students interested in science and tech policy issues and
-              local governments with an increasing need to build tech capacity.
-              Our objective is to make science and tech policy research more
-              accessible to students of any background and to create a
-              supportive community among those interested in exploring this
-              intersection.
+              Started by two former{" "}
+              <a
+                href="https://www.whitehouse.gov/ostp/"
+                style={{ textDecoration: "underline" }}
+              >
+                White House OSTP
+              </a>{" "}
+              interns, we saw a gap between students interested in tech policy
+              issues and local governments with an increasing need to build tech
+              capacity. Our objective is to make science and tech policy
+              research more accessible to students of any background and to
+              create a supportive community among those interested in exploring
+              this intersection.
               <br></br>
               <br></br>
               The organizing team includes students from:
