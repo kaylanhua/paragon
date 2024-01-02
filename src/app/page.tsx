@@ -65,13 +65,12 @@ export default function Home() {
               <br></br>
               Policy topics will range from immediate issues that governments
               face today, to future issues they may not have the capacity to
-              explore. For instance, environmental permitting is known to be
+              explore. For instance, environmental permitting is known to be a
               time-consuming and complicated process. In their project, fellows
-              could investigate the applications of AI in the permitting
-              process. Fellows would produce a policy brief identifying
-              opportunities and outlining a realistic strategy for AI
-              integration in different phases of the permitting process, from
-              streamlining compliance checks to automating application analysis.
+              would produce a policy brief identifying opportunities and
+              outlining a realistic strategy for AI integration in different
+              phases of the permitting process, from streamlining compliance
+              checks to automating application analysis.
             </Text>
             <H3 className="pb-5">WHAT IS THE IMPACT?</H3>
             <Text className="pb-10">
