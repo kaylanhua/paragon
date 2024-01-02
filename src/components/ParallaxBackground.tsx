@@ -32,7 +32,7 @@ export default function ParallaxBackground() {
     const floatDown = useSpring(injectLoop(true));
 
     return <div className="h-screen w-screen fixed top-0 left-0 -z-50 overflow-hidden">
-        {/* <animated.div style={floatDown}> */}
+        <animated.div style={floatDown}>
             <animated.div className="flex-row relative" style={{
                 transform: scrollYProgress.to(e => {
                     if (typeof window === "undefined") {
@@ -55,6 +55,6 @@ export default function ParallaxBackground() {
                     </div>
                 ))}
             </animated.div>
-        {/* </animated.div> */}
+        </animated.div>
     </div >
 }
