@@ -6,7 +6,7 @@ import { animated, useScroll, useSpring } from "react-spring";
 const Y_OFFSET = -25;
 const X_OFFSET = -75;
 const DAMPER = 0.3;
-const FLOAT_TIME = 30000;
+const FLOAT_TIME = 300000;
 
 // Was having problems with the parallax looping correctly, so a little reverse engineering
 // of the library led me to this hacky solution. Basically just a function that returns
