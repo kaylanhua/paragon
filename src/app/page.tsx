@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="bg-black bg-opacity-35">
+      <main className="bg-black bg-opacity-45">
         <Section className="z-3 max-w-7xl justify-center h-screen font-sans mb-2">
           <H1 className="pb-10 max-w-3xl">PARAGON POLICY FELLOWSHIP</H1>
           <H3 className="max-w-2xl">
