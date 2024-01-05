@@ -1,5 +1,11 @@
 import { ReactNode } from "react";
 
-export default function Button({ children, className = "", ...props }: { children: ReactNode, className?: string }) {
-    return <button className={`text-2xl bg-secondary border-secondary border-[.2rem] rounded-2xl bg-opacity-15 px-12 py-6 uppercase border-primary-gradient ${className}`} {...props}>{children}</button>
+const styles: { [key: string]: string } = {
+    primary: "border-[.2rem] bg-secondary border-secondary border-primary-gradient bg-opacity-15 hover:bg-opacity-40 uppercase",
+    secondary: "border-[.2rem] hover:bg-white hover:bg-opacity-10 uppercase",
+    noBorder: "border-0 hover:bg-white hover:bg-opacity-10 uppercase"
+}
+
+export default function Button({ children, className = "", style = "primary", ...props }: { children: ReactNode, className?: string, style?: string }) {
+    return <button className={`transition-all flex items-center text-2xl rounded-2xl px-16 py-5 ${styles[style] || ""} ${className}`} {...props}>{children}</button>
 }

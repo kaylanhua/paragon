@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { PluginUtils, RecursiveKeyValuePair } from 'tailwindcss/types/config'
 
 const config: Config = {
   content: [
@@ -7,11 +8,14 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      dark: "#0E1632",
-      primary: '#14224D',
-      secondary: '#4870FF',
-      muted: '#DEDEDE'
+    colors: (c: PluginUtils): RecursiveKeyValuePair<string, string> => {
+      return {
+        ...c.colors,
+        dark: "#0E1632",
+        primary: '#14224D',
+        secondary: '#4870FF',
+        muted: '#DEDEDE'
+      }
     }
   },
   plugins: [],

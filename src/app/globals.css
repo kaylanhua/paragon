@@ -12,6 +12,20 @@
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   box-shadow: 0px 0px 11.9px -1px rgba(255, 255, 255, 0.11);
   border-radius: 6px;
-  border-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.125);
   border-width: 1px;
+}
+
+@layer components {
+  .subheading {
+    @apply text-4xl font-semibold uppercase mb-5;
+  }
+
+  .text {
+    @apply text-2xl font-light leading-relaxed;
+  }
+}
+
+a {
+  text-decoration: underline;
 }
