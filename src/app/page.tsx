@@ -52,17 +52,17 @@ export default function Home() {
         <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
       </Section>
       <Section>
-        <Subheading className='mb-12'>What does a project look like?</Subheading>
+        <Subheading className='md:mb-12 mb-6'>What does a project look like?</Subheading>
         <div>
           <TimelineCard className="py-14" first>
             <Subheading className='mb-1'>Example text</Subheading>
-            <Text className='max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
             <CornerDecoration icon={RiGroupLine} uniqueId='pages' />
           </TimelineCard>
           <TimelineCard className="py-14">
             <Subheading className='mb-1'>Example text</Subheading>
-            <Text className='max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
-            <CornerDecoration style={{ width: "100%" }} uniqueId='text' className="absolute top-6 right-6 w-[380px]">
+            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+            <CornerDecoration style={{ width: "100%" }} uniqueId='text' className="absolute top-6 right-6 w-[380px] md:block hidden">
               <text x="100%" y="10%" fontSize="16" textAnchor='end' fill="white">
                 <tspan x="100%" dy="0">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</tspan>
                 <tspan x="100%" dy="1.2em">ADIPISCING, SED DO EIUSMOD TEMPOR</tspan>
@@ -79,11 +79,11 @@ export default function Home() {
           </TimelineCard>
           <TimelineCard className="py-14">
             <Subheading className='mb-1'>Example text</Subheading>
-            <Text className='max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
           </TimelineCard>
           <TimelineCard className="py-14" last>
             <Subheading className='mb-0'>Example text</Subheading>
-            <Text className='max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
           </TimelineCard>
         </div>
       </Section>
@@ -94,14 +94,14 @@ export default function Home() {
       <Section>
         <Subheading>Who are we?</Subheading>
         <Text>Started by two former <a href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
-        <div className='flex my-6'>
-          <Button style='secondary'><MdOutlinePersonAddAlt className="mr-2" /> Join our organizing team</Button>
-          <Button style='noBorder' className='ml-4'>Team Directory</Button>
+        <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
+          <Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl'><MdOutlinePersonAddAlt className="mr-2" /> Join our organizing team</Button>
+          <Button style='noBorder' className='md:ml-4'>Team Directory</Button>
         </div>
         <Carousel className='mt-10' speed={0.5}>
           {
             logos.map((logo, index) => (
-              <Image key={index} src={logo} alt="Logo" className='h-full mr-14 w-32 object-contain grayscale' />
+              <Image key={index} src={logo} alt="Logo" className='h-full md:mr-14 mr-10 md:w-32 w-24 object-contain grayscale' />
             ))
           }
         </Carousel>

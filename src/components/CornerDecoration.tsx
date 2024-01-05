@@ -9,7 +9,7 @@ export default function CornerDecoration({ icon, uniqueId = "mask", style = {}, 
     const TOTAL_H = GRID_SIZE * pattern.length;
 
     return (
-        <div className="absolute top-6 right-6 h-full" {...props}>
+        <div className="absolute top-6 right-6 h-full md:block hidden" {...props}>
             <svg className="h-full" style={{
                 height: `${TOTAL_H}px`,
                 width: `${TOTAL_W}px`,

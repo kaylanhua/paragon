@@ -18,11 +18,11 @@
 
 @layer components {
   .subheading {
-    @apply text-4xl font-semibold uppercase mb-5;
+    @apply md:text-4xl text-2xl font-semibold uppercase mb-5;
   }
 
   .text {
-    @apply text-2xl font-light leading-relaxed;
+    @apply md:text-2xl text-xl font-light leading-relaxed;
   }
 }
 

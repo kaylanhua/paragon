@@ -7,5 +7,5 @@ const styles: { [key: string]: string } = {
 }
 
 export default function Button({ children, className = "", style = "primary", ...props }: { children: ReactNode, className?: string, style?: string }) {
-    return <button className={`transition-all flex items-center text-2xl rounded-2xl px-16 py-5 ${styles[style] || ""} ${className}`} {...props}>{children}</button>
+    return <button className={`transition-all flex items-center md:text-2xl text-lg rounded-2xl md:px-16 px-10 md:py-5 py-4 ${styles[style] || ""} ${className}`} {...props}>{children}</button>
 }

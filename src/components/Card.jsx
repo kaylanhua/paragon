@@ -4,6 +4,9 @@ export default function Card({ className = "", children, ...props }) {
     const ref = useRef(null)
 
     const animate = (event) => {
+        //if on mobile, don't do anything
+        if (window.innerWidth < 768) return
+
         //these constants are out here so they don't get needlessly recalculated on every mousemove
         const el = ref.current
         const rect = el.getBoundingClientRect()
