@@ -8,8 +8,20 @@ import { Subheading, Text } from '@/components/Typography';
 import Image from "next/image";
 import { RiGroupLine } from "react-icons/ri";
 
+import Carousel from '@/components/Carousel';
 import ParallaxBackground from '@/components/ParallaxBackground';
 import { MdOutlinePersonAddAlt } from "react-icons/md";
+
+import brownLogo from '@/assets/colleges/brown.png';
+import gtLogo from '@/assets/colleges/gt.svg';
+import harvardLogo from '@/assets/colleges/harvard.png';
+import iitLogo from '@/assets/colleges/iit.jpeg';
+import pennLogo from '@/assets/colleges/penn.png';
+import risdLogo from '@/assets/colleges/risd.svg';
+import ugaLogo from '@/assets/colleges/uga.png';
+import yaleLogo from '@/assets/colleges/yale.png';
+
+const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
 
 
@@ -86,6 +98,13 @@ export default function Home() {
           <Button style='secondary'><MdOutlinePersonAddAlt className="mr-2" /> Join our organizing team</Button>
           <Button style='noBorder' className='ml-4'>Team Directory</Button>
         </div>
+        <Carousel className='mt-10' speed={0.5}>
+          {
+            logos.map((logo, index) => (
+              <Image key={index} src={logo} alt="Logo" className='h-full mr-14 w-32 object-contain grayscale' />
+            ))
+          }
+        </Carousel>
       </Section>
       <Section className='flex items-center justify-center flex-col'>
         <Subheading className='mb-2'>Let&lsquo;s get started.</Subheading>
