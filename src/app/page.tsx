@@ -23,6 +23,7 @@ import yaleLogo from '@/assets/colleges/yale.png';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
+const EMAIL_LIST_TYPEFORM_URL = "https://5kekfnl7i01.typeform.com/to/ef4fyRGj";
 
 
 export default function Home() {
@@ -43,7 +44,7 @@ export default function Home() {
             Shape the future of technology through semester
             projects with state and local governments
           </Text>
-          <Button className='mt-8'>Join our interest list</Button>
+          <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
         </div>
       </Section>
       <Section className='overflow-y-hidden'>
@@ -93,7 +94,7 @@ export default function Home() {
       </Section>
       <Section>
         <Subheading>Who are we?</Subheading>
-        <Text>Started by two former <a href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
+        <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
         <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
           <Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl'><MdOutlinePersonAddAlt className="mr-2" /> Join our organizing team</Button>
           <Button style='noBorder' className='md:ml-4'>Team Directory</Button>
@@ -109,7 +110,7 @@ export default function Home() {
       <Section className='flex items-center justify-center flex-col'>
         <Subheading className='mb-2'>Let&lsquo;s get started.</Subheading>
         <Text className='uppercase'>Start making policy impact today. Get on our mailing list</Text>
-        <Button className='mt-8'>Join our interest list</Button>
+        <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
       </Section>
     </>
   );

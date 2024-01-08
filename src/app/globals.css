@@ -25,7 +25,3 @@
     @apply md:text-2xl text-xl font-light leading-relaxed;
   }
 }
-
-a {
-  text-decoration: underline;
-}
