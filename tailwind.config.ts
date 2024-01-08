@@ -12,6 +12,7 @@ const config: Config = {
       return {
         ...c.colors,
         dark: "#0E1632",
+        darker: "#0A0F1F",
         primary: '#14224D',
         secondary: '#4870FF',
         muted: '#DEDEDE'

@@ -22,6 +22,7 @@ import ugaLogo from '@/assets/colleges/uga.png';
 import yaleLogo from '@/assets/colleges/yale.png';
 import ExampleCard from '@/components/ExampleCard';
 import ExampleSection from '@/components/ExampleSection';
+import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
@@ -116,6 +117,19 @@ export default function Home() {
         <Text className='uppercase'>Start making policy impact today. Get on our mailing list</Text>
         <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
       </Section>
+      <Footer>
+        <FooterSection title='Our Organization'>
+          <FooterLink href='/'>Contact Us</FooterLink>
+          <FooterLink href='/'>Policymaker Portal</FooterLink>
+          <FooterLink href='/'>Brand Kit</FooterLink>
+        </FooterSection>
+        <FooterSection title="Other Links">
+          <FooterLink href='/'>Privacy Policy</FooterLink>
+          <FooterLink href='/'>Terms of Service</FooterLink>
+          <FooterLink href='/'>Code of Conduct</FooterLink>
+          <FooterLink href='/'>FAQ</FooterLink>
+        </FooterSection>
+      </Footer>
     </>
   );
 }
