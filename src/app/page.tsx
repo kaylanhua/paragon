@@ -20,6 +20,9 @@ import pennLogo from '@/assets/colleges/penn.png';
 import risdLogo from '@/assets/colleges/risd.svg';
 import ugaLogo from '@/assets/colleges/uga.png';
 import yaleLogo from '@/assets/colleges/yale.png';
+import ExampleCard from '@/components/ExampleCard';
+import ExampleSection from '@/components/ExampleSection';
+import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
@@ -60,23 +63,24 @@ export default function Home() {
             <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
             <CornerDecoration icon={RiGroupLine} uniqueId='pages' />
           </TimelineCard>
-          <TimelineCard className="py-14">
-            <Subheading className='mb-1'>Example text</Subheading>
-            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
-            <CornerDecoration style={{ width: "100%" }} uniqueId='text' className="absolute top-6 right-6 w-[380px] md:block hidden">
-              <text x="100%" y="10%" fontSize="16" textAnchor='end' fill="white">
-                <tspan x="100%" dy="0">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</tspan>
-                <tspan x="100%" dy="1.2em">ADIPISCING, SED DO EIUSMOD TEMPOR</tspan>
-                <tspan x="100%" dy="1.2em">INCIDIDUNT UT LABORE ET MAGNA ALIQUA.</tspan>
-                <tspan x="100%" dy="1.2em">UT AD MINIM VENIAM, QUIS NOSTRUD</tspan>
-                <tspan x="100%" dy="1.2em">EXCEPTEUR SINT OCCAECAT CUPIDATAT</tspan>
-                <tspan x="100%" dy="1.2em">EXERCITATION ULLAMCO LABORIS UT</tspan>
-                <tspan x="100%" dy="1.2em">ALIQUIP EA COMMODO CONSEQUAT.</tspan>
-                <tspan x="100%" dy="1.2em">IN VOLUPTATE VELIT ESSE CILLUM</tspan>
-                <tspan x="100%" dy="1.2em">DOLORE EU FUGIAT NULLA PARIATUR.</tspan>
-                <tspan x="100%" dy="1.2em">DUIS IN REPREHENDERIT</tspan>
-              </text>
-            </CornerDecoration>
+          <TimelineCard className="py-14 pb-11">
+            <div className='h-full w-full'>
+              <Subheading className='mb-1'>Example text</Subheading>
+              <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+            </div>
+            <hr className='w-full md:mt-16 mt-8 mb-4 bg-gray-600 h-px border-0'></hr>
+            <ExampleSection>
+              <ExampleCard image={"https://dummyimage.com/600x400/000/fff"} href='/'>
+                Example Brief One with Long Text
+              </ExampleCard>
+              <ExampleCard image={"https://dummyimage.com/600x400/000/fff"} href='/'>
+                Example Brief One with Long Text
+              </ExampleCard>
+              <ExampleCard image={"https://dummyimage.com/600x400/000/fff"} href='/'>
+                Example Brief One with Long Text
+              </ExampleCard>
+            </ExampleSection>
+            <LipsumCornerDecoration />
           </TimelineCard>
           <TimelineCard className="py-14">
             <Subheading className='mb-1'>Example text</Subheading>
