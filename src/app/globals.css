@@ -22,7 +22,7 @@
   }
 
   .text {
-    @apply md:text-2xl text-xl font-light leading-relaxed;
+    @apply md:text-[1.5rem] text-xl font-light leading-9;
   }
 }
 

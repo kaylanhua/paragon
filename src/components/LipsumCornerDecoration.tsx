@@ -1,7 +1,8 @@
+import { RiCharacterRecognitionFill } from "react-icons/ri";
 import CornerDecoration from "./CornerDecoration";
 
 export default function LipsumCornerDecoration() {
-    return <CornerDecoration style={{ width: "100%" }} uniqueId='text' className="absolute top-6 right-6 w-[380px] md:block hidden">
+    return <CornerDecoration style={{ width: "100%" }} uniqueId='text' icon={RiCharacterRecognitionFill} className="absolute top-6 right-6 w-[380px] md:block hidden">
         <text x="100%" y="10%" fontSize="16" textAnchor='end' fill="white">
             <tspan x="100%" dy="0">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</tspan>
             <tspan x="100%" dy="1.2em">ADIPISCING, SED DO EIUSMOD TEMPOR</tspan>

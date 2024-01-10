@@ -6,11 +6,11 @@ import Section from "@/components/Section";
 import TimelineCard from '@/components/TimelineCard';
 import { Subheading, Text } from '@/components/Typography';
 import Image from "next/image";
-import { RiGroupLine } from "react-icons/ri";
+import { RiGroupLine, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
 
 import Carousel from '@/components/Carousel';
 import ParallaxBackground from '@/components/ParallaxBackground';
-import { MdOutlinePersonAddAlt } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 import brownLogo from '@/assets/colleges/brown.png';
 import gtLogo from '@/assets/colleges/gt.svg';
@@ -20,8 +20,6 @@ import pennLogo from '@/assets/colleges/penn.png';
 import risdLogo from '@/assets/colleges/risd.svg';
 import ugaLogo from '@/assets/colleges/uga.png';
 import yaleLogo from '@/assets/colleges/yale.png';
-import ExampleCard from '@/components/ExampleCard';
-import ExampleSection from '@/components/ExampleSection';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 
@@ -60,16 +58,29 @@ export default function Home() {
         <Subheading className='md:mb-12 mb-6'>What does a project look like?</Subheading>
         <div>
           <TimelineCard className="py-14" first>
-            <Subheading className='mb-1'>Example text</Subheading>
-            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
-            <CornerDecoration icon={RiGroupLine} uniqueId='pages' />
+            <Subheading className='mb-1'>Apply</Subheading>
+            <Text className='md:max-w-[60%]'>
+              Fellows will be matched with a cohort of 5-8 fellows from your region to work on a policy issue with a local or state government. Policy areas for our projects range from immediate issues that governments face to future issues they seek to explore – each one is carefully scoped by our organizing team with our government partners.
+            </Text>
+            <CornerDecoration icon={RiGroupLine} uniqueId='group' />
+          </TimelineCard>
+          <TimelineCard className="py-14">
+            <Subheading className='mb-1'>Learn</Subheading>
+            <Text className='md:max-w-[60%]'>
+              After meeting their regional cohort, fellows will attend our boot camp training, where we will prepare fellows with the policy research and writing skills necessary to work on real government issues. We will also host brown bag conversations and a guest lecture series on tech policy issues throughout the program.
+            </Text>
+            <CornerDecoration icon={RiPagesLine} uniqueId='docs' />
           </TimelineCard>
           <TimelineCard className="py-14 pb-11">
             <div className='h-full w-full'>
-              <Subheading className='mb-1'>Example text</Subheading>
-              <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+              <Subheading className='mb-1'>Research</Subheading>
+              <Text className='md:max-w-[60%]'>
+                Fellows will spend 5-10 hours a week researching a policy issue that their state and local government leaders are interested in. During the fellowship, each team will produce a policy brief for their local government with policy recommendations that pertain to tech implementation, strategy, and decision-making. They will meet with our government partners regularly to iterate on and shape the final product.
+              </Text>
             </div>
-            <hr className='w-full md:mt-16 mt-8 mb-4 bg-gray-600 h-px border-0'></hr>
+            {/* TODO: Add real examples */}
+            {/* 
+            <hr className='w-full md:mt-10 mt-4 mb-4 bg-gray-600 h-px border-0'></hr>
             <ExampleSection>
               <ExampleCard image={"https://dummyimage.com/600x400/000/fff"} href='/'>
                 Example Brief One with Long Text
@@ -80,29 +91,31 @@ export default function Home() {
               <ExampleCard image={"https://dummyimage.com/600x400/000/fff"} href='/'>
                 Example Brief One with Long Text
               </ExampleCard>
-            </ExampleSection>
+            </ExampleSection> */}
             <LipsumCornerDecoration />
           </TimelineCard>
-          <TimelineCard className="py-14">
-            <Subheading className='mb-1'>Example text</Subheading>
-            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
-          </TimelineCard>
           <TimelineCard className="py-14" last>
-            <Subheading className='mb-0'>Example text</Subheading>
-            <Text className='md:max-w-[60%]'>of your peers in your region. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Text>
+            <Subheading className='mb-0'>Present</Subheading>
+            <Text className='md:max-w-[60%]'>
+              Your research can make a real impact. Each team will present their research and policy brief to our government partners. Through these presentations, you will gain valuable experience communicating your findings to directly impact your local government’s science and tech policy strategies and initiatives.
+            </Text>
+            <CornerDecoration icon={RiSlideshowLine} uniqueId='present' />
           </TimelineCard>
         </div>
       </Section>
       <Section>
         <Subheading>What is the impact?</Subheading>
-        <Text>Currently, opportunities for students to explore science and tech policy are limited and highly competitive, creating a barrier of entry. By connecting students with state and local governments, we empower them to chart a career path in tech policy and address the most pressing issues in their communities. Our success will cultivate the next generation of science and tech policy leaders.</Text>
+        <Text>
+          Currently, opportunities for students to explore science and tech policy are limited and highly competitive, creating a barrier of entry. Accessibility lies at the heart of Paragon’s mission: by connecting students with state and local governments, we empower them to chart a career path in tech policy and address the most pressing issues in their communities. Our success will cultivate the next generation of science and tech policy leaders.
+        </Text>
       </Section>
       <Section>
         <Subheading>Who are we?</Subheading>
         <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
         <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
-          <Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl'><MdOutlinePersonAddAlt className="mr-2" /> Join our organizing team</Button>
-          <Button style='noBorder' className='md:ml-4'>Team Directory</Button>
+          <Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button>
+          {/* TODO: create the team directory page */}
+          {/* <Button style='noBorder' className='md:ml-4'>Team Directory</Button> */}
         </div>
         <Carousel className='mt-10' speed={0.5}>
           {
@@ -119,15 +132,7 @@ export default function Home() {
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href='/'>Contact Us</FooterLink>
-          <FooterLink href='/'>Policymaker Portal</FooterLink>
-          <FooterLink href='/'>Brand Kit</FooterLink>
-        </FooterSection>
-        <FooterSection title="Other Links">
-          <FooterLink href='/'>Privacy Policy</FooterLink>
-          <FooterLink href='/'>Terms of Service</FooterLink>
-          <FooterLink href='/'>Code of Conduct</FooterLink>
-          <FooterLink href='/'>FAQ</FooterLink>
+          <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
         </FooterSection>
       </Footer>
     </>
