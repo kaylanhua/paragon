@@ -11,7 +11,7 @@ export default function CornerDecoration({ icon, uniqueId = "mask", style = {}, 
     return (
         <>
             <div className="md:hidden block">
-                {icon && icon({ className: "text-secondary opacity-40 absolute top-4 right-4", size: HEIGHT, key: uniqueId })}
+                {icon && icon({ className: "text-secondary opacity-40 absolute top-4 right-4", size: HEIGHT })}
             </div>
             <div className="absolute top-6 right-6 h-full md:block hidden" {...props}>
                 <svg className="h-full" style={{
