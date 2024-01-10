@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { PluginUtils, RecursiveKeyValuePair } from 'tailwindcss/types/config'
 
 const config: Config = {
   content: [
@@ -7,13 +8,16 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
+    colors: (c: PluginUtils): RecursiveKeyValuePair<string, string> => {
+      return {
+        ...c.colors,
+        dark: "#0E1632",
+        darker: "#0A0F1F",
+        primary: '#14224D',
+        secondary: '#4870FF',
+        muted: '#DEDEDE'
+      }
+    }
   },
   plugins: [],
 }

@@ -1,5 +1,10 @@
-export default function Section({ children, className, ...props }: { children: React.ReactNode, className?: string }) {
-    return <section className={`flex flex-col w-screen max-w-[1200px] px-10 box-border mx-auto overflow-x-hidden ${className}`} {...props}>
-        {children}
-    </section>
+import { ReactNode } from "react";
+
+export default function Section({ children, className = "", backgroundChildren }: { children: ReactNode, className?: string, backgroundChildren?: ReactNode }) {
+    return <section className="relative flex w-full md:py-20 py-10 min-h-14 justify-center">
+        {backgroundChildren}
+        <div className={`md:w-[1150px] w-screen max-w-[85vw] mx-10 ${className}`}>
+            {children}
+        </div>
+    </section>;
 }

@@ -1,70 +1,43 @@
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
+"use client";
 
-interface CarouselItem {
-  image: string;
-  alt: string;
-}
+import { ComponentProps, useEffect, useRef } from "react";
 
-interface CarouselProps {
-  items: CarouselItem[];
-}
+export default function Carousel({ children, speed = 1, className = "", ...props }: { children: React.ReactNode, className?: string, speed?: number } & ComponentProps<"div">) {
+    const ref = useRef<HTMLDivElement>(null);
 
-const Carousel: React.FC<CarouselProps> = ({ items }) => {
-  // Ensure enough duplicates to create a seamless infinite scroll
-  const duplicatedItems = Array.from({ length: 100 }, () => items).flat();
+    useEffect(() => {
+        let currentScroll = 0;
+        let stop = false;
+        const element = ref.current as HTMLDivElement;
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+        const step = () => {
+            const firstChild = element.children[0];
+            if (!firstChild) return;
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Move to the next image
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 5000); // Adjust the interval time to match the animation duration (e.g., 5000 milliseconds or 5 seconds)
+            const firstChildWidth = firstChild.clientWidth;
+            if (currentScroll >= firstChildWidth + 20) {
+                currentScroll -= firstChildWidth;
+                element.removeChild(firstChild);
+                element.appendChild(firstChild);
+            } else {
+                currentScroll += speed;
+                element.style.transform = `translateX(-${currentScroll}px)`;
+            }
 
-    return () => clearInterval(intervalId);
-  }, [currentIndex, items.length]);
+            if (!stop) requestAnimationFrame(step);
+        };
 
-  return (
-    <div className="overflow-hidden w-full">
-      <div
-        className="flex"
-        style={{
-          animation: "slide 45s linear infinite", // Adjust the animation duration and timing function as needed
-          transform: `translateX(-${currentIndex * 33.33}%)`, // Adjust based on the number of duplicates
-        }}
-      >
-        {duplicatedItems.map((item, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 snap-center"
-          >
-            <Image
-              src={item.image}
-              width={100}
-              height={100}
-              alt={item.alt}
-              className="w-full h-full object-contain transform scale-80 pl-5"
-              style={{ transformOrigin: "center center" }}
-              // style={{ minWidth: "100%", minHeight: "100%" }}
-            />
-          </div>
-        ))}
-      </div>
-      <style jsx>{`
-        @keyframes slide {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(
-              -${items.length * 33.33}%
-            ); // Adjust based on the number of duplicates
-          }
-        }
-      `}</style>
+        requestAnimationFrame(step);
+        return () => { stop = true };
+    }, []);
+
+    return <div className={`w-full mx-auto h-52 relative overflow-hidden ${className}`} {...props}>
+        <div className="flex items-center h-full" ref={ref}>
+            <div className="flex items-center h-full flex-shrink-0">{children}</div>
+            <div className="md:flex items-center h-full flex-shrink-0">{children}</div>
+        </div>
+        <div className='absolute top-0 -right-3 w-24 h-full bg-gradient-to-r from-transparent to-dark' />
+        <div className='absolute top-0 -left-3 w-24 h-full bg-gradient-to-l from-transparent to-dark' />
     </div>
-  );
-};
+}
 
-export default Carousel;
