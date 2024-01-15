@@ -25,7 +25,7 @@ import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
-const EMAIL_LIST_TYPEFORM_URL = "https://5kekfnl7i01.typeform.com/to/ef4fyRGj";
+const EMAIL_LIST_TYPEFORM_URL = "https://forms.gle/ddLjn4458UHBPkWz5";
 
 
 export default function Home() {
@@ -127,7 +127,7 @@ export default function Home() {
       </Section>
       <Section className='flex items-center justify-center flex-col'>
         <Subheading className='mb-2'>Let&lsquo;s get started.</Subheading>
-        <Text className='uppercase'>Start making policy impact today. Get on our mailing list</Text>
+        <Text className='uppercase'>Start making policy impact today.</Text>
         <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
       </Section>
       <Footer>
