@@ -47,6 +47,7 @@ export default function Home() {
             projects with state and local governments
           </Text>
           <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
+          <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Apply Now</Button>
         </div>
       </Section>
       <Section className='overflow-y-hidden'>
