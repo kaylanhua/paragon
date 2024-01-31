@@ -115,7 +115,7 @@ export default function Home() {
         <Subheading>Who are we?</Subheading>
         <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
         <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
-          <Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button>
+          {/*<Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button> */}
           {/* TODO: create the team directory page */}
           {/* <Button style='noBorder' className='md:ml-4'>Team Directory</Button> */}
         </div>
