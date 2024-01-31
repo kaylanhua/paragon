@@ -26,7 +26,7 @@ import InfoCard from '@/components/InfoCard';
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
 const EMAIL_LIST_TYPEFORM_URL = "https://forms.gle/ddLjn4458UHBPkWz5";
-
+const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrUxs7NGbyc2RyFX";
 
 export default function Home() {
   return (
@@ -148,7 +148,7 @@ export default function Home() {
           </InfoCard>
         </div>
         <h3 className='text-center md:mb-12 mb-6 mt-0'>Applicants of any age—from undergraduate and graduate students to new grads (graduated in the last year)—are welcome to apply.</h3>
-        <Button inNewTab className='mx-auto mt-8 mb-12' url={EMAIL_LIST_TYPEFORM_URL}>Apply now</Button>
+        <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
         
       </Section>
       <Footer>
