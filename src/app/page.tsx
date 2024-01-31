@@ -25,7 +25,6 @@ import InfoCard from '@/components/InfoCard';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
-const EMAIL_LIST_TYPEFORM_URL = "https://forms.gle/ddLjn4458UHBPkWz5";
 const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrUxs7NGbyc2RyFX";
 
 export default function Home() {
