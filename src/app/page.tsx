@@ -149,8 +149,9 @@ export default function Home() {
             
           </InfoCard>
         </div>
-        <Button inNewTab className='mx-auto mt-8 mb-12' url={EMAIL_LIST_TYPEFORM_URL}>Apply now</Button>
         <h3 className='text-center md:mb-12 mb-6 mt-0'>Applicants of any age—from undergraduate and graduate students to new grads (graduated in the last year)—are welcome to apply.</h3>
+        <Button inNewTab className='mx-auto mt-8 mb-12' url={EMAIL_LIST_TYPEFORM_URL}>Apply now</Button>
+        
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
