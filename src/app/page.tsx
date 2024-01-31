@@ -10,7 +10,6 @@ import { RiGroupLine, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
 
 import Carousel from '@/components/Carousel';
 import ParallaxBackground from '@/components/ParallaxBackground';
-import { MdEmail } from "react-icons/md";
 
 import brownLogo from '@/assets/colleges/brown.png';
 import gtLogo from '@/assets/colleges/gt.svg';
@@ -23,7 +22,6 @@ import yaleLogo from '@/assets/colleges/yale.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import InfoCard from '@/components/InfoCard';
-import { IconType } from 'react-icons';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
