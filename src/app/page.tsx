@@ -48,7 +48,7 @@ export default function Home() {
             Shape the future of technology through semester
             projects with state and local governments
           </Text>
-          <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Apply Now</Button>
+          <Button className='mt-8' url='#apply'>Apply Now</Button>
         </div>
       </Section>
       <Section className='overflow-y-hidden'>
@@ -128,7 +128,7 @@ export default function Home() {
         </Carousel>
       </Section>
       <Section>
-        <div className='flex items-center justify-center flex-col'>
+        <div id="apply" className='flex items-center justify-center flex-col'>
           <Subheading className='mb-2'>Let&lsquo;s get started.</Subheading>
           <Text className='uppercase'>Start making policy impact today.</Text>
         </div>
