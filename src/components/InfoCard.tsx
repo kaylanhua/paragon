@@ -27,7 +27,7 @@ export default function TimelineCard({ className = "", children, first, last, ..
     }, []);
 
     return (
-        <div className="relative py-4">
+        <div ref={ref} className="relative py-4">
             <Card className={`${className}`} {...props}>
                 {children}
             </Card>
