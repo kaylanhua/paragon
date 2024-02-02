@@ -20,8 +20,8 @@ import risdLogo from '@/assets/colleges/risd.svg';
 import ugaLogo from '@/assets/colleges/uga.png';
 import yaleLogo from '@/assets/colleges/yale.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
-import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import InfoCard from '@/components/InfoCard';
+import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
@@ -130,25 +130,25 @@ export default function Home() {
           <Text className='uppercase mb-2'>Start making policy impact today.</Text>
         </div>
 
-        <div className="flex flex-row space-x-4 justify-between">
+        <div className="flex md:flex-row flex-col md:space-x-4 justify-between">
           <InfoCard className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Fellows</Subheading>
             <Text className='text-center'>
-            Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads to check in on updates and biweekly with their government partners to align research priorities. Paragon will provide policy training through a short boot camp at the beginning of the program and continuous support throughout. 
+              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads to check in on updates and biweekly with their government partners to align research priorities. Paragon will provide policy training through a short boot camp at the beginning of the program and continuous support throughout.
             </Text>
-            
+
           </InfoCard>
           <InfoCard className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Project Leads</Subheading>
             <Text className='text-center'>
-            Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track through milestones and weekly meetings as well as communicating with their team’s government partner. Leads will also receive regular support from mentors and the Paragon organizing team. 
+              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track through milestones and weekly meetings as well as communicating with their team’s government partner. Leads will also receive regular support from mentors and the Paragon organizing team.
             </Text>
-            
+
           </InfoCard>
         </div>
         <h3 className='text-center md:mb-12 mb-6 mt-0'>Applicants of any age—from undergraduate and graduate students to new grads (graduated in the last year)—are welcome to apply.</h3>
         <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
-        
+
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
