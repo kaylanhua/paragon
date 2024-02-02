@@ -10,7 +10,6 @@ import { RiGroupLine, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
 
 import Carousel from '@/components/Carousel';
 import ParallaxBackground from '@/components/ParallaxBackground';
-import { MdEmail } from "react-icons/md";
 
 import brownLogo from '@/assets/colleges/brown.png';
 import gtLogo from '@/assets/colleges/gt.svg';
@@ -22,11 +21,11 @@ import ugaLogo from '@/assets/colleges/uga.png';
 import yaleLogo from '@/assets/colleges/yale.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
+import InfoCard from '@/components/InfoCard';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
-const EMAIL_LIST_TYPEFORM_URL = "https://5kekfnl7i01.typeform.com/to/ef4fyRGj";
-
+const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrUxs7NGbyc2RyFX";
 
 export default function Home() {
   return (
@@ -46,7 +45,7 @@ export default function Home() {
             Shape the future of technology through semester
             projects with state and local governments
           </Text>
-          <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
+          <Button className='mt-8' url='#apply'>Apply Now</Button>
         </div>
       </Section>
       <Section className='overflow-y-hidden'>
@@ -113,7 +112,7 @@ export default function Home() {
         <Subheading>Who are we?</Subheading>
         <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
         <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
-          <Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button>
+          {/*<Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button> */}
           {/* TODO: create the team directory page */}
           {/* <Button style='noBorder' className='md:ml-4'>Team Directory</Button> */}
         </div>
@@ -125,10 +124,31 @@ export default function Home() {
           }
         </Carousel>
       </Section>
-      <Section className='flex items-center justify-center flex-col'>
-        <Subheading className='mb-2'>Let&lsquo;s get started.</Subheading>
-        <Text className='uppercase'>Start making policy impact today. Get on our mailing list</Text>
-        <Button inNewTab className='mt-8' url={EMAIL_LIST_TYPEFORM_URL}>Join our interest list</Button>
+      <Section>
+        <div id="apply" className='flex items-center justify-center flex-col'>
+          <Subheading className='mb-2'>Let&lsquo;s get started.</Subheading>
+          <Text className='uppercase mb-2'>Start making policy impact today.</Text>
+        </div>
+
+        <div className="flex flex-row space-x-4 justify-between">
+          <InfoCard className="py-14 w-full">
+            <Subheading className='mb-5 text-center'>Fellows</Subheading>
+            <Text className='text-center'>
+            Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads to check in on updates and biweekly with their government partners to align research priorities. Paragon will provide policy training through a short boot camp at the beginning of the program and continuous support throughout. 
+            </Text>
+            
+          </InfoCard>
+          <InfoCard className="py-14 w-full">
+            <Subheading className='mb-5 text-center'>Project Leads</Subheading>
+            <Text className='text-center'>
+            Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track through milestones and weekly meetings as well as communicating with their team’s government partner. Leads will also receive regular support from mentors and the Paragon organizing team. 
+            </Text>
+            
+          </InfoCard>
+        </div>
+        <h3 className='text-center md:mb-12 mb-6 mt-0'>Applicants of any age—from undergraduate and graduate students to new grads (graduated in the last year)—are welcome to apply.</h3>
+        <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
+        
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
