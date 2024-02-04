@@ -153,7 +153,6 @@ export default function Home() {
       <Footer>
         <FooterSection title='Our Organization'>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
-          <FooterLink href='FAQ'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
     </>
