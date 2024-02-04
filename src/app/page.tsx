@@ -147,12 +147,17 @@ export default function Home() {
           </InfoCard>
         </div>
         <h3 className='text-center md:mb-12 mb-6 mt-0'>Applicants of any age—from undergraduate and graduate students to new grads (graduated in the last year)—are welcome to apply.</h3>
-        <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
+        <div className='flex space-x-5 justify-center'>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
+          <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
+        </div>
         
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
+          <FooterLink href={AIRTABLE_URL}>Apply Now</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
+          <FooterLink href='/faq'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
     </>
