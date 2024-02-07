@@ -23,7 +23,7 @@ export default function About() {
         <Image src={HeaderLogo} alt="About Logo" className='mb-6 w-[600px]' />
         <div>
           <Text className='max-w-[500px] leading-normal mb-6'>
-            Join the team that's shaping the future of tech policy through semester projects, research, and community engagement
+            Join the team that&apos;s shaping the future of tech policy through semester projects, research, and community engagement
 
           </Text>
           <div className='flex space-x-5'>
@@ -58,7 +58,7 @@ export default function About() {
       />
       <FAQuestion
         question="Will this fellowship be entirely remote, hybrid, or in-person?"
-        answer="The fellowship will be remote, but if you're from the same area as our government partners, the final presentations may be in person. We will also organize in-person meet-ups for fellows in the same region."
+        answer="The fellowship will be remote, but if you&apos;re from the same area as our government partners, the final presentations may be in person. We will also organize in-person meet-ups for fellows in the same region."
       />
       <FAQuestion
         question="What kind of student would be best suited for this fellowship? How much government experience is required?"
