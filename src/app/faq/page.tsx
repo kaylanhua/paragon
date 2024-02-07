@@ -94,7 +94,6 @@ export default function About() {
         <div className='flex space-x-5 justify-center'>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
         </div>
-        
       </Section>
       </Section>
       <Footer>

@@ -10,7 +10,7 @@ const FAQuestion = ({ question, answer }: { question: string; answer: string }) 
   };
 
   return (
-    <div className="mb-4 border-b border-white">
+    <div className="mb-10 border-b border-white">
       <div
         className="flex items-center cursor-pointer transition"
         onClick={toggleExpand}
@@ -18,10 +18,10 @@ const FAQuestion = ({ question, answer }: { question: string; answer: string }) 
         aria-expanded={expanded}
         aria-controls="answer"
       > 
-        <div className={`font-semibold text-xl mb-4 ${expanded ? 'text-blue-100' : 'text-white'} transition`}>{question}</div>
+        <div className={`font-medium text-3xl mb-5 mr-10 ${expanded ? 'text-blue-100' : 'text-white'} transition`}>{question}</div>
         <div className={`mr-2 ml-auto mb-4 ${expanded ? 'ml-auto' : ''} transition`}>{expanded ? '▼' : '▶'}</div>
       </div>
-      {expanded && <div className="mt-2 ml-6 mb-4 text-white-800 text-lg" id="answer">{answer}</div>}
+      {expanded && <div className="mt-2 ml-6 mb-6 text-white-800 text-lg mr-10" id="answer">{answer}</div>}
     </div>
   );
 };
