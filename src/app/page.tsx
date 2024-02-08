@@ -22,6 +22,7 @@ import yaleLogo from '@/assets/colleges/yale.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import InfoCard from '@/components/InfoCard';
+import FAQuestion from '@/components/FAQuestion';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
@@ -151,7 +152,38 @@ export default function Home() {
           <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
           <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
         </div>
-        
+      </Section>
+      <Section>
+        <div>
+        <FAQuestion
+          question="What is the fellowship timeline?"
+          answer="We have two cohorts every year—fall and spring. The spring cohort begins in early March, with final presentations in early June. The fall cohort begins in late September and ends in December."
+        />
+        <FAQuestion
+          question="Is there a stipend given to fellows?"
+          answer="Our spring cohort (March-June) will most likely run on a volunteer basis. This might change in the coming weeks depending on philanthropic changes, but we advise students to assume that a stipend will not be distributed."
+        />
+        <FAQuestion
+          question="Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
+          answer="If you are not accepted as a project lead, you will still be considered as a fellow! The project lead application is largely the same as the fellow application, just with a few more questions."
+        />
+        <FAQuestion
+          question="What are some project examples?"
+          answer="This will be the inaugural cohort as we are launching our first set of projects this coming spring. Some project examples include policy solutions regarding deepfake regulations, advancing EV infrastructures in low-income areas, and implementing automated translations in court services."
+        />
+        <FAQuestion
+          question="How will fellows be matched with government partners?"
+          answer="Since many of our government partners are excited to work with local students and we are seeking to build a strong student community, we will prioritize matching fellows with projects in their region. For government partners that don’t have regional preferences, we will match you based on your policy interests."
+        />
+        <FAQuestion
+          question="Will this fellowship be entirely remote, hybrid, or in-person?"
+          answer="The fellowship will be remote, but if you&apos;re from the same area as our government partners, the final presentations may be in person. We will also organize in-person meet-ups for fellows in the same region."
+        />
+        <FAQuestion
+          question="What kind of student would be best suited for this fellowship? How much government experience is required?"
+          answer="While students of all undergraduate and graduate levels are welcome to apply, this fellowship is geared toward students with less formal experience in tech policy and government work. Students with more policy or government experience should consider applying as a project lead."
+        />
+      </div>
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>

@@ -35,7 +35,7 @@ export default function About() {
       </Section>
       <Section>
         <Subheading className='md:mb-12 mb-6'>Frequently Asked Questions</Subheading>
-        <div>
+    <div>
       <FAQuestion
         question="What is the fellowship timeline?"
         answer="We have two cohorts every year—fall and spring. The spring cohort begins in early March, with final presentations in early June. The fall cohort begins in late September and ends in December."
