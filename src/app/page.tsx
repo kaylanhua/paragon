@@ -26,7 +26,7 @@ import FAQuestion from '@/components/FAQuestion';
 
 const logos = [harvardLogo, brownLogo, yaleLogo, pennLogo, gtLogo, ugaLogo, risdLogo, iitLogo]
 
-const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrUxs7NGbyc2RyFX";
+const AIRTABLE_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/form";
 
 export default function Home() {
   return (
@@ -147,9 +147,9 @@ export default function Home() {
             
           </InfoCard>
         </div>
-        <h3 className='text-center md:mb-12 mb-6 mt-0'>Applicants of any age—from undergraduate and graduate students to new grads (graduated in the last year)—are welcome to apply.</h3>
+        <h3 className='text-center md:mb-12 mb-6 mt-0'>Applications are currently closed for spring of 2024. Fall applications TBD.</h3>
         <div className='flex space-x-5 justify-center'>
-          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply now</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Mailing List</Button>
           <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
         </div>
       </Section>
