@@ -47,3 +47,6 @@ export const colleges: {
         logo: iitLogo
     }
 }
+
+export const AIRTABLE_API_KEY = `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77f8737b4d61e679345b33804f29385d8ed16` // i realize this is bad practice but this key can only read from only the people table (which is public) so im not concerned
+export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`

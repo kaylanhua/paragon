@@ -1,5 +1,7 @@
 interface Image {
     id: string,
+    width: number,
+    height: number,
     url: string,
     filename: string,
     size: number,
@@ -35,33 +37,28 @@ enum SchoolEnum {
 }
 
 interface PersonRecord {
-    _table: object,
-    _rawJson: object,
     id: string,
+    createdTime: string,
     fields: {
         name: string,
         title: string,
-        image: Image[],
+        school: SchoolEnum,
+        region: string,
         email: string,
         linkedin: string,
         website: string,
-        region: string,
-        school: SchoolEnum
+        image: Image[]
     }
 }
 
 import HeaderLogo from '@/assets/header-logo.svg'
 import Card from "@/components/Card"
 import Footer, { FooterLink, FooterSection } from '@/components/Footer'
-import Airtable from "airtable"
 import Image from "next/image"
 import Link from 'next/link'
 import { ElementType } from "react"
 import { RiLinkedinLine, RiLinksLine, RiMailLine } from "react-icons/ri"
-import { colleges } from '../constants'
-const base = new Airtable({
-    apiKey: `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77f8737b4d61e679345b33804f29385d8ed16` // i realize this is bad practice but this key can only read from only the people table (which is public) so im not concerned
-}).base('appItWRxWaZWa1qhj');
+import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../constants'
 
 export default async function Team() {
     const people = await retrievePeople();
@@ -133,25 +130,15 @@ function IconButton({ icon: Icon, url }: { icon: ElementType, url: string }) {
     </a>
 }
 
-function retrievePeople(): Promise<PersonRecord[]> {
-    const allRecords: PersonRecord[] = [];
-
-    return new Promise((resolve, reject) => {
-        base('Team Members').select({
-            maxRecords: 100
-        }).eachPage(function page(records, fetchNextPage) {
-            records.forEach(function (record: unknown) {
-                allRecords.push(record as PersonRecord);
-            });
-
-            fetchNextPage();
-
-        }, function done(err) {
-            if (err) {
-                console.error(err);
-                reject(err);
-            }
-            resolve(allRecords);
-        });
-    });
+async function retrievePeople(): Promise<PersonRecord[]> {
+    // TODO: this only can handle 100 records cuz api limitations. Expand if necessary
+    // also notable that we dont use the airtable library because it breaks during build.
+    // see https://www.reddit.com/r/Netlify/comments/jv7z8g/strange_abortsignal_error_trying_to_get_a_lambda/
+    const records = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/Team%20Members?maxRecords=100`, {
+        headers: {
+            'Authorization': `Bearer ${AIRTABLE_API_KEY}`
+        }
+    }); 1
+    const rec = await records.json();
+    return rec.records;
 }
