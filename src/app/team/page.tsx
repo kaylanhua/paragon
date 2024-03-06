@@ -62,14 +62,14 @@ import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../constants'
 
 export default async function Team() {
     const people = await retrievePeople();
-    const peopleSortedByCollege = people.sort((a, b) => a.fields.school.localeCompare(b.fields.school));
+    const peopleSortedByCollege = people.sort((a, b) => a.fields.school?.localeCompare(b.fields.school));
     const peopleByRegion = peopleSortedByCollege.reduce((acc: {
         [key: string]: PersonRecord[]
     }, person) => {
-        if (!acc[person.fields.region]) {
-            acc[person.fields.region] = [];
+        if (!acc[person.fields.region || "\0"]) {
+            acc[person.fields.region || "\0"] = [];
         }
-        acc[person.fields.region].push(person);
+        acc[person.fields.region || "\0"].push(person);
         return acc;
     }, {});
 
