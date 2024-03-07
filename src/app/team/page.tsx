@@ -60,16 +60,18 @@ import { ElementType } from "react"
 import { RiLinkedinLine, RiLinksLine, RiMailLine } from "react-icons/ri"
 import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../constants'
 
+const NO_REGION = "";
+
 export default async function Team() {
     const people = await retrievePeople();
     const peopleSortedByCollege = people.sort((a, b) => a.fields.school?.localeCompare(b.fields.school));
     const peopleByRegion = peopleSortedByCollege.reduce((acc: {
         [key: string]: PersonRecord[]
     }, person) => {
-        if (!acc[person.fields.region || "\0"]) {
-            acc[person.fields.region || "\0"] = [];
+        if (!acc[person.fields.region || NO_REGION]) {
+            acc[person.fields.region || NO_REGION] = [];
         }
-        acc[person.fields.region || "\0"].push(person);
+        acc[person.fields.region || NO_REGION].push(person);
         return acc;
     }, {});
 
@@ -85,14 +87,14 @@ export default async function Team() {
             {Object.entries(peopleByRegion).map(([region, people], i) => {
                 return <section key={i}>
                     <p className="text-3xl font-bold uppercase">{region}</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 my-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-5">
                         {people.map((person, i) => {
                             const college = colleges[person.fields.school];
 
                             return <Card key={i} className="flex flex-row w-full">
                                 <div className='relative h-min'>
-                                    <img src={person.fields.image[0].thumbnails.large.url} alt={person.fields.name} className="aspect-square h-32 w-32 object-cover rounded-full shadow-lg " />
-                                    {college && <img src={college.logo.src} alt={college.name} className="h-12 aspect-square shadow object-contain mt-2 grayscale absolute -bottom-1 -right-1" />}
+                                    <img src={person.fields.image[0].url} alt={person.fields.name} className="aspect-square h-32 w-32 object-cover rounded-full shadow-lg " />
+                                    {college && <img src={college.logo.src} alt={college.name} className="h-12 aspect-square object-contain mt-2 grayscale absolute -bottom-1 -right-1" />}
                                 </div>
                                 <div className="flex flex-col h-full justify-center ml-5 w-4/6">
                                     <p className="text-3xl font-semibold">{person.fields.name}</p>
