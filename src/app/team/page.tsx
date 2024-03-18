@@ -28,12 +28,21 @@ interface Image {
 enum SchoolEnum {
     Harvard = 'harvard',
     Brown = 'brown',
+    Stanford = 'stanford',
     Yale = 'yale',
     Penn = 'penn',
     GT = 'gt',
     UGA = 'uga',
     RISD = 'risd',
-    IIT = 'iit'
+    IIT = 'iit',
+    Georgetown = 'georgetown',
+    UCSD = 'ucsd',
+    UCB = 'ucb',
+    UCI = 'uci',
+
+
+
+
 }
 
 interface PersonRecord {
