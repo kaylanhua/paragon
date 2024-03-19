@@ -39,10 +39,6 @@ enum SchoolEnum {
     UCSD = 'ucsd',
     UCB = 'ucb',
     UCI = 'uci',
-
-
-
-
 }
 
 interface PersonRecord {
@@ -102,7 +98,7 @@ export default async function Team() {
 
                             return <Card key={i} className="flex flex-row w-full">
                                 <div className='relative h-min'>
-                                    <img src={person.fields.image[0].url} alt={person.fields.name} className="aspect-square h-32 w-32 object-cover rounded-full shadow-lg " />
+                                    <img src={person.fields.image[0].thumbnails.large.url} alt={person.fields.name} className="aspect-square h-32 w-32 object-cover rounded-full shadow-lg " />
                                     {college && <img src={college.logo.src} alt={college.name} className="h-12 aspect-square object-contain mt-2 grayscale absolute -bottom-1 -right-1" />}
                                 </div>
                                 <div className="flex flex-col h-full justify-center ml-5 w-4/6">
@@ -148,8 +144,11 @@ async function retrievePeople(): Promise<PersonRecord[]> {
     const records = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/Team%20Members?maxRecords=100`, {
         headers: {
             'Authorization': `Bearer ${AIRTABLE_API_KEY}`
+        },
+        next: {
+            revalidate: 60 * 60 * 1.5 // revalidate every 1.5 hours, see https://community.airtable.com/t5/automations/urls-to-images-expire-randomly/td-p/162141
         }
-    }); 1
+    });
     const rec = await records.json();
     return rec.records;
 }
