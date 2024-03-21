@@ -39,7 +39,7 @@ export default function Home() {
             Shape the future of technology through semester
             projects with state and local governments
           </Text>
-          <Button className='mt-8' url='#apply'>Learn More</Button>
+          <Button className='mt-8' url={AIRTABLE_URL}>Mailing List</Button>
         </div>
       </Section>
       <Section className='overflow-y-hidden'>
