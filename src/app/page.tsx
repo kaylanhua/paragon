@@ -1,4 +1,3 @@
-import HeaderLogo from '@/assets/header-logo.svg';
 import BarDecoration from '@/components/BarDecoration';
 import Button from '@/components/Button';
 import CornerDecoration from '@/components/CornerDecoration';
@@ -6,10 +5,10 @@ import Section from "@/components/Section";
 import TimelineCard from '@/components/TimelineCard';
 import { Subheading, Text } from '@/components/Typography';
 import Image from "next/image";
-import { RiGroupLine, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
+import { RiGroupLine, RiMenu3Line, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
+import HEADER_LOGO from '../assets/header-logo.svg';
 
 import Carousel from '@/components/Carousel';
-import ParallaxBackground from '@/components/ParallaxBackground';
 
 import FAQuestion from '@/components/FAQuestion';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
@@ -24,23 +23,27 @@ const AIRTABLE_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/f
 export default function Home() {
   return (
     <>
-      <Section className="py-16 overflow-hidden" backgroundChildren={<>
-        <div className='absolute top-0 left-0 w-full h-full bg-primary bg-opacity-65 -z-10' />
-        <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-        <ParallaxBackground />
-      </>}>
-        <Image src={HeaderLogo} alt="Paragon Logo" className='mb-6 w-[600px]' />
-        <div>
-          <Text className='max-w-[500px] leading-normal mb-6'>
-            Bringing students to the forefront
-            of science and tech policy
-          </Text>
-          <Text className='max-w-[600px] leading-normal'>
-            Shape the future of technology through semester
-            projects with state and local governments
-          </Text>
-          <Button className='mt-8' url={AIRTABLE_URL}>Mailing List</Button>
+      <div className='fixed top-0 left-0 p-8 flex w-screen z-50 justify-between'>
+        <div className='absolute bottom-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-dark to-transparent' />
+        <Image src={HEADER_LOGO} alt="Paragon Fellowship" className='h-12 w-36 object-contain' />
+        <div className='space-x-8 uppercase mt-2 md:flex hidden'>
+          <Text>For Students</Text>
+          <Text>Projects</Text>
+          <Text>For Governments</Text>
         </div>
+        <div className='md:block hidden'>
+          <Button style='custom' className='border-[.2rem] hover:bg-white hover:bg-opacity-10 uppercase w-36 h-12 text-sm text-center' url={AIRTABLE_URL}><Text className='text-sm w-full text-center'>Contact us</Text></Button>
+        </div>
+        <div className='md:hidden block'>
+          <Button style='custom' className='border-[.2rem] hover:bg-white hover:bg-opacity-10 uppercase w-24 h-12 text-sm text-center' url={AIRTABLE_URL}><Text className='text-sm w-full text-center flex items-center justify-center'><RiMenu3Line className='mr-2' /> Menu</Text></Button>
+        </div>
+      </div>
+      <Section className='h-[110vh] flex flex-col' backgroundChildren={<>
+        <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
+        <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
+      </>}>
+        <div><Text className='md:max-w-[60%] w-full md:text-6xl text-5xl uppercase mb-20 md:mt-[15vh] mt-[20vh] font-medium'>We empower students to make real policy impact.</Text></div>
+        <div><Text className='md:max-w-[70%] w-full md:text-6xl text-5xl uppercase ml-auto md:text-right font-medium' >ready to shape the future of <span className='text-gradient'>tech policy?</span></Text></div>
       </Section>
       <Section className='overflow-y-hidden'>
         <BarDecoration />

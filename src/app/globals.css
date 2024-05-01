@@ -27,6 +27,16 @@
   }
 }
 
+.text-gradient {
+  background: radial-gradient(55.17% 214.73% at 44.83% 193.84%, #FFBD12 0%, #ED9862 48.57%, #D970B7 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
