@@ -86,7 +86,7 @@ export type MenuOption = {
 
 export const defaultMenuOptions: MenuOption[] = [
     { name: 'Home', url: '/' },
-    { name: 'Projects', url: '/projects', topBar: true },
+    // { name: 'Projects', url: '/projects', topBar: true },
     { name: 'For Governments', url: '/governments', topBar: true },
-    { name: 'Contact us', url: '#' }
+    { name: 'Contact us', url: 'mailto:paragonfellowship@gmail.com' }
 ]
