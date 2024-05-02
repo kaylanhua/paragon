@@ -38,13 +38,14 @@ export default function Home() {
           <Button style='custom' className='border-[.2rem] hover:bg-white hover:bg-opacity-10 uppercase w-24 h-12 text-sm text-center' url={AIRTABLE_URL}><Text className='text-sm w-full text-center flex items-center justify-center'><RiMenu3Line className='mr-2' /> Menu</Text></Button>
         </div>
       </div>
-      <Section className='h-[110vh] flex flex-col' backgroundChildren={<>
-        <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
-        <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-      </>}>
-        <div><Text className='md:max-w-[60%] w-full md:text-6xl text-5xl uppercase mb-20 md:mt-[15vh] mt-[20vh] font-medium'>We empower students to make real policy impact.</Text></div>
-        <div><Text className='md:max-w-[70%] w-full md:text-6xl text-5xl uppercase ml-auto md:text-right font-medium' >ready to shape the future of <span className='text-gradient'>tech policy?</span></Text></div>
-      </Section>
+      <section className="relative flex w-full md:py-10 py-10 h-[100vh] justify-center items-center">
+        <div className={`md:w-[1350px] w-screen max-w-[85vw]  mx-10`}>
+          <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
+          <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
+          <div><Text className='md:max-w-[60%] w-full md:text-6xl text-4xl uppercase md:mb-32 mb-20 font-medium'>We empower students to make real policy impact.</Text></div>
+          <div><Text className='md:max-w-[70%] w-full md:text-6xl text-4xl uppercase ml-auto md:text-right font-medium' >ready to shape the future of <span className='text-gradient'>tech policy?</span></Text></div>
+        </div>
+      </section>
       <Section className='overflow-y-hidden'>
         <BarDecoration />
         <Subheading>About Paragon</Subheading>
