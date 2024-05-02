@@ -95,7 +95,7 @@ export default function About() {
       <Section>
         <Subheading className='flex justify-center text-center'>What can paragon<br />do for you?</Subheading>
         <div className='flex justify-center'>
-          <Button url={"#"} className='mt-4 justify-center'>Contact Us</Button>
+          <Button url={"mailto:paragonfellowship@gmail.com"} className='mt-4 justify-center'>Contact Us</Button>
         </div>
 
       </Section>
