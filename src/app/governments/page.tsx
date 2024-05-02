@@ -1,26 +1,18 @@
 import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
-import HEADER_LOGO from '@/assets/header-logo.svg';
 import WACKY_LINES from '@/assets/wacky-lines-2.svg';
 import Button from '@/components/Button';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import InfoCard from '@/components/InfoCard';
 import Section from "@/components/Section";
+import TopBar from '@/components/TopBar';
 
 import { SmallText, Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
-import { RiMenu3Line } from 'react-icons/ri';
-
-const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrUxs7NGbyc2RyFX";
 
 export default function About() {
   return (
     <>
-      <div className='fixed top-0 left-0 p-6 flex w-screen z-50 justify-between'>
-        <Image src={HEADER_LOGO} alt="Paragon Fellowship" className='h-12 w-36 object-contain' />
-        <div>
-          <Button style='custom' className='border-[.1rem] hover:bg-white hover:bg-opacity-10 uppercase w-28 h-12 text-sm text-center' url={AIRTABLE_URL}><Text className='text-sm w-full text-center flex items-center justify-center'><RiMenu3Line className='mr-2' /> Menu</Text></Button>
-        </div>
-      </div>
+      <TopBar />
       <Section className='h-[40vh] flex flex-col justify-center' backgroundChildren={<>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary to-dark opacity-35 -z-30' />
       </>}>
@@ -103,14 +95,14 @@ export default function About() {
       <Section>
         <Subheading className='flex justify-center text-center'>What can paragon<br />do for you?</Subheading>
         <div className='flex justify-center'>
-          <Button href={AIRTABLE_URL} className='mt-4 justify-center'>Contact Us</Button>
+          <Button url={"#"} className='mt-4 justify-center'>Contact Us</Button>
         </div>
 
       </Section>
 
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={AIRTABLE_URL}>Apply Now</FooterLink>
+          <FooterLink href={""}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
           <FooterLink href='/faq'>FAQs</FooterLink>

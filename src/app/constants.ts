@@ -75,3 +75,18 @@ export const colleges: {
 
 export const AIRTABLE_API_KEY = `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77f8737b4d61e679345b33804f29385d8ed16` // i realize this is bad practice but this key can only read from only the people table (which is public) so im not concerned
 export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`
+
+export const AIRTABLE_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/form"
+
+export type MenuOption = {
+    name: string,
+    url: string,
+    topBar?: boolean
+}
+
+export const defaultMenuOptions: MenuOption[] = [
+    { name: 'Home', url: '/' },
+    { name: 'Projects', url: '/projects', topBar: true },
+    { name: 'For Governments', url: '/governments', topBar: true },
+    { name: 'Contact us', url: '#' }
+]

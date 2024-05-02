@@ -5,47 +5,27 @@ import Section from "@/components/Section";
 import TimelineCard from '@/components/TimelineCard';
 import { Subheading, Text } from '@/components/Typography';
 import Image from "next/image";
-import { RiGroupLine, RiMenu3Line, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
-import HEADER_LOGO from '../assets/header-logo.svg';
+import { RiGroupLine, RiPagesLine, RiSlideshowLine } from "react-icons/ri";
 
 import Carousel from '@/components/Carousel';
 
+import Card from '@/components/Card';
 import FAQuestion from '@/components/FAQuestion';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
-import InfoCard from '@/components/InfoCard';
+import HeroSection from '@/components/HeroSection';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
-import { colleges } from './constants';
+import TopBar from '@/components/TopBar';
+import { AIRTABLE_URL, colleges } from './constants';
 
 
 const logos = Object.values(colleges).map(college => college.logo);
-const AIRTABLE_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/form";
 
 export default function Home() {
+
   return (
     <>
-      <div className='fixed top-0 left-0 p-8 flex w-screen z-50 justify-between'>
-        <div className='absolute bottom-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-dark to-transparent' />
-        <Image src={HEADER_LOGO} alt="Paragon Fellowship" className='h-12 w-36 object-contain' />
-        <div className='space-x-8 uppercase mt-2 md:flex hidden'>
-          <Text>For Students</Text>
-          <Text>Projects</Text>
-          <Text>For Governments</Text>
-        </div>
-        <div className='md:block hidden'>
-          <Button style='custom' className='border-[.2rem] hover:bg-white hover:bg-opacity-10 uppercase w-36 h-12 text-sm text-center' url={AIRTABLE_URL}><Text className='text-sm w-full text-center'>Contact us</Text></Button>
-        </div>
-        <div className='md:hidden block'>
-          <Button style='custom' className='border-[.2rem] hover:bg-white hover:bg-opacity-10 uppercase w-24 h-12 text-sm text-center' url={AIRTABLE_URL}><Text className='text-sm w-full text-center flex items-center justify-center'><RiMenu3Line className='mr-2' /> Menu</Text></Button>
-        </div>
-      </div>
-      <section className="relative flex w-full md:py-10 py-10 h-[100vh] justify-center items-center">
-        <div className={`md:w-[1350px] w-screen max-w-[85vw]  mx-10`}>
-          <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-          <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
-          <div><Text className='md:max-w-[60%] w-full md:text-6xl text-4xl uppercase md:mb-32 mb-20 font-medium'>We empower students to make real policy impact.</Text></div>
-          <div><Text className='md:max-w-[70%] w-full md:text-6xl text-4xl uppercase ml-auto md:text-right font-medium' >ready to shape the future of <span className='text-gradient'>tech policy?</span></Text></div>
-        </div>
-      </section>
+      <TopBar />
+      <HeroSection />
       <Section className='overflow-y-hidden'>
         <BarDecoration />
         <Subheading>About Paragon</Subheading>
@@ -127,21 +107,21 @@ export default function Home() {
           <Text className='uppercase mb-2'>Start making policy impact today.</Text>
         </div>
 
-        <div className="flex md:flex-row flex-col md:space-x-4 justify-between">
-          <InfoCard className="py-14 w-full">
+        <div className="flex md:flex-row flex-col md:space-x-4 justify-between my-10">
+          <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Fellows</Subheading>
             <Text className='md:text-center'>
               Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads to check in on updates and biweekly with their government partners to align research priorities. Paragon will provide policy training through a short boot camp at the beginning of the program and continuous support throughout.
             </Text>
 
-          </InfoCard>
-          <InfoCard className="py-14 w-full">
+          </Card>
+          <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Project Leads</Subheading>
             <Text className='md:text-center'>
               Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track through milestones and weekly meetings as well as communicating with their team’s government partner. Leads will also receive regular support from mentors and the Paragon organizing team.
             </Text>
 
-          </InfoCard>
+          </Card>
         </div>
         <h2 className='text-center md:mb-12 mb-6 mt-0'>Applications are currently closed for spring of 2024. Fall applications TBD.</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
