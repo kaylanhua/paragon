@@ -16,9 +16,9 @@ export default function About() {
       <Section className='h-[40vh] flex flex-col justify-center' backgroundChildren={<>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary to-dark opacity-35 -z-30' />
       </>}>
-        <Text className='text-5xl uppercase font-semibold'>Paragon <br /> For governments</Text>
-        <Text className='text-2xl mt-4 uppercase'>bold ideas for a better future.</Text>
-        <Image src={CAPITOL_LINEART} alt="Capitol Building" className='h-[650px] w-[650px] object-contain absolute -right-10 -top-24 -z-10' />
+        <Text className='md:text-5xl text-3xl uppercase font-semibold'>Paragon <br /> For governments</Text>
+        <Text className='md:text-2xl text-lg md:mt-4 mt-2 uppercase'>bold ideas for a better future.</Text>
+        <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />
       </Section>
       <Section>
         <Subheading>How we help</Subheading>
@@ -27,11 +27,11 @@ export default function About() {
         </Text>
       </Section>
       <div className='mx-30'><Image src={WACKY_LINES} alt="Capitol Building" className='w-full object-contain' /></div>
-      <Section className='flex justify-between'>
+      <Section className='flex justify-between md:flex-row flex-col'>
         <Subheading>What we provide</Subheading>
-        <div className='w-[50%]'>
-          <hr className="border-t border-gray-300 my-4 mb-10" />
-          <div className='ml-5 mr-5'>
+        <div className='md:w-[50%]'>
+          <hr className="border-t border-gray-300 my-4 mb-10 md:block hidden" />
+          <div className='ml-5 mr-5 md:mt-0 mt-4'>
             <Text className='mb-3'>In-Depth Research</Text>
             <SmallText>On average, our fellows contribute 500-700 hours of dedicated policy research on every project. Our fellows go through an in-house bootcamp which prepares students with the necessary policy research and writing skills to work on real government issues. </SmallText>
           </div>
@@ -52,7 +52,7 @@ export default function About() {
       <Section>
         <Subheading>Project Selection</Subheading>
         <Text>We don’t settle for surface-level insights. Our fellows commit to working closely with you over 3-4 months to uncover core issues and develop substantive solutions. The end product is a brief that includes meaningful, long-term policy recommendations.</Text>
-        <div className='mt-8 flex justify-evenly space-x-4'>
+        <div className='mt-8 flex justify-evenly md:space-x-4 md:space-y-0 space-y-10 md:flex-row flex-col'>
           <div className='max-w-96'>
             <Text className='uppercase font-medium mb-2'>Forms of Policy Research</Text>
             <ul className='list-disc pl-4 space-y-1'>
@@ -77,7 +77,7 @@ export default function About() {
       </Section>
       <Section>
         <Subheading>Our Impact</Subheading>
-        <div className='grid grid-cols-4 space-x-2'>
+        <div className='grid md:grid-cols-4 grid-rows-4 md:grid-rows-1 md:space-x-2 space-y-5 md:space-y-0'>
           <InfoCard>
             our spring ‘24 cohort had 50 fellows FROM 27 different universities and 22 different states.
           </InfoCard>
