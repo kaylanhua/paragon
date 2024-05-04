@@ -78,21 +78,21 @@ export default function About() {
         <Subheading>Our Impact</Subheading>
         <div className='grid md:grid-cols-4 grid-rows-4 md:grid-rows-1 md:space-x-2 space-y-5 md:space-y-0'>
           <InfoCard>
-            our spring 2024 cohort had 50 fellows FROM 27 different universities and 22 different states.
+            Our spring 2024 cohort had 50 fellows from 27 universities and 22 states
           </InfoCard>
           <InfoCard>
-            our fellows have committed 2500+ hours of service.
+            Our fellows have committed 2500+ hours of service
           </InfoCard>
           <InfoCard>
-            We are CURRENTLY partnerING with 11 govts across 8 different states
+            We are currently partnering with 6 govts across 5 different states
           </InfoCard>
           <InfoCard>
-            projecTS in fields such as DESIGNING tech, procurement  & language access
+            Projects in fields such as designing tech procurement and language access
           </InfoCard>
         </div>
       </Section>
       <Section>
-        <Subheading className='flex justify-center text-center'>What can paragon<br />do for you?</Subheading>
+        <Subheading className='flex justify-center text-center'>What can Paragon<br />do for you?</Subheading>
         <div className='flex justify-center'>
           <Button url={"mailto:paragonfellowship@gmail.com"} className='mt-4 justify-center'>Contact Us</Button>
         </div>
