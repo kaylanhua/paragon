@@ -42,7 +42,7 @@ export default function About() {
           <hr className="border-t border-gray-300 my-4 mt-10 mb-10" />
           <div className='ml-5 mr-5'>
             <Text className='mb-3'>Government Visibility</Text>
-            <SmallText>Increase visibility among local students interested in pursuing a career in public service, fostering a stronger connection between your government and the next generation of policy leaders.</SmallText>
+            <SmallText>Increase visibility among local students interested in pursuing a career in public service, fostering a stronger connection between your government and the next generation of policy leaders.</SmallText>
           </div>
           <hr className="border-t border-gray-300 my-4 mt-10" />
         </div>
@@ -78,7 +78,7 @@ export default function About() {
         <Subheading>Our Impact</Subheading>
         <div className='grid md:grid-cols-4 grid-rows-4 md:grid-rows-1 md:space-x-2 space-y-5 md:space-y-0'>
           <InfoCard>
-            our spring ‘24 cohort had 50 fellows FROM 27 different universities and 22 different states.
+            our spring 2024 cohort had 50 fellows FROM 27 different universities and 22 different states.
           </InfoCard>
           <InfoCard>
             our fellows have committed 2500+ hours of service.
