@@ -119,7 +119,7 @@ export default function Home() {
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Project Leads</Subheading>
             <Text className='md:text-center'>
-              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team's government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due May 21st.
+              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team&apos;s government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due May 21st.
             </Text>
 
           </Card>

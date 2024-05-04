@@ -56,11 +56,9 @@ interface PersonRecord {
     }
 }
 
-import HeaderLogo from '@/assets/header-logo.svg'
 import Card from "@/components/Card"
 import Footer, { FooterLink, FooterSection } from '@/components/Footer'
 import Image from "next/image"
-import Link from 'next/link'
 import { ElementType } from "react"
 import { RiLinkedinLine, RiLinksLine, RiMailLine } from "react-icons/ri"
 import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../constants'
