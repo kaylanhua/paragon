@@ -111,19 +111,19 @@ export default function Home() {
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Fellows</Subheading>
             <Text className='md:text-center'>
-              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads to check in on updates and biweekly with their government partners to align research priorities. Paragon will provide policy training through a short boot camp at the beginning of the program and continuous support throughout.
+              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads and biweekly with their government partners to align research priorities. Paragon will provide policy training and support throughout the program. Applications are due May 25th. 
             </Text>
 
           </Card>
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Project Leads</Subheading>
             <Text className='md:text-center'>
-              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track through milestones and weekly meetings as well as communicating with their team’s government partner. Leads will also receive regular support from mentors and the Paragon organizing team.
+              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team's government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due May 21st.
             </Text>
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Applications for Summer 2024 are currently open!</h2>
+        <h2 className='text-center mt-0'>Applications for our summer 2024 cohort are currently open!</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
           <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button>
