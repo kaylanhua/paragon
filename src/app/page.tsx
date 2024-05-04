@@ -123,10 +123,10 @@ export default function Home() {
 
           </Card>
         </div>
-        <h2 className='text-center md:mb-12 mb-6 mt-0'>Applications are currently closed for spring of 2024. Fall applications TBD.</h2>
+        <h2 className='text-center mt-0'>Applications for Summer 2024 are currently open!</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
-          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Mailing List</Button>
           <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button>
         </div>
       </Section>
       <Section>
