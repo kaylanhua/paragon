@@ -5,7 +5,6 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import InfoCard from '@/components/InfoCard';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar';
-
 import { SmallText, Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
 
