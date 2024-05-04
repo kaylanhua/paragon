@@ -27,6 +27,93 @@
   }
 }
 
+.menu-gradient {
+  background: linear-gradient(252.19deg, #485C98 8.78%, #7387C3 81.87%);
+}
+
+.text-gradient {
+  background: linear-gradient(82.83deg, #FFBD12 -43.67%, #ED9862 27.24%, #D970B7 102.33%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  animation: animate-text-gradient 5s ease infinite alternate;
+
+}
+
+.hero-text-fadein>div:nth-of-type(1) {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.hero-text-fadein>div:nth-of-type(2) {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+.hero-text-fadein>div:nth-of-type(3) {
+  opacity: 0;
+  animation: fadeIn 1s cubic-bezier(0, 0.97, 0.78, 0.99) forwards 2.5s, subtle-bounce-point 2s infinite;
+}
+
+.menu-animate {
+  clip-path: circle(0% at calc(100% - 2rem) 2rem);
+  transition: clip-path 0.5s ease-in-out;
+}
+
+.menu-animate-active {
+  clip-path: circle(200% at calc(100% - 2rem) 2rem);
+}
+
+@keyframes animate-text-gradient {
+  0% {
+    background-position: 0% 100%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
+
+}
+
+@keyframes subtle-bounce-point {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes fadeIn {
+
+  /* fade in from bottom and increase opacity */
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 ::-webkit-scrollbar {
   height: 5px;
   width: 5px;

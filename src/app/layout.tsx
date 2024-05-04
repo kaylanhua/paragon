@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-RSQFTB33RS"></Script>
-        <Script>
+        <Script id="google-analytics-inject">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

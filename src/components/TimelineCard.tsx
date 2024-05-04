@@ -30,11 +30,11 @@ export default function TimelineCard({ className = "", children, first, last, ..
             {/* at some point make it so the little bit of blue doesn't show up from the gradient at the top of the bar */}
             <div ref={ref} className="absolute top-0 -left-3 w-4 h-full">
                 <div className="h-1/2 w-1 mx-auto" style={{
-                    background: `linear-gradient(#476FF9 -5%, #476FF9 ${scrollPercent * 2 - 15}%, #8080802b ${scrollPercent * 2 + 10}%)`,
+                    background: `linear-gradient(#476FF9 -5%, #476FF9 ${scrollPercent * 2 - 15}%, #8080802b ${Math.max(0, scrollPercent * 2 + 10)}%)`,
                     opacity: first ? 0 : 1,
                 }} />
                 <div className="h-1/2 w-1 mx-auto" style={{
-                    background: `linear-gradient(#476FF9 -5%, #476FF9 ${(scrollPercent - 50) * 2}%, #8080802b ${(scrollPercent - 50) * 2 + 10}%)`,
+                    background: `linear-gradient(#476FF9 -5%, #476FF9 ${(scrollPercent - 50) * 2}%, #8080802b ${Math.max(0, (scrollPercent - 50) * 2 + 10)}%)`,
                     opacity: last ? 0 : 1,
                 }} />
                 <div className="rounded-full h-3 w-3 bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{
