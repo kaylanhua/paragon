@@ -50,7 +50,7 @@ export default function About() {
       </Section>
       <Section>
         <Subheading>Project Selection</Subheading>
-        <Text>We don\'t settle for surface-level insights. Our fellows commit to working closely with you over 3-4 months to uncover core issues and develop substantive solutions. The end product is a brief that includes meaningful, long-term policy recommendations.</Text>
+        <Text>We don&apos;t settle for surface-level insights. Our fellows commit to working closely with you over 3-4 months to uncover core issues and develop substantive solutions. The end product is a brief that includes meaningful, long-term policy recommendations.</Text>
         <div className='mt-8 flex justify-evenly md:space-x-4 md:space-y-0 space-y-10 md:flex-row flex-col'>
           <div className='max-w-96'>
             <Text className='uppercase font-medium mb-2'>Forms of Policy Research</Text>
