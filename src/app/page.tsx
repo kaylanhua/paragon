@@ -30,6 +30,7 @@ export default function Home() {
         <BarDecoration />
         <Subheading>About Paragon</Subheading>
         <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
+        <Button inNewTab className='mt-10' url={AIRTABLE_URL}>Apply Now</Button>
       </Section>
       <Section>
         <Subheading className='md:mb-12 mb-6'>What does a project look like?</Subheading>
