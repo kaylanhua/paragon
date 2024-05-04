@@ -64,6 +64,7 @@ import Link from 'next/link'
 import { ElementType } from "react"
 import { RiLinkedinLine, RiLinksLine, RiMailLine } from "react-icons/ri"
 import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../constants'
+import TopBar from '@/components/TopBar'
 
 const NO_REGION = "";
 
@@ -81,10 +82,9 @@ export default async function Team() {
     }, {});
 
     return <>
+        <TopBar></TopBar>
         <div className="flex items-center justify-center mb-8 h-52 w-full relative">
-            <Link href="/" className="absolute top-4 left-4">
-                <Image src={HeaderLogo} alt="Paragon Logo" className='mb-6 w-[200px]' />
-            </Link>
+            
             <p className="text-5xl font-bold">Our Team</p>
             <div className="h-full w-full bg-gradient-to-b from-primary to-transparent top-0 left-0 absolute -z-10" />
         </div>

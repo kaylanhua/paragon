@@ -24,7 +24,6 @@ export default function About() {
         <div>
           <Text className='max-w-[500px] leading-normal mb-6'>
             Join the team that&apos;s shaping the future of tech policy through semester projects, research, and community engagement
-
           </Text>
           <div className='flex space-x-5'>
             <Button className='mt-8' url={'/'}>Home</Button>
