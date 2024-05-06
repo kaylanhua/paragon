@@ -74,30 +74,40 @@ export default function About() {
           </div>
         </div>
       </Section>
-      <Section>
-        <Subheading>Our Impact</Subheading>
-        <div className='grid md:grid-cols-4 grid-rows-4 md:grid-rows-1 md:space-x-2 space-y-5 md:space-y-0'>
+      
+      <Section className='bg-gradient-to-r from-light-blue-500 to-indigo-500 text-white p-8'>
+        <Subheading className='text-center text-2xl font-bold mb-6'>Our Impact</Subheading>
+        <div className='grid md:grid-cols-4 gap-6 text-center'>
           <InfoCard>
-            Our spring 2024 cohort had 50 fellows from 27 universities and 22 states
+            <Text className='font-semibold'>Spring 2024 Cohort</Text>
+            <br />
+            <SmallText>50 fellows</SmallText>
+            <br />
+            <SmallText>27 universities</SmallText>
+            <br />
+            <SmallText>22 states</SmallText>
           </InfoCard>
           <InfoCard>
-            Our fellows have committed 2500+ hours of service
+            <Text className='font-semibold'>Hours of Volunteered Service</Text>
+            <br />
+            <SmallText>2500+ total hours of volunteer work</SmallText>
           </InfoCard>
           <InfoCard>
-            We are currently partnering with 6 govts across 5 different states
+            <Text className='font-semibold'>Government Partnerships</Text>
+            <br />
+            <SmallText>4 city governments</SmallText>
+            <br />
+            <SmallText>1 state government</SmallText>
           </InfoCard>
           <InfoCard>
-            Projects in fields such as designing tech procurement and language access
+            <Text className='font-semibold'>Project Topics</Text>
+            <br />
+            <SmallText>Generative AI, Language Access, Tech Procurement etc.</SmallText>
           </InfoCard>
         </div>
       </Section>
-      <Section>
-        <Subheading className='flex justify-center text-center'>What can Paragon<br />do for you?</Subheading>
-        <div className='flex justify-center'>
-          <Button url={"mailto:paragonfellowship@gmail.com"} className='mt-4 justify-center'>Contact Us</Button>
-        </div>
 
-      </Section>
+
 
       <Footer>
         <FooterSection title='Our Organization'>
