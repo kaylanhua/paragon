@@ -75,7 +75,7 @@ export default function About() {
         </div>
       </Section>
       
-      <Section className='bg-gradient-to-r from-light-blue-500 to-indigo-500 text-white p-8'>
+      <Section>
         <Subheading className='text-center text-2xl font-bold mb-6'>Our Impact</Subheading>
         <div className='grid md:grid-cols-4 gap-6 text-center'>
           <InfoCard>
