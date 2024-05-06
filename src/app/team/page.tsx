@@ -52,7 +52,8 @@ interface PersonRecord {
         email: string,
         linkedin: string,
         website: string,
-        image: Image[]
+        image: Image[],
+        team: string
     }
 }
 
@@ -68,8 +69,16 @@ const NO_REGION = "";
 
 export default async function Team() {
     const people = await retrievePeople();
-    const peopleSortedByCollege = people.sort((a, b) => a.fields.school?.localeCompare(b.fields.school));
-    const peopleByRegion = peopleSortedByCollege.reduce((acc: {
+    
+    // Splitting people into two lists: operations and others
+    const operationsTeam = people.filter(person => person.fields.team === 'operations');
+    const otherTeams = people.filter(person => person.fields.team !== 'operations')
+                             .sort((a, b) => a.fields.team.localeCompare(b.fields.team));
+
+    // Combining the operations team first and then other teams
+    const peopleSortedByTeam = [...operationsTeam, ...otherTeams];
+
+    const peopleByRegion = peopleSortedByTeam.reduce((acc: {
         [key: string]: PersonRecord[]
     }, person) => {
         if (!acc[person.fields.region || NO_REGION]) {

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { RiMenu3Line } from "react-icons/ri";
+import { RiMenu2Fill } from "react-icons/ri";
 import HEADER_LOGO from '../assets/header-logo.svg';
 import Button from "./Button";
 import Menu from "./Menu";
@@ -32,7 +32,7 @@ export default function TopBar() {
                 <Button style='topbar-menu'
                     onClick={() => openState[1](true)}>
                     <Text className='w-full text-center flex items-center justify-center md:text-lg text-sm'>
-                        <RiMenu3Line className='mr-2' /> Menu</Text>
+                        <RiMenu2Fill className='mr-2' /> Menu</Text>
                 </Button>
             </div>
             <Menu openState={openState} />
