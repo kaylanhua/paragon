@@ -164,10 +164,8 @@ export default function Home() {
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={AIRTABLE_URL}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
-          <FooterLink href='/faq'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
     </>
