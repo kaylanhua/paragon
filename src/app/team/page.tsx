@@ -69,16 +69,8 @@ const NO_REGION = "";
 
 export default async function Team() {
     const people = await retrievePeople();
-    
-    // Splitting people into two lists: operations and others
-    const operationsTeam = people.filter(person => person.fields.team === 'operations');
-    const otherTeams = people.filter(person => person.fields.team !== 'operations')
-                             .sort((a, b) => a.fields.team.localeCompare(b.fields.team));
 
-    // Combining the operations team first and then other teams
-    const peopleSortedByTeam = [...operationsTeam, ...otherTeams];
-
-    const peopleByRegion = peopleSortedByTeam.reduce((acc: {
+    const peopleByRegion = people.reduce((acc: {
         [key: string]: PersonRecord[]
     }, person) => {
         if (!acc[person.fields.region || NO_REGION]) {
@@ -148,7 +140,7 @@ async function retrievePeople(): Promise<PersonRecord[]> {
     // TODO: this only can handle 100 records cuz api limitations. Expand if necessary
     // also notable that we dont use the airtable library because it breaks during build.
     // see https://www.reddit.com/r/Netlify/comments/jv7z8g/strange_abortsignal_error_trying_to_get_a_lambda/
-    const records = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/Team%20Members?maxRecords=100`, {
+    const records = await fetch(`https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/Team%20Members?maxRecords=100&view=all_ordered`, {
         headers: {
             'Authorization': `Bearer ${AIRTABLE_API_KEY}`
         },
