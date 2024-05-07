@@ -134,11 +134,15 @@ export default function Home() {
         <div>
           <FAQuestion
             question="What is the fellowship timeline?"
-            answer="We have two cohorts every year—fall and spring. The spring cohort begins in early March, with final presentations in early June. The fall cohort begins in late September and ends in December."
+            answer="We have three cohorts every year—summer, fall and spring. The summer cohort begins in mid-June and ends mid-September. The fall cohort begins in late September and ends in December. The spring cohort begins in mid-February, with final presentations in early June."
           />
           <FAQuestion
             question="Is there a stipend given to fellows?"
-            answer="Our spring cohort (March-June) will most likely run on a volunteer basis. This might change in the coming weeks depending on philanthropic changes, but we advise students to assume that a stipend will not be distributed."
+            answer="Our current cohorts will most likely run on a volunteer basis. We are working very diligently during Summer 2024 to change this via philanthropic donations, but we advise students to assume that a stipend will not be distributed."
+          />
+          <FAQuestion
+            question="Do you offer any other perks or benefits?"
+            answer="The greatest 'perk' Paragon offers is its network of intelligent, impact-driven humans. Our organizing team and past fellows have experience working at the White House, Brookings Institution, Coding It Forward, and at least a dozen local, state and federal agencies. Our project leads are working towards MPP/MPA degrees from places like Harvard Kennedy School and UC Berkeley's Goldman School. All of these people are active, accessible members on our Slack channel."
           />
           <FAQuestion
             question="Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
@@ -146,7 +150,7 @@ export default function Home() {
           />
           <FAQuestion
             question="What are some project examples?"
-            answer="This will be the inaugural cohort as we are launching our first set of projects this coming spring. Some project examples include policy solutions regarding deepfake regulations, advancing EV infrastructures in low-income areas, and implementing automated translations in court services."
+            answer="Our inaugural (Spring 2024) cohort worked on the following topics: generative AI policies for state employees, technology for foreign language access of government services, combating deepfakes of government officials, combating manipulation of public feedback forms to the government, and tech procurement."
           />
           <FAQuestion
             question="How will fellows be matched with government partners?"
@@ -154,11 +158,11 @@ export default function Home() {
           />
           <FAQuestion
             question="Will this fellowship be entirely remote, hybrid, or in-person?"
-            answer="The fellowship will be remote, but if you&apos;re from the same area as our government partners, the final presentations may be in person. We will also organize in-person meet-ups for fellows in the same region."
+            answer="The fellowship will be largely remote. However, for most projects there will be a required in-person meetup for final presentations to the government. We will allow exceptions on a case-by-case basis. We also run optional social meetups."
           />
           <FAQuestion
             question="What kind of student would be best suited for this fellowship? How much government experience is required?"
-            answer="While students of all undergraduate and graduate levels are welcome to apply, this fellowship is geared toward students with less formal experience in tech policy and government work. Students with more policy or government experience should consider applying as a project lead."
+            answer="We encourage all US students who are interested in making real-world impact via policy or government work to apply. This fellowship is geared both towards training those without much formal policy experience, but also towards more experienced students who want to exercise their analytical, writing and policy abilities. We encourage experienced candidates to apply to be project leads."
           />
         </div>
       </Section>
