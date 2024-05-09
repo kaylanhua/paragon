@@ -77,7 +77,7 @@ export const AIRTABLE_API_KEY = `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77
 export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`
 
 export const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrfKG3W0XpO1L2tx"
-export const MAIL_LIST_URL = ""
+export const MAIL_LIST_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/form"
 
 export type MenuOption = {
     name: string,
