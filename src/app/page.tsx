@@ -15,7 +15,7 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import TopBar from '@/components/TopBar';
-import { AIRTABLE_URL, colleges } from './constants';
+import { AIRTABLE_URL, colleges, MAIL_LIST_URL } from './constants';
 
 
 const logos = Object.values(colleges).map(college => college.logo);
@@ -29,8 +29,18 @@ export default function Home() {
       <Section className='overflow-y-hidden'>
         <BarDecoration />
         <Subheading>About Paragon</Subheading>
-        <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
-        <Button inNewTab className='mt-10' url={AIRTABLE_URL}>Apply Now</Button>
+
+        
+        <div>
+          <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
+          <br></br>
+          <div className='flex space-x-4 mt-4'>
+            <Button inNewTab url={AIRTABLE_URL}>Apply Now</Button>
+            <Button inNewTab url={MAIL_LIST_URL}>Mailing List</Button>
+          </div>
+        </div>
+
+
       </Section>
       <Section>
         <Subheading className='md:mb-12 mb-6'>What does a project look like?</Subheading>
@@ -126,11 +136,16 @@ export default function Home() {
         </div>
         <h2 className='text-center mt-0'>Applications for our summer 2024 cohort are currently open!</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
-          <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
         </div>
       </Section>
       <Section>
+        <div id="faqs" className='flex items-center justify-center flex-col'>
+          <Subheading className='mb-2'>Frequently Asked Questions</Subheading>
+        </div>
+        <br></br>
+        <br></br>
         <div>
           <FAQuestion
             question="What is the fellowship timeline?"
@@ -170,6 +185,7 @@ export default function Home() {
         <FooterSection title='Our Organization'>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
+          <FooterLink href='/#faqs'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
     </>
