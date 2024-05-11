@@ -28,8 +28,7 @@ export default function Home() {
       <HeroSection />
       <Section className='overflow-y-hidden'>
         <BarDecoration />
-
-        <Subheading>We are a think tank run by student volunteers.</Subheading>
+        <Subheading>About Paragon</Subheading>
 
         
         <div>
