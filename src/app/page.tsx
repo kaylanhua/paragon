@@ -156,10 +156,6 @@ export default function Home() {
             answer="Our current cohorts will most likely run on a volunteer basis. We are working very diligently during Summer 2024 to change this via philanthropic donations, but we advise students to assume that a stipend will not be distributed."
           />
           <FAQuestion
-            question="Do you offer any other perks or benefits?"
-            answer="The greatest 'perk' Paragon offers is its network of intelligent, impact-driven humans. Our organizing team and past fellows have experience working at the White House, Brookings Institution, Coding It Forward, and at least a dozen local, state and federal agencies. Our project leads are working towards MPP/MPA degrees from places like Harvard Kennedy School and UC Berkeley's Goldman School. All of these people are active, accessible members on our Slack channel."
-          />
-          <FAQuestion
             question="Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
             answer="If you are not accepted as a project lead, you will still be considered as a fellow! The project lead application is largely the same as the fellow application, just with a few more questions."
           />
