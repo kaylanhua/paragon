@@ -107,7 +107,7 @@ export default function Home() {
         <Carousel className='mt-10' speed={0.5}>
           {
             logos.map((logo, index) => (
-              <Image key={index} src={logo} alt="Logo" className='h-full md:mr-14 mr-10 md:w-32 w-24 object-contain grayscale' />
+              <Image key={index} src={logo} alt="Logo" className='h-full md:mr-14 mr-10 md:w-32 w-24 object-contain' />
             ))
           }
         </Carousel>
