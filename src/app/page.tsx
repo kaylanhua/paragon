@@ -134,7 +134,7 @@ export default function Home() {
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Applications for our summer 2024 cohort are currently open!</h2>
+        <h2 className='text-center mt-0'>Applications are currently closed! Check back around end of July, 2024.</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
