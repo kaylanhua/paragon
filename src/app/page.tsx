@@ -15,7 +15,7 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import TopBar from '@/components/TopBar';
-import { AIRTABLE_URL, colleges, MAIL_LIST_URL } from './constants';
+import { AIRTABLE_URL, colleges, MAIL_LIST_URL, NEWSLETTER_URL } from './constants';
 
 
 const logos = Object.values(colleges).map(college => college.logo);
@@ -35,7 +35,7 @@ export default function Home() {
           <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 to 10 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
           <br></br>
           <div className='flex space-x-4 mt-4'>
-            <Button inNewTab url={AIRTABLE_URL}>Apply Now</Button>
+            <Button inNewTab url={NEWSLETTER_URL}>Blog</Button>
             <Button inNewTab url={MAIL_LIST_URL}>Mailing List</Button>
           </div>
         </div>
