@@ -32,7 +32,7 @@ export default function Home() {
 
         
         <div>
-          <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
+          <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 to 10 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
           <br></br>
           <div className='flex space-x-4 mt-4'>
             <Button inNewTab url={AIRTABLE_URL}>Apply Now</Button>
@@ -99,7 +99,9 @@ export default function Home() {
       </Section>
       <Section>
         <Subheading>Who are we?</Subheading>
-        <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
+        <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, Paragon was founded to help bridge the gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
+        <br></br>
+        <Text> Paragon is supported by the <a className='underline' href="https://fas.org/">Federation of American Scientists</a>, a policy research and advocacy organization, through fiscal sponsorship.</Text>
         <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
           {/*<Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button> */}
           <Button className='mt-4' url="/team">Team Directory</Button>
@@ -134,9 +136,9 @@ export default function Home() {
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Applications are currently closed! Check back around end of July, 2024.</h2>
+        <h2 className='text-center mt-0'>Applications are currently closed! Please check back in around the beginning of August 2024.</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
-          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button>
+          {/* <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button> */}
           <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
         </div>
       </Section>
