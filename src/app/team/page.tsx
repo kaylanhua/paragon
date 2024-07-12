@@ -97,7 +97,7 @@ export default async function Team() {
 
                             return <Card key={i} className="flex flex-row w-full">
                                 <div className='relative h-min'>
-                                    <img src={person.fields.image[0].thumbnails.large.url} alt={person.fields.name} className="aspect-square h-32 w-32 object-cover rounded-full shadow-lg " />
+                                    {person.fields.image && <img src={person.fields.image[0].thumbnails.large.url} alt={person.fields.name} className="aspect-square h-32 w-32 object-cover rounded-full shadow-lg " />}
                                     {college && <img src={college.logo.src} alt={college.name} className="h-12 aspect-square object-contain mt-2 absolute -bottom-1 -right-1" />}
                                 </div>
                                 <div className="flex flex-col h-full justify-center ml-5 w-4/6">
