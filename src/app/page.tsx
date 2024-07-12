@@ -15,7 +15,7 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import TopBar from '@/components/TopBar';
-import { AIRTABLE_URL, colleges, MAIL_LIST_URL, NEWSLETTER_URL } from './constants';
+import { colleges, MAIL_LIST_URL, NEWSLETTER_URL } from './constants';
 
 
 const logos = Object.values(colleges).map(college => college.logo);
