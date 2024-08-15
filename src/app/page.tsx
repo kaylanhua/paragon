@@ -15,7 +15,7 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import TopBar from '@/components/TopBar';
-import { colleges, MAIL_LIST_URL, NEWSLETTER_URL } from './constants';
+import { colleges, MAIL_LIST_URL, NEWSLETTER_URL, FA_APP_URL } from './constants';
 
 
 const logos = Object.values(colleges).map(college => college.logo);
@@ -32,11 +32,11 @@ export default function Home() {
 
         
         <div>
-          <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 to 10 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement. Applications for our Fall 2024 cohort will open in mid-August.</Text>
+          <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend around 10 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement. Applications for our Fall 2024 cohort are now open!</Text>
           <br></br>
           <div className='flex space-x-4 mt-4'>
-            <Button inNewTab url={NEWSLETTER_URL}>Blog</Button>
-            <Button inNewTab url={MAIL_LIST_URL}>Mailing List</Button>
+            <Button inNewTab url={FA_APP_URL}>Apply</Button>
+            <Button inNewTab url={NEWSLETTER_URL}>Newsletter</Button>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
             <div className='h-full w-full'>
               <Subheading className='mb-1'>Research</Subheading>
               <Text className='md:max-w-[60%]'>
-                Fellows will spend 5-10 hours a week researching a policy issue that their state and local government leaders are interested in. During the fellowship, each team will produce a policy brief for their local government with policy recommendations that pertain to tech implementation, strategy, and decision-making. They will meet with our government partners regularly to iterate on and shape the final product.
+                Fellows will spend around 10 hours a week researching a policy issue that their state and local government leaders are interested in. During the fellowship, each team will produce a policy brief for their local government with policy recommendations that pertain to tech implementation, strategy, and decision-making. They will meet with our government partners regularly to iterate on and shape the final product.
               </Text>
             </div>
             {/* TODO: Add real examples */}
@@ -171,7 +171,7 @@ export default function Home() {
           />
           <FAQuestion
             question="Will this fellowship be entirely remote, hybrid, or in-person?"
-            answer="The fellowship will be largely remote. However, for most projects there will be a required in-person meetup for final presentations to the government. We will allow exceptions on a case-by-case basis. We also run optional social meetups."
+            answer="The fellowship will be largely remote. However, for most projects, students will be centralized in one geographic location. There will also be optional in-person social events throughout the fellowship!"
           />
           <FAQuestion
             question="What kind of student would be best suited for this fellowship? How much government experience is required?"
