@@ -124,22 +124,22 @@ export default function Home() {
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Fellows</Subheading>
             <Text className='md:text-center'>
-              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads and biweekly with their government partners to align research priorities. Paragon will provide policy training and support throughout the program. Applications are due May 25th. 
+              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads and biweekly with their government partners to align research priorities. Paragon will provide policy training and support throughout the program. Applications are due September 5th. 
             </Text>
 
           </Card>
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Project Leads</Subheading>
             <Text className='md:text-center'>
-              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team&apos;s government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due May 21st.
+              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team&apos;s government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due September 5th.
             </Text>
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Applications are currently closed! Please check back in around the beginning of August 2024.</h2>
+        <h2 className='text-center mt-0'>Fall applications are currently open!</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
-          {/* <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button> */}
-          <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={FA_APP_URL}>Apply Now</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Newsletter</Button>
         </div>
       </Section>
       <Section>
@@ -175,7 +175,7 @@ export default function Home() {
           />
           <FAQuestion
             question="What kind of student would be best suited for this fellowship? How much government experience is required?"
-            answer="We encourage all US students who are interested in making real-world impact via policy or government work to apply. This fellowship is geared both towards training those without much formal policy experience, but also towards more experienced students who want to exercise their analytical, writing and policy abilities. We encourage experienced candidates to apply to be project leads."
+            answer="We encourage all students located in the US who are interested in making real-world impact via policy or government work to apply. This fellowship is geared both towards training those without much formal policy experience, but also towards more experienced students who want to exercise their analytical, writing and policy abilities. We encourage experienced candidates to apply to be project leads."
           />
         </div>
       </Section>
