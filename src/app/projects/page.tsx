@@ -34,31 +34,36 @@ export default function Projects() {
         <Subheading className='text-center text-2xl font-bold mb-6'>Spring Projects</Subheading>
         <SmallText className='text-center mb-4'>Page under construction, more to come!</SmallText>
         <div className='grid md:grid-cols-3 gap-6 text-center'>
-          {/* <Link href="/projects/sp24/leb" passHref>
+          <Link href="/projects/sp24/leb" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>Lebanon, NH</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Building a technology procurement framework</SmallText>
             </div>
           </Link>
-          <Link href="/projects/sp24/stl" passHref>
+          {/* <Link href="/projects/sp24/stl" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>St. Louis, MO</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Tech-enabled language access</SmallText>
             </div>
-          </Link>
+          </Link> */}
           <Link href="/projects/sp24/bos" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>Boston, MA</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Creating AI procurement guidelines</SmallText>
             </div>
-          </Link> */}
+          </Link>
           <Link href="/projects/sp24/sjg" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>San Jose, CA</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Protecting government communications</SmallText>
             </div>
           </Link>
-          {/* Defending public comment against synthetic content */}
+          {/* <Link href="/projects/sp24/sjp" passHref>
+            <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
+              <Text className='font-semibold'>San Jose, CA</Text>
+              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Protecting government communications</SmallText>
+            </div>
+          </Link> */}
         </div>
       </Section>
 

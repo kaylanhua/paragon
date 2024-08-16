@@ -16,8 +16,10 @@ export default function SJG() {
       <Section className='h-[40vh] flex flex-col justify-center' backgroundChildren={<>
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary to-dark opacity-35 -z-30' />
       </>}>
-        <Text className='md:text-5xl text-3xl uppercase font-semibold'>San Jose, CA </Text>
-        <Text className='md:text-2xl text-lg md:mt-4 mt-2 uppercase'>Protecting Government<br></br>  Communication from <br></br> AI Manipulation</Text>
+        <div className="flex flex-col justify-end h-full pb-4">
+          <Text className='md:text-5xl text-3xl uppercase font-semibold'>San Jose, CA </Text>
+          <Text className='md:text-2xl text-lg md:mt-4 mt-2 uppercase'>Protecting Government<br></br>  Communication from <br></br> AI Manipulation</Text>
+        </div>
         <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />
       </Section>
       <br />
@@ -101,36 +103,6 @@ export default function SJG() {
           ))}
         </div>
       </Section>
-
-      {/* <Section>
-        <Subheading>Project Selection</Subheading>
-        <Text>We don&apos;t settle for surface-level insights. Our fellows commit to working closely with you over 3-4 months to uncover core issues and develop substantive solutions. The end product is a brief that includes meaningful, long-term policy recommendations.</Text>
-        <div className='mt-8 flex justify-evenly md:space-x-4 md:space-y-0 space-y-10 md:flex-row flex-col'>
-          <div className='max-w-96'>
-            <Text className='uppercase font-medium mb-2'>Forms of Policy Research</Text>
-            <ul className='list-disc pl-4 space-y-1'>
-              <li>Case study</li>
-              <li>Landscape analysis</li>
-              <li>Risk assessment</li>
-              <li>Capacity assessment</li>
-              <li>Data analysis</li>
-              <li>Policy reccomendations</li>
-            </ul>
-          </div>
-          <div className='max-w-96'>
-            <Text className='uppercase font-medium mb-2'>Project Selection Criteria</Text>
-            <ul className='list-disc pl-4 space-y-1'>
-              <li>Demonstrable impact in helping state and local governments wrestle with a salient issue</li>
-              <li>Clear vision for who and what this work will eventually inform</li>
-              <li>Sufficiently deep issue area that is feasible within our timeline and scope of expertise</li>
-              <li>Nonpartisan issue</li>
-            </ul>
-          </div>
-        </div>
-      </Section> */}
-
-
-
 
       <Footer>
         <FooterSection title='Our Organization'>
