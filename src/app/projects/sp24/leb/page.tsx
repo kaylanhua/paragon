@@ -62,7 +62,7 @@ export default function LEB() {
       <Section>
         <Subheading>Project Deliverables</Subheading>
         <Text>
-        Our project delivered three key components to enhance Lebanon's AI governance:
+        Our project delivered three key components to enhance Lebanon&apos;s AI governance:
         </Text>
         <ul className="list-disc pl-6 space-y-4 mt-4">
           <li>
