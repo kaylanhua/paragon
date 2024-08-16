@@ -26,11 +26,11 @@ export default function LEB() {
         In the digital age, artificial intelligence (AI) stands at the forefront of revolutionizing
         public administration and service delivery. The City of Lebanon, NH, recognizes the
         transformative potential of AI to enhance public services, making them more efficient,
-        accessible, and responsive to citizens' needs. However, this potential comes with significant
+        accessible, and responsive to citizens&apos; needs. However, this potential comes with significant
         challenges, including privacy concerns, ethical implications, and the paramount need for
         transparency and public trust. As AI systems increasingly influence various aspects of public
         life, Lebanon, NH, commits to leading by example in the ethical utilization of AI, grounded in
-        the city's "ADM-143 Use of Artificial Intelligence" policy.
+        the city&apos;s &quot;ADM-143 Use of Artificial Intelligence&quot; policy.
         </Text>
       </Section>
 
@@ -41,7 +41,7 @@ export default function LEB() {
         AI adoption, balancing innovation with integrity and setting a standard for ethical AI use in
         public administration. This document outlines the principles guiding the AI auditing and
         technology review process, underscoring our commitment to using AI as a force for public good
-        and enhancing services while safeguarding our community's rights and freedoms.
+        and enhancing services while safeguarding our community&apos;s rights and freedoms.
         </Text>
       </Section>
 
@@ -67,7 +67,7 @@ export default function LEB() {
         <ul className="list-disc pl-6 space-y-4 mt-4">
           <li>
             <Text>
-              <span className="font-semibold">AI Auditing Framework:</span> This policy will establish the risk assessment, evaluation criteria, and audit procedures for the City of Lebanon's AI auditing framework. AI audits will be conducted by the City&apos;s Technology Review Committee (TRC) and ensure the AI software selection and usage process align with the City&apos;s values and responsibility to residents. Key principles will guide the TRC throughout the auditing process to ensure that AI technologies are used ethically and transparently.
+              <span className="font-semibold">AI Auditing Framework:</span> This policy will establish the risk assessment, evaluation criteria, and audit procedures for the City of Lebanon&apos;s AI auditing framework. AI audits will be conducted by the City&apos;s Technology Review Committee (TRC) and ensure the AI software selection and usage process align with the City&apos;s values and responsibility to residents. Key principles will guide the TRC throughout the auditing process to ensure that AI technologies are used ethically and transparently.
             </Text>
           </li>
           <li>
@@ -90,10 +90,10 @@ these applications adhere to the guidelines of the AI auditing framework.
         In conclusion, the AI Auditing Framework for Lebanon, NH, represents a significant step
         forward in ensuring that the deployment and use of artificial intelligence within city
         operations are conducted in a manner that is ethical, transparent, and aligned with the
-        community's values. This document, rooted in a deep understanding of the dual nature of
-        AI's impact, sets a benchmark for responsible AI utilization, emphasizing the importance of
+        community&apos;s values. This document, rooted in a deep understanding of the dual nature of
+        AI&apos;s impact, sets a benchmark for responsible AI utilization, emphasizing the importance of
         safeguarding individual privacy, ensuring equity, and maintaining robust oversight. The
-        detailed strategies and proposed changes to existing policies underscore the city's
+        detailed strategies and proposed changes to existing policies underscore the city&apos;s
         commitment to leading by example in the ethical use of AI technologies.
         </Text>
         <br />
@@ -104,9 +104,9 @@ these applications adhere to the guidelines of the AI auditing framework.
         Auditing Sub-Committee and an integration of AI risk assessment models into existing
         technology review processes. Training for TRC members on the nuances of AI technologies and
         the creation of a public engagement mechanism to gather and incorporate community feedback
-        on AI use are crucial steps that will enhance the framework's effectiveness and relevance.
+        on AI use are crucial steps that will enhance the framework&apos;s effectiveness and relevance.
         Additionally, updating city policies to reflect the incorporation of AI technologies, as outlined in
-        the proposed changes, will solidify the city's stance on responsible AI use.
+        the proposed changes, will solidify the city&apos;s stance on responsible AI use.
         </Text>
       </Section>
 

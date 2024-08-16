@@ -34,7 +34,7 @@ export default function BOS() {
         <Subheading>PROCESS</Subheading>
         <Text>
         For the final deliverable, the students developed an internal 20-page technology procurement guideline for
-        the City of Boston employees, establishing guiding values for the City of Boston's technology procurement
+        the City of Boston employees, establishing guiding values for the City of Boston&apos;s technology procurement
         process. They have structured these guidelines to develop actionable pathways for refining the technology
         procurement process and have incorporated legal requirements and case studies for practical application.
         The ultimate goal is for City staff and contractors to use this framework to evaluate procurement
@@ -62,7 +62,7 @@ export default function BOS() {
       <Section>
         <Subheading>DELIVERABLES</Subheading>
         <Text>
-        With technology procurement being a critical part of DoIt's government processes, this deliverable will
+        With technology procurement being a critical part of DoIt&apos;s government processes, this deliverable will
         guide City employees in providing clarity to the technology procurement process and establishing new
         standards for the role of procurement in their respective departments. By doing so, this can contribute to
         a more formal procurement management function and simplify the traditional procurement experience to
