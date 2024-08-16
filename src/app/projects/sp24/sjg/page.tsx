@@ -83,6 +83,25 @@ export default function SJG() {
         </Text>
       </Section>
 
+      <Section>
+        <Subheading>Contributors</Subheading>
+        <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-4'>
+          {[
+            'Elijah Mercer',
+            'Kaitlyn Cui',
+            'Gene Kim',
+            'Houda Nait El Barj',
+            'Isabelle Anzabi',
+            'Jena Alsup',
+            'Payton Alaama'
+          ].map((name, index) => (
+            <div key={index} className='border border-gray-300 p-4 rounded-lg flex items-center justify-center'>
+              <Text className='text-center'>{name}</Text>
+            </div>
+          ))}
+        </div>
+      </Section>
+
       {/* <Section>
         <Subheading>Project Selection</Subheading>
         <Text>We don&apos;t settle for surface-level insights. Our fellows commit to working closely with you over 3-4 months to uncover core issues and develop substantive solutions. The end product is a brief that includes meaningful, long-term policy recommendations.</Text>
