@@ -67,7 +67,7 @@ export default function LEB() {
         <ul className="list-disc pl-6 space-y-4 mt-4">
           <li>
             <Text>
-              <span className="font-semibold">AI Auditing Framework:</span> This policy will establish the risk assessment, evaluation criteria, and audit procedures for the City of Lebanon’s AI auditing framework. AI audits will be conducted by the City’s Technology Review Committee (TRC) and ensure the AI software selection and usage process align with the City’s values and responsibility to residents. Key principles will guide the TRC throughout the auditing process to ensure that AI technologies are used ethically and transparently.
+              <span className="font-semibold">AI Auditing Framework:</span> This policy will establish the risk assessment, evaluation criteria, and audit procedures for the City of Lebanon's AI auditing framework. AI audits will be conducted by the City&apos;s Technology Review Committee (TRC) and ensure the AI software selection and usage process align with the City&apos;s values and responsibility to residents. Key principles will guide the TRC throughout the auditing process to ensure that AI technologies are used ethically and transparently.
             </Text>
           </li>
           <li>

@@ -23,13 +23,13 @@ export default function SJG() {
       <Section>
         <Subheading>Project Description</Subheading>
         <Text>
-        The proliferation of publicly accessible generative AI (GenAI) tools has enabled the unprecedented spread of false information in textual, audio, and visual forms. As AI-generated media becomes increasingly difficult to discern from legitimate communications, governments are concerned that GenAI tools can be used to manipulate public sentiment. Already seen in propaganda movements amidst elections and the spread of fake news, the World Economic Forum has designated AI-powered misinformation as 2024’s top immediate risk in undermining democratic processes.
+        The proliferation of publicly accessible generative AI (GenAI) tools has enabled the unprecedented spread of false information in textual, audio, and visual forms. As AI-generated media becomes increasingly difficult to discern from legitimate communications, governments are concerned that GenAI tools can be used to manipulate public sentiment. Already seen in propaganda movements amidst elections and the spread of fake news, the World Economic Forum has designated AI-powered misinformation as 2024&apos;s top immediate risk in undermining democratic processes.
         </Text>
         <br />
         <br />
 
         <Text>
-        The City of San José’s interest in responding to the potential for GenAI to manipulate government communications led the San José Government team to produce an AI Misinformation Guidelines Manual and accompanying educational presentation for internal social media staff. This project recommends protocols that do not require extensive technical background to implement, addressing resource limitations within local governments that typically hinder timely responses toward emerging threats. Furthermore, San José is known for founding the GovAI Coalition, with over 300 agencies as members to promote standard setting for responsible AI use in government. The City of San José’s leadership in this issue area can foster local-level collaboration to safeguard public communications and become a model for other local governments to look toward
+        The City of San José&apos;s interest in responding to the potential for GenAI to manipulate government communications led the San José Government team to produce an AI Misinformation Guidelines Manual and accompanying educational presentation for internal social media staff. This project recommends protocols that do not require extensive technical background to implement, addressing resource limitations within local governments that typically hinder timely responses toward emerging threats. Furthermore, San José is known for founding the GovAI Coalition, with over 300 agencies as members to promote standard setting for responsible AI use in government. The City of San José&apos;s leadership in this issue area can foster local-level collaboration to safeguard public communications and become a model for other local governments to look toward
 
         </Text>
       </Section>

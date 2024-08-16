@@ -75,7 +75,7 @@ export default function BOS() {
         <Text>
         We give special thanks to Aleja Jimenez Jaramillo for the close guidance and mentorship in building out
         this project! We are also grateful to our stakeholder interviewees Casey, Laura, Jude, Julia, Sheila, and
-        Greg – in providing additional insights and feedback into the technology procurement process.
+        Greg in providing additional insights and feedback into the technology procurement process.
         </Text>
       </Section>
 
