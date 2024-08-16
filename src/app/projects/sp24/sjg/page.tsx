@@ -1,13 +1,9 @@
 import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
-import WACKY_LINES from '@/assets/wacky-lines-2.svg';
-import Button from '@/components/Button';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
-import InfoCard from '@/components/InfoCard';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar';
 import { SmallText, Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function SJG() {
   return (
