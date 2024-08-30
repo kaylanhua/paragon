@@ -5,7 +5,7 @@ import TopBar from '@/components/TopBar';
 import { SmallText, Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
 
-export default function BOS() {
+export default function SJ() {
     return (
       <>
         <TopBar />
@@ -18,7 +18,18 @@ export default function BOS() {
           </div>
           <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />
         </Section>
-        <br />
+        <br /> 
+        <Section>
+          <Subheading>BACKGROUND</Subheading>
+          <Text>
+          The City of San José, at the heart of Silicon Valley, is a well-known frontier for technological innovation
+and advancement, including AI and technology policy. This project addressed the challenge of identifying
+and mitigating the misuse of AI-generated content in the public input process for the City of San José.
+Through iterative literature reviews, case study analyses of existing regulations at various governmental
+levels, and regular consultations with City officials, AI policy experts, and technologists, the Paragon
+Policy Fellowship team developed comprehensive policy guidelines and procedural recommendations.
+          </Text>
+        </Section>
         <Section>
           <Subheading>METHODOLOGY</Subheading>
           <Text>
@@ -28,23 +39,17 @@ export default function BOS() {
           resources to develop a framework to maintain integrity of public input processes in the face of proliferating AI. 
           </Text>
         </Section>
-  
+
         <Section>
-          <Subheading>PROCESS</Subheading>
+          <Subheading>PROBLEM AND EXPECTATIONS</Subheading>
           <Text>
-          For the final deliverable, the students developed an internal 20-page technology procurement guideline for
-          the City of Boston employees, establishing guiding values for the City of Boston&apos;s technology procurement
-          process. They have structured these guidelines to develop actionable pathways for refining the technology
-          procurement process and have incorporated legal requirements and case studies for practical application.
-          The ultimate goal is for City staff and contractors to use this framework to evaluate procurement
-          decisions, ensuring that technologies meet legal, technical, ethical, and community standards. Through
-          thorough analysis of procurement research and stakeholder interviews, they identified three core pillars to
-          guide ethical and effective technology procurement. They are as follows:
+          → How can the City of San José identify false AI-generated content in public input? →
+What are best practices for the City of San José to mitigate false AI-generated public
+input?
           </Text>
           <br />
           <Text>
-          • Community Focus: Adhering to the needs of the community served by the City of Boston should
-          influence the technologies implemented by the city.
+          • One main goal for the team was to create a presentation for the City of San José City Council Information Technology organization stakeholders.
           </Text>
           <Text>
           • Technological Infrastructure: This pillar outlines guidelines for regulation, safe implementation, and
@@ -71,11 +76,26 @@ export default function BOS() {
         </Section>
   
         <Section>
-          <Subheading>IMPACT</Subheading>
+          <Subheading>IMPACT AND FUTURE WORK</Subheading>
           <Text>
-          We give special thanks to Aleja Jimenez Jaramillo for the close guidance and mentorship in building out
-          this project! We are also grateful to our stakeholder interviewees Casey, Laura, Jude, Julia, Sheila, and
-          Greg in providing additional insights and feedback into the technology procurement process.
+          By implementing the recommended technologies and training programs, the City of San José can
+significantly enhance the integrity, security, and reliability of public input from real constituents. Future
+work includes:
+          </Text>
+          <Text>
+          1. Monitoring the effectiveness of implemented solutions.
+          </Text>
+          <Text>
+          2. Adapting strategies as AI technologies evolve.
+          </Text>
+          <Text>
+          3. Collaborating with other municipalities to share best practices.
+          </Text>
+          <Text>
+          4. Exploring additional technological solutions for content verification.
+          </Text>
+          <Text>
+          5. Developing public education initiatives on responsible AI use in civic engagement.
           </Text>
         </Section>
   
