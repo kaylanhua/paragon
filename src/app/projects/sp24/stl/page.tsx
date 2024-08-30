@@ -24,13 +24,13 @@ export default function STL() {
           <Text>
           St. Louis, home to 2.8 million people, is experiencing significant demographic shifts, with
 marked increases in its Asian and Hispanic populations as well as influxes of new residents
-from around the world. Accordingly, the City of St. Louis is continually improving its service
+from around the world. Accordingly, the city of St. Louis is continually improving its service
 provision in order to meet the needs of its evolving population. In light of this growing diversity,
 the city has established the Office of New Americans to streamline resources for new residents.
-However, the City has limited staff and systems to promptly handle the bureaucratic process
-needed to serve large numbers of new migrants to St. Louis. One of the most salient ways that
+However, the city has limited staff and systems to promptly handle the bureaucratic process
+needed to serve large numbers of new migrants. One of the most salient ways that
 these resources can be bolstered is through increasing culturally responsive translation
-services for city offices. In the following brief, an technology-powered approach to translation is
+services for city offices. In the following brief, a technology-powered approach to translation is
 explored. Given the breadth of language diversity in St. Louis, resources such as Artificial
 Intelligence (AI) and Large Language Models (LLMs) have the capacity to provide greatly
 expanded capacity and accuracy. Supported by human checkers, the city can develop a
@@ -71,7 +71,6 @@ risks like data security and transparency.
 Coalition and the White House’s AI Bill of Rights, detailing principles of fairness,
 accountability, and transparency for AI use and necessary training materials for city staff
 on ethical AI use, emphasizing transparency and responsible implementation.
-          maintenance.
           </Text>
           <br />
           <Text>

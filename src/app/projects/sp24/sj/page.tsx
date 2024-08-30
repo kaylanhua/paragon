@@ -22,19 +22,16 @@ export default function SJ() {
         <Section>
           <Subheading>BACKGROUND</Subheading>
           <Text>
-          The City of San José, at the heart of Silicon Valley, is a well-known frontier for technological innovation
+          The city of San José, at the heart of Silicon Valley, is a well-known frontier for technological innovation
 and advancement, including AI and technology policy. This project addressed the challenge of identifying
-and mitigating the misuse of AI-generated content in the public input process for the City of San José.
-Through iterative literature reviews, case study analyses of existing regulations at various governmental
-levels, and regular consultations with City officials, AI policy experts, and technologists, the Paragon
-Policy Fellowship team developed comprehensive policy guidelines and procedural recommendations.
+and mitigating the misuse of AI-generated content in the public input process for the city of San José.
           </Text>
         </Section>
         <Section>
           <Subheading>METHODOLOGY</Subheading>
           <Text>
           Through iterative literature reviews, case study analyses of existing regulations at various governmental
-          levels, and regular consultations with City officials, AI policy experts, and technologists, the 
+          levels, and regular consultations with city officials, AI policy experts, and technologists, the 
           team developed comprehensive policy guidelines and procedural recommendations. The students utilized a variety of 
           resources to develop a framework to maintain integrity of public input processes in the face of proliferating AI. 
           </Text>
@@ -43,13 +40,13 @@ Policy Fellowship team developed comprehensive policy guidelines and procedural 
         <Section>
           <Subheading>PROBLEM AND EXPECTATIONS</Subheading>
           <Text>
-          → How can the City of San José identify false AI-generated content in public input? →
-What are best practices for the City of San José to mitigate false AI-generated public
+          → How can the city of San José identify false AI-generated content in public input? →
+What are best practices for the city of San José to mitigate false AI-generated public
 input?
           </Text>
           <br />
           <Text>
-          • One main goal for the team was to create a presentation for the City of San José City Council Information Technology organization stakeholders.
+          • One main goal for the team was to create a presentation for the San José City Council Information Technology organization stakeholders.
           </Text>
         </Section>
   
@@ -60,7 +57,7 @@ input?
             and the Paragon Policy Spring 2024 community, along with a detailed Policy Guidelines Manual. Key
             proposed solutions include implementing new requirements and technologies for eComment user
             verification and email submission verification, as well as conducting brief and effective annual generative
-            AI skills training for City staff managing public comment submissions. This initiative aims to enhance the
+            AI skills training for city staff managing public comment submissions. This initiative aims to enhance the
             integrity of public input processes in the face of evolving AI technologies.
           </Text>
         </Section>
@@ -72,18 +69,23 @@ input?
 significantly enhance the integrity, security, and reliability of public input from real constituents. Future
 work includes:
           </Text>
+          <br />
           <Text>
           1. Monitoring the effectiveness of implemented solutions.
           </Text>
+          <br />
           <Text>
           2. Adapting strategies as AI technologies evolve.
           </Text>
+          <br />
           <Text>
           3. Collaborating with other municipalities to share best practices.
           </Text>
+          <br />
           <Text>
           4. Exploring additional technological solutions for content verification.
           </Text>
+          <br />
           <Text>
           5. Developing public education initiatives on responsible AI use in civic engagement.
           </Text>
