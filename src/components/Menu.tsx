@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import PARAGON_P from '../assets/paragon-p.svg';
 import Button from "./Button";
-import { Text } from "./Typography";
+import { Text } from "./Typography"; 
 
 export default function Menu({ openState, menuOptions = [] }: { openState: [boolean, Dispatch<SetStateAction<boolean>>], menuOptions?: MenuOption[] }) {
     return <div className={`fixed top-0 left-0 w-screen h-screen menu-gradient bg-opacity-95 z-50 flex justify-center items-center ${openState[0] ? 'menu-animate-active' : ''} menu-animate`}>

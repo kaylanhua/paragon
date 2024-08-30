@@ -19,7 +19,7 @@ export default function STL() {
           <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />
         </Section>
         <br />
-        <Section>
+        <Section> 
           <Subheading>SUMMARY</Subheading>
           <Text>
           St. Louis, home to 2.8 million people, is experiencing significant demographic shifts, with
@@ -114,27 +114,6 @@ Expanding the scope of AI tools beyond translation, such as incorporating AI-dri
 outreach and engagement initiatives, could further bridge language barriers and create a more
 welcoming and inclusive environment for all residents.
           </Text>
-        </Section>
-  
-        <Section>
-          <Subheading>Contributors</Subheading>
-          <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-4'>
-            {[
-              { name: 'Quinn Wilson', role: 'Project Lead', school: 'UC Berkeley' },
-              { name: 'Anahita Srinivasan', role: 'Research Lead', school: 'MIT' },
-              { name: 'Elisha Ham', role: 'Data Lead', school: 'Wellesley College' },
-              { name: 'Marie Zhang', role: 'Data Lead', school: 'Wellesley College' },
-              { name: 'Sarah Wu', role: 'Stakeholder Lead', school: 'Amherst College' },
-              { name: 'Sofia Rodriguez', role: 'Research Lead', school: 'Wellesley College' },
-              { name: 'Wanru Skuld Shao', role: 'Stakeholder/Client Lead', school: 'Northeastern University' }
-            ].map((contributor, index) => (
-              <div key={index} className='border border-gray-300 p-4 rounded-lg flex flex-col items-center justify-center'>
-                <Text className='text-center font-semibold'>{contributor.name}</Text>
-                <SmallText className='text-center'>{contributor.role}</SmallText>
-                <SmallText className='text-center'>{contributor.school}</SmallText>
-              </div>
-            ))}
-          </div>
         </Section>
   
         <Footer>
