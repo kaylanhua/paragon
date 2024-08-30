@@ -2,7 +2,7 @@ import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar';
-import { SmallText, Subheading, Text } from '@/components/Typography';
+import {Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
 
 export default function STL() {
@@ -65,6 +65,7 @@ procure AI systems, prioritizing vendors with U.S. federal government experience
 comprehensive safety and ethics documentation and including a checklist to assess
 risks like data security and transparency.
           </Text>
+          <br />
           <Text>
           • Implementation Policy Manual: A policy manual aligned with the San Jose GovAI
 Coalition and the White House’s AI Bill of Rights, detailing principles of fairness,
@@ -72,17 +73,20 @@ accountability, and transparency for AI use and necessary training materials for
 on ethical AI use, emphasizing transparency and responsible implementation.
           maintenance.
           </Text>
+          <br />
           <Text>
           • Maintenance and Monitoring Plan: A user-friendly feedback system for reporting AI
 issues, combined with human-in-the-loop protocols for continuous oversight. This plan
 includes quarterly audits to detect and address biases.
           </Text>
+          <br />
           <Text>
           • Proof of Concept: A report on the development and testing of an AI-powered legal
 document translation service, showcasing practical applications and challenges. It
 includes recommendations for future improvements, such as using advanced language
 models and expanding the dataset.
           </Text>
+          <br />
           <Text>
           • Final Internal AI Policy Checklist: A comprehensive checklist covering all critical steps
 for ethical AI procurement, implementation, and maintenance. This ensures that AI

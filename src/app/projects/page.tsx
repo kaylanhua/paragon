@@ -41,7 +41,7 @@ export default function Projects() {
           <Link href="/projects/sp24/sj" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>San Jose, CA</Text>
-              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Public input integrity in the midst of AI</SmallText>
+              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Public integrity in the midst of AI</SmallText>
             </div>
           </Link> 
           <Link href="/projects/sp24/bos" passHref>
