@@ -20,7 +20,7 @@ export default function BOS() {
       </Section>
       <br />
       <Section>
-        <Subheading>Project team</Subheading>
+        <Subheading>PROJECT TEAM</Subheading>
         <Text>
         The Boston team divided up the project scope based on research, data, and stakeholder engagement. By
         conducting a literature review on the technology procurement landscape, outlining standards for data

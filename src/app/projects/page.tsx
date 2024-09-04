@@ -18,7 +18,7 @@ export default function Projects() {
         <Text className='md:text-2xl text-lg md:mt-4 mt-2 uppercase'>students shaping the future.</Text>
         <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />
       </Section>
-      <br />
+      <br /> 
       <br />
       <Section>
         <Subheading>Our Spring 2024 Cohort</Subheading>
@@ -37,13 +37,13 @@ export default function Projects() {
               <Text className='font-semibold'>Lebanon, NH</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Building a technology procurement framework</SmallText>
             </div>
-          </Link>
-          {/* <Link href="/projects/sp24/stl" passHref>
+          </Link> 
+          <Link href="/projects/sp24/sj" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
-              <Text className='font-semibold'>St. Louis, MO</Text>
-              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Tech-enabled language access</SmallText>
+              <Text className='font-semibold'>San Jose, CA</Text>
+              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Public integrity in the midst of AI</SmallText>
             </div>
-          </Link> */}
+          </Link> 
           <Link href="/projects/sp24/bos" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>Boston, MA</Text>
@@ -56,12 +56,12 @@ export default function Projects() {
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Protecting government communications</SmallText>
             </div>
           </Link>
-          {/* <Link href="/projects/sp24/sjp" passHref>
+          <Link href="/projects/sp24/stl" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
-              <Text className='font-semibold'>San Jose, CA</Text>
-              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Protecting government communications</SmallText>
+              <Text className='font-semibold'>St Louis, Missouri</Text>
+              <SmallText className='mt-2 flex-grow flex items-center justify-center'>Tech-powered cultural diversity</SmallText>
             </div>
-          </Link> */}
+          </Link>
         </div>
       </Section>
 
