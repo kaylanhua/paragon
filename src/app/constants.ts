@@ -78,6 +78,8 @@ export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`
 
 export const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrfKG3W0XpO1L2tx"
 export const MAIL_LIST_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/form"
+export const NEWSLETTER_URL = "https://paragonpolicyfellowship.substack.com/"
+export const FA_APP_URL = "https://tinyurl.com/paragon-f24-apps"
 
 export type MenuOption = {
     name: string,
@@ -87,7 +89,7 @@ export type MenuOption = {
 
 export const defaultMenuOptions: MenuOption[] = [
     { name: 'Home', url: '/' },
-    // { name: 'Projects', url: '/projects', topBar: true },
+    { name: 'Past Projects', url: '/projects', topBar: true },
     { name: 'For Governments', url: '/governments', topBar: true },
     { name: 'Meet the Team', url: '/team', topBar: true },
     { name: 'Contact us', url: 'mailto:paragonfellowship@gmail.com' }
