@@ -149,7 +149,9 @@ function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion:
                                     <p className="text-3xl font-semibold">{person.fields.name}</p>
                                     <p className="text-xl">{person.fields.title}</p>
                                     <div className="flex flex-row mt-2 gap-2">
-                                        <IconButton url={`mailto:${person.fields.email}`} icon={RiMailLine} />
+                                        {person.fields.email && person.fields.email.trim() !== "" && (
+                                            <IconButton url={`mailto:${person.fields.email}`} icon={RiMailLine} />
+                                        )}
                                         {person.fields.linkedin && <IconButton url={person.fields.linkedin} icon={RiLinkedinLine} />}
                                         {person.fields.website && <IconButton url={person.fields.website} icon={RiLinksLine} />}
                                     </div>
@@ -162,6 +164,7 @@ function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion:
         </section>
     );
 }
+
 
 // IconButton component
 function IconButton({ icon: Icon, url }: { icon: ElementType, url: string }) {
