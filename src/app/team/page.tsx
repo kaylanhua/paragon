@@ -147,7 +147,7 @@ function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion:
                                 </div>
                                 <div className="flex flex-col h-full justify-center ml-5 w-4/6">
                                     <p className="text-3xl font-semibold">{person.fields.name}</p>
-                                    <p className="text-xl">{person.fields.title}</p>
+                                    <p className="text-xl">{person.fields.team}</p>
                                     <div className="flex flex-row mt-2 gap-2">
                                         {person.fields.email && person.fields.email.trim() !== "" && (
                                             <IconButton url={`mailto:${person.fields.email}`} icon={RiMailLine} />
