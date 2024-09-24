@@ -36,7 +36,8 @@ export default function Home() {
           <br></br>
           <div className='flex space-x-4 mt-4'>
             <Button inNewTab url={FA_APP_URL}>Apply</Button>
-            <Button inNewTab url={NEWSLETTER_URL}>Mailing List</Button>
+            <Button inNewTab url={MAIL_LIST_URL}>MAILING LIST</Button>
+            <Button inNewTab url={NEWSLETTER_URL}>NEWSROOM</Button>
           </div>
         </div>
 
