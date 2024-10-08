@@ -15,7 +15,7 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import LipsumCornerDecoration from '@/components/LipsumCornerDecoration';
 import TopBar from '@/components/TopBar';
-import { AIRTABLE_URL, colleges } from './constants';
+import { colleges, MAIL_LIST_URL, NEWSLETTER_URL, FA_APP_URL } from './constants';
 
 
 const logos = Object.values(colleges).map(college => college.logo);
@@ -29,8 +29,19 @@ export default function Home() {
       <Section className='overflow-y-hidden'>
         <BarDecoration />
         <Subheading>About Paragon</Subheading>
-        <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
-        <Button inNewTab className='mt-10' url={AIRTABLE_URL}>Apply Now</Button>
+
+        
+        <div>
+          <Text className='max-w-[700px]'>The Paragon Fellowship aims to connect students with opportunities in the science and tech policy space. Fellows will spend around 10 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is a hands-on, project-based experience, designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
+          <br></br>
+          <Text className='max-w-[700px]'>Paragon is supported by the <a className='underline' href="https://fas.org/">Federation of American Scientists</a>, a policy research and advocacy organization, through fiscal sponsorship.</Text>
+          <br></br>
+          <div className='flex space-x-4 mt-4'>
+            <Button inNewTab url={FA_APP_URL}>Apply</Button>
+            <Button inNewTab url={MAIL_LIST_URL}>MAILING LIST</Button>
+            <Button inNewTab url={NEWSLETTER_URL}>NEWSROOM</Button>
+          </div>
+        </div>
       </Section>
       <Section>
         <Subheading className='md:mb-12 mb-6'>What does a project look like?</Subheading>
@@ -53,7 +64,7 @@ export default function Home() {
             <div className='h-full w-full'>
               <Subheading className='mb-1'>Research</Subheading>
               <Text className='md:max-w-[60%]'>
-                Fellows will spend 5-10 hours a week researching a policy issue that their state and local government leaders are interested in. During the fellowship, each team will produce a policy brief for their local government with policy recommendations that pertain to tech implementation, strategy, and decision-making. They will meet with our government partners regularly to iterate on and shape the final product.
+                Fellows will spend around 10 hours a week researching a policy issue that their state and local government leaders are interested in. During the fellowship, each team will produce a policy brief for their local government with policy recommendations that pertain to tech implementation, strategy, and decision-making. They will meet with our government partners regularly to iterate on and shape the final product.
               </Text>
             </div>
             {/* TODO: Add real examples */}
@@ -89,15 +100,16 @@ export default function Home() {
       </Section>
       <Section>
         <Subheading>Who are we?</Subheading>
-        <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, we saw a gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
+        <Text>Started by two former <a className='underline' href="https://www.whitehouse.gov/ostp/">White House OSTP</a> interns, Paragon was founded to help bridge the gap between students interested in tech policy issues and local governments with an increasing need to build tech capacity. Our objective is to make science and tech policy research more accessible to students of any background and to create a supportive community among those interested in exploring this intersection.</Text>
+        <br></br>
         <div className='flex md:flex-row flex-col items-center md:my-6 mt-5'>
           {/*<Button style='secondary' className='md:mb-0 mb-3 text-base md:text-2xl' url="mailto:paragonfellowship@gmail.com"><MdEmail className="mr-2" /> Join our organizing team</Button> */}
-          <Button className='md:ml-4' url="/team">Team Directory</Button>
+          <Button className='mt-4' url="/team">Team Directory</Button>
         </div>
         <Carousel className='mt-10' speed={0.5}>
           {
             logos.map((logo, index) => (
-              <Image key={index} src={logo} alt="Logo" className='h-full md:mr-14 mr-10 md:w-32 w-24 object-contain grayscale' />
+              <Image key={index} src={logo} alt="Logo" className='h-full md:mr-14 mr-10 md:w-32 w-24 object-contain' />
             ))
           }
         </Carousel>
@@ -112,33 +124,38 @@ export default function Home() {
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Fellows</Subheading>
             <Text className='md:text-center'>
-              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads and biweekly with their government partners to align research priorities. Paragon will provide policy training and support throughout the program. Applications are due May 25th. 
+              Fellows are the backbone of the policy team. Fellows are matched with 5-8 students from their region to work on a project with their local government. Policy teams meet weekly with their project leads and biweekly with their government partners to align research priorities. Paragon will provide policy training and support throughout the program. Applications are due September 5th. 
             </Text>
 
           </Card>
           <Card className="py-14 w-full">
             <Subheading className='mb-5 text-center'>Project Leads</Subheading>
             <Text className='md:text-center'>
-              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team&apos;s government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due May 21st.
+              Each team is headed by the project lead, a more experienced student (in leadership and/or policy) who will serve as the manager for 5-8 fellows from their region. Leads will be responsible for keeping their team on track as well as communicating with the team&apos;s government partner. Leads will also receive regular support from mentors and the Paragon board. Applications are due September 5th.
             </Text>
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Applications for our summer 2024 cohort are currently open!</h2>
+        <h2 className='text-center mt-0'>Fall applications are now closed.</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
-          <Button className='mx-auto mt-8 mb-12' url={'/faq'}>FAQs</Button>
-          <Button inNewTab className='mx-auto mt-8 mb-12' url={AIRTABLE_URL}>Apply Now</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={FA_APP_URL}>Apply Now</Button>
+          <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
         </div>
       </Section>
       <Section>
+        <div id="faqs" className='flex items-center justify-center flex-col'>
+          <Subheading className='mb-2'>Frequently Asked Questions</Subheading>
+        </div>
+        <br></br>
+        <br></br>
         <div>
           <FAQuestion
             question="What is the fellowship timeline?"
-            answer="We have two cohorts every year—fall and spring. The spring cohort begins in early March, with final presentations in early June. The fall cohort begins in late September and ends in December."
+            answer="We have three cohorts every year—summer, fall and spring. The summer cohort begins in mid-June and ends mid-September. The fall cohort begins in late September and ends in December. The spring cohort begins in mid-February, with final presentations in early June."
           />
           <FAQuestion
             question="Is there a stipend given to fellows?"
-            answer="Our spring cohort (March-June) will most likely run on a volunteer basis. This might change in the coming weeks depending on philanthropic changes, but we advise students to assume that a stipend will not be distributed."
+            answer="Our current cohorts will most likely run on a volunteer basis. We are working very diligently during Summer 2024 to change this via philanthropic donations, but we advise students to assume that a stipend will not be distributed."
           />
           <FAQuestion
             question="Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
@@ -146,7 +163,7 @@ export default function Home() {
           />
           <FAQuestion
             question="What are some project examples?"
-            answer="This will be the inaugural cohort as we are launching our first set of projects this coming spring. Some project examples include policy solutions regarding deepfake regulations, advancing EV infrastructures in low-income areas, and implementing automated translations in court services."
+            answer="Our inaugural (Spring 2024) cohort worked on the following topics: generative AI policies for state employees, technology for foreign language access of government services, combating deepfakes of government officials, combating manipulation of public feedback forms to the government, and tech procurement."
           />
           <FAQuestion
             question="How will fellows be matched with government partners?"
@@ -154,20 +171,19 @@ export default function Home() {
           />
           <FAQuestion
             question="Will this fellowship be entirely remote, hybrid, or in-person?"
-            answer="The fellowship will be remote, but if you&apos;re from the same area as our government partners, the final presentations may be in person. We will also organize in-person meet-ups for fellows in the same region."
+            answer="The fellowship will be largely remote. However, for most projects, students will be centralized in one geographic location. There will also be optional in-person social events throughout the fellowship!"
           />
           <FAQuestion
             question="What kind of student would be best suited for this fellowship? How much government experience is required?"
-            answer="While students of all undergraduate and graduate levels are welcome to apply, this fellowship is geared toward students with less formal experience in tech policy and government work. Students with more policy or government experience should consider applying as a project lead."
+            answer="We encourage all students located in the US who are interested in making real-world impact via policy or government work to apply. This fellowship is geared both towards training those without much formal policy experience, but also towards more experienced students who want to exercise their analytical, writing and policy abilities. We encourage experienced candidates to apply to be project leads."
           />
         </div>
       </Section>
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={AIRTABLE_URL}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
-          <FooterLink href='/faq'>FAQs</FooterLink>
+          <FooterLink href='/#faqs'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
     </>
