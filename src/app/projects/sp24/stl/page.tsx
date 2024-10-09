@@ -22,37 +22,14 @@ export default function STL() {
         <Section> 
           <Subheading>SUMMARY</Subheading>
           <Text>
-          St. Louis, home to 2.8 million people, is experiencing significant demographic shifts, with
-marked increases in its Asian and Hispanic populations as well as influxes of new residents
-from around the world. Accordingly, the city of St. Louis is continually improving its service
-provision in order to meet the needs of its evolving population. In light of this growing diversity,
-the city has established the Office of New Americans to streamline resources for new residents.
-However, the city has limited staff and systems to promptly handle the bureaucratic process
-needed to serve large numbers of new migrants. One of the most salient ways that
-these resources can be bolstered is through increasing culturally responsive translation
-services for city offices. In the following brief, a technology-powered approach to translation is
-explored. Given the breadth of language diversity in St. Louis, resources such as Artificial
-Intelligence (AI) and Large Language Models (LLMs) have the capacity to provide greatly
-expanded capacity and accuracy. Supported by human checkers, the city can develop a
-standardized approach to contextually accurate and responsible translation.
+          St. Louis, Missouri is a city with a remarkable degree of demographic diversity. From a governmental perspective, this unique character has challenged the city’s ability to provide equitable service and an inclusive environment for individuals with limited English proficiency (LEP). Recently, digital tools for translation–including those powered by artificial intelligence (AI)–have expanded in number and scope, providing one route for governmental entities to efficiently improve their language access capabilities. However, the efficacy of these tools remains poorly demonstrated and robust, generalizable guidelines for their implementation are lacking. Consequently, any initiative to incorporate digital translation tools into governmental services will require an in-depth assessment of needs, opportunities, and costs. Herein, we explore the interface of digital tools and language access for the city of St. Louis and make two targeted recommendations to address current challenges.
           </Text>
         </Section>
   
         <Section>
           <Subheading>METHODOLOGY</Subheading>
           <Text>
-          The team initiated the project by conducting a thorough literature review, focusing on AI ethics
-frameworks, government procurement standards, and policies related to AI use in public
-services, specifically for language translation. This research identified critical areas such as
-transparency, accountability, and bias mitigation, which were crucial for St. Louis&#39;s context. In
-collaboration with AI policy experts, city officials, and technologists, the team held biweekly
-meetings to refine these insights into a detailed policy framework tailored to the city&#39;s needs.
-This framework emphasized ethical AI procurement, implementation guidelines aligned with the
-San Jose GovAI Coalition and the White House’s Blueprint for an AI Bill of Rights, and robust
-maintenance protocols, including human-in-the-loop oversight. Additionally, the team developed
-a proof-of-concept for a legal document translation service using fine-tuned large language
-models, which provided practical insights into the challenges and opportunities of AI-driven
-translation services in St. Louis.
+          We began our project by surveying the landscape of language access within St. Louis, Missouri, and the United States. This investigation was supplemented by an exploration of current trends in translation technologies. With a general context established, we interviewed stakeholders from the St. Louis language access community to better anchor our research with local perspectives. Working with city officials from the Office of New Americans (ONA), we utilized these insights to generate a general picture of the successes and failures of the St. Louis area’s language access landscape. Having identified key gaps in current policies and infrastructures, we drafted two recommendations for the ONA that we believe will provide an impactful boost to language access in the city.
           </Text>
           <br />
         </Section>
@@ -60,63 +37,43 @@ translation services in St. Louis.
         <Section>
           <Subheading>DELIVERABLES</Subheading>
           <Text>
-          • Procurement Policy Guidelines: A concise set of guidelines for St. Louis to ethically
-procure AI systems, prioritizing vendors with U.S. federal government experience or
-comprehensive safety and ethics documentation and including a checklist to assess
-risks like data security and transparency.
+          • A thorough summary of recent trends in language access and machine translation, written with accessibility for non-specialists in mind.
           </Text>
           <br />
           <Text>
-          • Implementation Policy Manual: A policy manual aligned with the San Jose GovAI
-Coalition and the White House’s AI Bill of Rights, detailing principles of fairness,
-accountability, and transparency for AI use and necessary training materials for city staff
-on ethical AI use, emphasizing transparency and responsible implementation.
+          • A set of timely case studies from other cities’ attempts to incorporate machine translation tools.
           </Text>
           <br />
           <Text>
-          • Maintenance and Monitoring Plan: A user-friendly feedback system for reporting AI
-issues, combined with human-in-the-loop protocols for continuous oversight. This plan
-includes quarterly audits to detect and address biases.
+          • A deep analysis of current strengths and gaps in the St. Louis language access landscape.
           </Text>
           <br />
           <Text>
-          • Proof of Concept: A report on the development and testing of an AI-powered legal
-document translation service, showcasing practical applications and challenges. It
-includes recommendations for future improvements, such as using advanced language
-models and expanding the dataset.
+          • Two concrete policy recommendations revolving around (i) the creation of a government-community hybrid “language access committee” and (ii) the adoption of a AI-powered translation tool, Wordly, for city council meetings.
           </Text>
           <br />
-          <Text>
-          • Final Internal AI Policy Checklist: A comprehensive checklist covering all critical steps
-for ethical AI procurement, implementation, and maintenance. This ensures that AI
-systems deployed in St. Louis are aligned with best practices and legal requirements.
-          </Text>
         </Section>
   
         <Section>
           <Subheading>IMPACT</Subheading>
           <Text>
-          The implementation of AI-powered language access services in St. Louis holds significant
-potential to transform how the city supports its immigrant communities. By integrating AI, the
-Office of New Americans (ONA) can streamline communication and provide more culturally
-sensitive, equitable, and scalable services. The immediate impact will be seen in enhanced
-accessibility for non-English speaking residents, empowering them to navigate city services
-more effectively.
+          As the city’s demographics continue to diversify, St. Louis will need to continue to evolve its language access policies and infrastructures. Our report provides an up-to-date picture of the local language access landscape to keep policymakers working in this space well-informed and while preparing them to adjust to ongoing trends. It also shines a light on neglected areas that may require attention. Our recommendations are simple, relatively low-cost, and high-upside actions that were directly informed by perspectives from local stakeholders. By implementing our recommendations, St. Louis will immediately improve language access in the city while also laying a stable foundation for future initiatives.
           </Text>
           <br />
-          <Text>
-          Future work on language access AI in St. Louis can involve several key areas of development.
-The city could expand the range of languages supported by AI systems to better serve its
-diverse immigrant communities. Further research and pilot programs can explore advanced AI
-models tailored specifically for legal and administrative language translation, enhancing
-accuracy and cultural sensitivity. Continuous improvement of AI governance, including regular
-updates to policies and training programs, will be necessary to adapt to new ethical challenges
-and technological advancements. Additionally, the city could engage in partnerships with other
-municipalities and organizations to share best practices and refine AI deployment strategies.
-Expanding the scope of AI tools beyond translation, such as incorporating AI-driven community
-outreach and engagement initiatives, could further bridge language barriers and create a more
-welcoming and inclusive environment for all residents.
-          </Text>
+        </Section>
+
+        <Section>
+          <Subheading>TEAM</Subheading>
+          <ul className='list-disc pl-5 text-lg'>
+            <li>Lucas Fluegel (team lead)</li>
+            <li>Rachel Arnold (fellow)</li>
+            <li>Rhea Banerjee (fellow)</li>
+            <li>Wil Czeschin (fellow)</li>
+            <li>Devashri Khadke (fellow)</li>
+            <li>Deepali Paasham (fellow)</li>
+            <li>Eman Teshome (fellow)</li>
+            <li>Marvel Zhou (fellow)</li>
+          </ul>
         </Section>
   
         <Footer>
