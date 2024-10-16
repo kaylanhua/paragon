@@ -19,6 +19,7 @@ import { colleges, MAIL_LIST_URL, NEWSLETTER_URL, FA_APP_URL } from './constants
 
 
 const logos = Object.values(colleges).map(college => college.logo);
+const currentlyApplying = false;
 
 export default function Home() {
 
@@ -37,7 +38,9 @@ export default function Home() {
           <Text className='max-w-[700px]'>Paragon is supported by the <a className='underline' href="https://fas.org/">Federation of American Scientists</a>, a policy research and advocacy organization, through fiscal sponsorship.</Text>
           <br></br>
           <div className='flex space-x-4 mt-4'>
-            <Button inNewTab url={FA_APP_URL}>Apply</Button>
+            {currentlyApplying && (
+              <Button inNewTab url={FA_APP_URL}>Apply</Button>
+            )}
             <Button inNewTab url={MAIL_LIST_URL}>MAILING LIST</Button>
             <Button inNewTab url={NEWSLETTER_URL}>NEWSROOM</Button>
           </div>
@@ -138,7 +141,9 @@ export default function Home() {
         </div>
         <h2 className='text-center mt-0'>Fall applications are now closed.</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
-          <Button inNewTab className='mx-auto mt-8 mb-12' url={FA_APP_URL}>Apply Now</Button>
+          {currentlyApplying && (
+            <Button inNewTab className='mx-auto mt-8 mb-12' url={FA_APP_URL}>Apply Now</Button>
+          )}
           <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
         </div>
       </Section>
