@@ -3,7 +3,7 @@ import Button from '@/components/Button';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar';
-import {, Subheading, Text } from '@/components/Typography';
+import {Subheading, Text } from '@/components/Typography';
 import Link from 'next/link';
 import ProjectCard from '@/components/ProjectCard';
 
