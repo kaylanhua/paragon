@@ -1,8 +1,8 @@
 import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
-import TopBar from '@/components/TopBar';
-import {Subheading, Text } from '@/components/Typography';
+import TopBar from '@/components/TopBar'; 
+import {Subheading, Text } from '@/components/Typography'; 
 import Image from 'next/image';
 
 export default function STL() {
