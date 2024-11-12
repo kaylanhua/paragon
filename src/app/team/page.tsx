@@ -98,15 +98,16 @@ function groupPeopleByRegion(people: PersonRecord[]) {
     }, {});
 }
 
-// Main Team page with 3 sections
 export default async function Team() {
     const organizingTeam = await retrievePeople("Team Members");
     const strategicAdvisors = await retrievePeople("Strategic Advisors");
     const formerOrganizingTeam = await retrievePeople("Former Team Members");
+    const pastGuestSpeakers = await retrievePeople("Past Guest Speakers");  // Fetch Past Guest Speakers
 
     const organizingByRegion = groupPeopleByRegion(organizingTeam);
     const advisorsByRegion = groupPeopleByRegion(strategicAdvisors);
     const formerByRegion = groupPeopleByRegion(formerOrganizingTeam);
+    const speakersByRegion = groupPeopleByRegion(pastGuestSpeakers);  // Group Past Guest Speakers by Region
 
     return <>
         <TopBar />
@@ -118,6 +119,7 @@ export default async function Team() {
             <TeamSection title="Strategic Advisors" peopleByRegion={advisorsByRegion} />
             <TeamSection title="Organizing Team" peopleByRegion={organizingByRegion} />
             <TeamSection title="Organizing Team Alumni" peopleByRegion={formerByRegion} />
+            <TeamSection title="Past Guest Speakers" peopleByRegion={speakersByRegion} />  {/* New Section */}
         </main>
         <Footer>
             <FooterSection title='Our Organization'>
@@ -129,6 +131,7 @@ export default async function Team() {
         </Footer>
     </>
 }
+
 
 // Reusable component to render each section (Strategic Advisors, Organizing Team, Former Organizing Team)
 function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion: { [key: string]: PersonRecord[] } }) {
