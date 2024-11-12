@@ -122,7 +122,7 @@ async function fetchSectionData(section: SectionType) {
     }
 }
 
-export async function RenderTeamSections(sections: SectionType[]) {
+export async function RenderTeamSections(title: string, sections: SectionType[]) {
     const dataPromises = sections.map(fetchSectionData);
     const dataResults = await Promise.all(dataPromises);
 
@@ -138,7 +138,7 @@ export async function RenderTeamSections(sections: SectionType[]) {
         <>
             <TopBar />
             <div className="flex items-center justify-center mb-8 h-52 w-full relative">
-                <p className="text-5xl font-bold">Our Team</p>
+                <p className="text-5xl font-bold">{title}</p>
                 <div className="h-full w-full bg-gradient-to-b from-primary to-transparent top-0 left-0 absolute -z-10" />
             </div>
             <main className="m-8">
@@ -252,5 +252,5 @@ function IconButton({
 export { SectionType };
 
 export default function TeamPage() {
-    return RenderTeamSections([SectionType.TEAM, SectionType.FORMER]);
+    return RenderTeamSections("Our Team", [SectionType.TEAM, SectionType.FORMER]);
 }
