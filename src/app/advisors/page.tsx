@@ -112,12 +112,12 @@ export default async function Team() {
     return <>
         <TopBar />
         <div className="flex items-center justify-center mb-8 h-52 w-full relative">
-            <p className="text-5xl font-bold">Our Team</p>
+            <p className="text-5xl font-bold">Advisors & Past Speakers</p>
             <div className="h-full w-full bg-gradient-to-b from-primary to-transparent top-0 left-0 absolute -z-10" />
         </div>
         <main className="m-8">
-            <TeamSection title="Organizing Team" peopleByRegion={organizingByRegion} />
-            <TeamSection title="Organizing Team Alumni" peopleByRegion={formerByRegion} />
+            <TeamSection title="Strategic Advisors" peopleByRegion={advisorsByRegion} />
+            <TeamSection title="Past Guest Speakers" peopleByRegion={speakersByRegion} />  {/* New Section */}
         </main>
         <Footer>
             <FooterSection title='Our Organization'>
