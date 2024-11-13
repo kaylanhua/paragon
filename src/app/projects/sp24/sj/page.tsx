@@ -13,7 +13,7 @@ export default function SJ() {
           <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary to-dark opacity-35 -z-30' />
         </>}>
           <div className="flex flex-col justify-end h-full pb-4">
-            <Text className='md:text-5xl text-3xl uppercase font-semibold'>San Jose, CA</Text>
+            <Text className='md:text-5xl text-3xl uppercase font-semibold'>San José, CA</Text>
             <Text className='md:text-2xl text-lg md:mt-4 mt-2 uppercase'>Public integrity in<br></br>the midst of AI</Text>
           </div>
           <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />

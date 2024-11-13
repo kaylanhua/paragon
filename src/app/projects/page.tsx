@@ -40,7 +40,7 @@ export default function Projects() {
           </Link> 
           <Link href="/projects/sp24/sj" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
-              <Text className='font-semibold'>San Jose, CA</Text>
+              <Text className='font-semibold'>San José, CA</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Public integrity in the midst of AI</SmallText>
             </div>
           </Link> 
@@ -52,7 +52,7 @@ export default function Projects() {
           </Link>
           <Link href="/projects/sp24/sjg" passHref>
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
-              <Text className='font-semibold'>San Jose, CA</Text>
+              <Text className='font-semibold'>San José, CA</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Protecting government communications</SmallText>
             </div>
           </Link>
@@ -60,6 +60,12 @@ export default function Projects() {
             <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
               <Text className='font-semibold'>St Louis, Missouri</Text>
               <SmallText className='mt-2 flex-grow flex items-center justify-center'>Tech-powered cultural diversity</SmallText>
+            </div>
+          </Link>
+          <Link href="/projects/sp24/sj2" passHref>
+            <div className='cursor-pointer p-4 border rounded-lg hover:bg-gray-100 transition-colors h-full flex flex-col'>
+              <Text className='font-semibold'>San José, CA</Text>
+              <SmallText className='mt-2 flex-grow flex items-center justify-center'>AI Risk Assessment</SmallText>
             </div>
           </Link>
         </div>
