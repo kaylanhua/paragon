@@ -1,3 +1,4 @@
+import { FA_APP_URL } from '@/app/constants';
 import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
@@ -90,7 +91,7 @@ export default function STL() {
 
       <Footer>
         <FooterSection title="Our Organization">
-          <FooterLink href="">Apply Now</FooterLink>
+          <FooterLink href={FA_APP_URL}>Apply Now</FooterLink>
           <FooterLink href="/team">Team Directory</FooterLink>
           <FooterLink href="mailto:paragonfellowship@gmail.com">Contact Us</FooterLink>
           <FooterLink href="/faq">FAQs</FooterLink>

@@ -6,6 +6,7 @@ import TopBar from '@/components/TopBar';
 import { SmallText, Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FA_APP_URL } from '../constants';
 
 export default function Projects() {
   return (
@@ -83,7 +84,7 @@ export default function Projects() {
 
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={""}>Apply Now</FooterLink>
+          <FooterLink href={FA_APP_URL}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
           <FooterLink href='/faq'>FAQs</FooterLink>

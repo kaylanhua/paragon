@@ -155,7 +155,7 @@ export default function Home() {
           />
           <FAQuestion
             question="Is there a stipend given to fellows?"
-            answer="Our current cohorts will most likely run on a volunteer basis. We are working very diligently during Summer 2024 to change this via philanthropic donations, but we advise students to assume that a stipend will not be distributed."
+            answer="Yes! Fellows in good standing will be paid $250 (once at midpoint, once after their final presentation) for a total of $500. Paragon will coordinate the stipend payments."
           />
           <FAQuestion
             question="Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
@@ -163,7 +163,7 @@ export default function Home() {
           />
           <FAQuestion
             question="What are some project examples?"
-            answer="Our inaugural (Spring 2024) cohort worked on the following topics: generative AI policies for state employees, technology for foreign language access of government services, combating deepfakes of government officials, combating manipulation of public feedback forms to the government, and tech procurement."
+            answer="Our past cohorts have worked on the following topics: generative AI policies for state employees, technology for foreign language access of government services, combating deepfakes of government officials, combating manipulation of public feedback forms to the government, and tech procurement. You can find more information about our projects on the Past Projects page."
           />
           <FAQuestion
             question="How will fellows be matched with government partners?"
@@ -176,6 +176,10 @@ export default function Home() {
           <FAQuestion
             question="What kind of student would be best suited for this fellowship? How much government experience is required?"
             answer="We encourage all students located in the US who are interested in making real-world impact via policy or government work to apply. This fellowship is geared both towards training those without much formal policy experience, but also towards more experienced students who want to exercise their analytical, writing and policy abilities. We encourage experienced candidates to apply to be project leads."
+          />
+          <FAQuestion
+            question="I am an international student. Can I still be a fellow?"
+            answer="Yes! International students are eligible for the fellowship and will also receive a stipend. However, all international fellows must reside in the U.S. during their time as a fellow."
           />
         </div>
       </Section>
