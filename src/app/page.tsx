@@ -19,7 +19,7 @@ import { colleges, MAIL_LIST_URL, NEWSLETTER_URL, FA_APP_URL } from './constants
 
 
 const logos = Object.values(colleges).map(college => college.logo);
-const currentlyApplying = false;
+const currentlyApplying = true;
 
 export default function Home() {
 
@@ -139,7 +139,6 @@ export default function Home() {
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Fall applications are now closed.</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
           {currentlyApplying && (
             <Button inNewTab className='mx-auto mt-8 mb-12' url={FA_APP_URL}>Apply Now</Button>

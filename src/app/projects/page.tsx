@@ -17,7 +17,7 @@ export default function Projects() {
         <div />
         
       </Section>
-      
+
       <Section>
       <Text className='md:text-4xl text-2xl uppercase font-semibold pb-5'>Our Projects </Text> 
         <div className="grid md:grid-cols-3 gap-6 text-center">
