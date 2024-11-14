@@ -136,7 +136,7 @@ export default function Home() {
 
           </Card>
         </div>
-        <h2 className='text-center mt-0'>Fall applications are now closed.</h2>
+        <h2 className='text-center mt-0'>Spring 2025 applications are open!</h2>
         <div className='flex space-x-5 md:flex-row justify-center'>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={FA_APP_URL}>Apply Now</Button>
           <Button inNewTab className='mx-auto mt-8 mb-12' url={MAIL_LIST_URL}>Mailing List</Button>
