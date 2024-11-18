@@ -100,7 +100,7 @@ function groupPeopleByRegion(people: PersonRecord[]) {
 
 export default async function Team() {
     const strategicAdvisors = await retrievePeople("Strategic Advisors");
-    const pastGuestSpeakers = await retrievePeople("Past Guest Speakers");  // Fetch Past Guest Speakers
+    const pastGuestSpeakers = await retrievePeople("Guest Speakers");  // Fetch Guest Speakers
 
     const advisorsByRegion = groupPeopleByRegion(strategicAdvisors);
     const speakersByRegion = groupPeopleByRegion(pastGuestSpeakers);  // Group Past Guest Speakers by Region
@@ -108,12 +108,12 @@ export default async function Team() {
     return <>
         <TopBar />
         <div className="flex items-center justify-center mb-8 h-52 w-full relative">
-            <p className="text-5xl font-bold">Advisors & Past Speakers</p>
+            <p className="text-5xl font-bold">Advisors & Guest Speakers</p>
             <div className="h-full w-full bg-gradient-to-b from-primary to-transparent top-0 left-0 absolute -z-10" />
         </div>
         <main className="m-8">
             <TeamSection title="Strategic Advisors" peopleByRegion={advisorsByRegion} />
-            <TeamSection title="Past Guest Speakers" peopleByRegion={speakersByRegion} />  {/* New Section */}
+            <TeamSection title="Guest Speakers" peopleByRegion={speakersByRegion} />  {/* New Section */}
         </main>
         <Footer>
             <FooterSection title='Our Organization'>
