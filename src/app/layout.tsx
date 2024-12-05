@@ -44,7 +44,7 @@ export default function RootLayout({
         <meta property="twitter:description" content="Paragon connects students with tech policy opportunities from their state and local governments.  Fellows will spend 5 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement." />
         <meta property="twitter:image" content="https://www.paragonfellowship.org/thumb.png" />
       </head>
-      <body className={`${inter.className} bg-dark overflow-x-hidden`}>{children}</body>
+      <body className={`${inter.className} overflow-x-hidden`}>{children}</body>
     </html>
   );
 }

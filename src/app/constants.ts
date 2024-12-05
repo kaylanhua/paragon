@@ -11,7 +11,90 @@ import uciLogo from '@/assets/colleges/uci.png';
 import ucsdLogo from '@/assets/colleges/ucsd.png';
 import ugaLogo from '@/assets/colleges/uga.png';
 import yaleLogo from '@/assets/colleges/yale.png';
+import maricopaLogo from '@/assets/governments/Maricopa.png';
+import brownsvilleLogo from '@/assets/governments/Brownsville.png';
+import bostonLogo from '@/assets/governments/Boston.png';
+import stLouisLogo from '@/assets/governments/StLouis.png';
+import georgiaLogo from '@/assets/governments/Georgia.png';
+import losAngelesLogo from '@/assets/governments/LosAngeles.png';
+import southBendLogo from '@/assets/governments/SouthBend.png';
+import oaklandLogo from '@/assets/governments/Oakland.png';
+import nycLogo from '@/assets/governments/NYC.png';
+import southCarolinaLogo from '@/assets/governments/SouthCarolina.png';
+import doeLogo from '@/assets/governments/DoE.png';
+import tempeLogo from '@/assets/governments/Tempe.png';
+import santaClaraLogo from '@/assets/governments/SantaClara.png';
+import sanJoseLogo from '@/assets/governments/SanJose.png';
+import lebanonLogo from '@/assets/governments/Lebanon.png';
 import { StaticImageData } from 'next/image';
+
+export const governments: {
+    [key: string]: {
+        name: string,
+        logo: StaticImageData
+    }
+} = {
+    maricopa: {
+        name: 'Maricopa',
+        logo: maricopaLogo
+    },
+    brownsville: {
+        name: 'Brownsville',
+        logo: brownsvilleLogo
+    },
+    boston: {
+        name: 'Boston',
+        logo: bostonLogo
+    },
+    stLouis: {
+        name: 'St. Louis',
+        logo: stLouisLogo
+    },
+    georgia: {
+        name: 'Georgia',
+        logo: georgiaLogo
+    },
+    losAngeles: {
+        name: 'Los Angeles',
+        logo: losAngelesLogo
+    },
+    southBend: {
+        name: 'South Bend',
+        logo: southBendLogo
+    },
+    oakland: {
+        name: 'Oakland',
+        logo: oaklandLogo
+    },
+    nyc: {
+        name: 'New York City',
+        logo: nycLogo
+    },
+    southCarolina: {
+        name: 'South Carolina',
+        logo: southCarolinaLogo
+    },
+    doe: {
+        name: 'Department of Energy',
+        logo: doeLogo
+    },
+    tempe: {
+        name: 'Tempe',
+        logo: tempeLogo
+    },
+    santaClara: {
+        name: 'Santa Clara',
+        logo: santaClaraLogo
+    },
+    sanJose: {
+        name: 'San Jose',
+        logo: sanJoseLogo
+    },
+    lebanon: {
+        name: 'Lebanon',
+        logo: lebanonLogo
+    }
+};
 
 export const colleges: {
     [key: string]: {

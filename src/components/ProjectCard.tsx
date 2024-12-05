@@ -13,7 +13,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ className = "", timeline, projectTitle, ...props }: ProjectCardProps) {
     return (
         <Card 
-            className={`md:h-[15rem] items-left text-left px-6 py-8 border rounded-lg transition-colors hover:bg-opacity-90 bg-dark-blue text-white flex flex-col${className}`} 
+            className={`md:h-[15rem] items-left text-left px-6 py-8 border rounded-lg transition-colors hover:bg-opacity-90 bg-newblue text-white flex flex-col${className}`} 
             {...props}
         >
             <p className="text-md md:text-sm font-light uppercase">

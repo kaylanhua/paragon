@@ -3,23 +3,33 @@ import Button from '@/components/Button';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar';
-import {Subheading, Text } from '@/components/Typography';
+import {SmallText, Subheading, Text } from '@/components/Typography';
 import Link from 'next/link';
+import { RiArrowDownLine } from 'react-icons/ri';
+import BgGrid from '@/components/BgGrid';
 import ProjectCard from '@/components/ProjectCard';
+import GrayDivider from '@/components/GrayDivider';
 
 export default function Projects() {
   return (
     <>
       <TopBar />
-      <Section className='h-[1vh] flex flex-col justify-center' backgroundChildren={<>
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary to-dark opacity-35 -z-30' />
-      </>}>
-        <div />
-        
-      </Section>
+      <div
+            className="background-container"
+            style={{ height: '75vh' }}
+        >
+        <BgGrid lineCount={7} />
+        <Text className='text-white pl-40 text-7xl pl-20 mt-60 font-semibold'>Project Portfolio</Text>
+        <Text className='text-3xl text-right pt-20 pr-20 max-w-[40%] ml-auto'>We&apos;ve been <span className='font-semibold'>hard at work</span> this year Check out what we&apos;ve been up to!</Text>
+        <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
+            <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
+            <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
+      </div>
+      
 
       <Section>
       <Text className='md:text-4xl text-2xl uppercase font-semibold pb-5'>Our Projects </Text> 
+      <GrayDivider />
         <div className="grid md:grid-cols-3 gap-6 text-center">
             <Link href="/projects/sp24/leb" passHref>
                 <ProjectCard 
@@ -52,6 +62,7 @@ export default function Projects() {
                 />
             </Link>
         </div>
+        <SmallText className='text-xs pt-5'>We&apos;re working on adding the rest of our portfolio, stay tuned for a complete collection!</SmallText>
       </Section>
 
       <Section>
