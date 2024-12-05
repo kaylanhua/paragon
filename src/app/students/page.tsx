@@ -119,11 +119,11 @@ export default function About() {
         </Text>
         <br></br>
         <Text>
-          Apps are now open for the spring 2025 cohort and will be closing on <span className="font-semibold">[date, time]</span>. The spring 2025 fellowship will run from <span className="font-semibold underline">January 22 to May 1, 2025</span>.
+          Apps are now open for the spring 2025 cohort. The spring 2025 fellowship will run from <span className="font-semibold underline">January 22 to May 1, 2025</span>.
         </Text>
         <br></br>
         <Text>
-          Apps for the fall 2026 cohort will be expected to open <span className="font-semibold">[date, time]</span>. Join our <a href="mailto:paragonfellowship@gmail.com" className="underline">mailing list</a> to be notified when apps open.
+          Apps for the fall 2026 cohort will be expected to open at a later date. Join our <a href="mailto:paragonfellowship@gmail.com" className="underline">mailing list</a> to be notified when apps open.
         </Text>
       </Section>
       <Section id="faq">
