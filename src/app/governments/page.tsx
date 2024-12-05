@@ -82,8 +82,7 @@ export default function About() {
         <Text>(11 states, 21 projects w/ 16 govts)</Text>
         <Text>Spring (5 new / 5 total): Boston; Lebanon, NH; Georgia; St. Louis, MO; San Jose, CA</Text>
         <Text>Summer (2 new / 7 total): CalHHS, Santa Clara</Text>
-        <Text>Fall (5 new / 9 total): Brownsville, Maricopa, LA, Tempe, DoE</Text>
-        <Text>Spring (4 new / ~12 total): South Bend, IN; South Carolina; New York City, NY; Oakland, CA</Text>
+        <Text>Fall (5 new / 9 total): Brownsville, TX; Los Angeles, CA; Tempe, AZ</Text>
       </Section>
 
       <Section id="projects">
