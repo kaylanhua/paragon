@@ -18,6 +18,9 @@ export default function TopBar() {
             <Link href="/team">
                 <MedText>Team</MedText>
             </Link>
+            <Link href="/students">
+                <MedText>Students</MedText>
+            </Link>
             <Link href="/governments">
                 <MedText>Governments</MedText>
             </Link>
