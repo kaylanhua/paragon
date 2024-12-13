@@ -123,7 +123,7 @@ export default function About() {
         />
         <FAQuestion
           question="Will students be compensated for the project?"
-          answer="a. Government partners will not need to compensate students. Students are supported by philanthropic grants via our sponsors at PIT UN and Responsible Youth Tech Power Fund."
+          answer="a. Government partners will not need to compensate students. Students are supported by philanthropic grants via our sponsors at PIT-UN, a Ford Foundation backed initiative, and RTYPF, a project of the Omidyar Network."
         />
         <FAQuestion
           question="How are projects scoped?"

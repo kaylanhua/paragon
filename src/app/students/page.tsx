@@ -131,30 +131,42 @@ export default function About() {
         <GrayDivider/>
         <div>
         <FAQuestion
-          question="What are the expectations for government partners?"
-          answer="a. We ask that government partners be responsive over email and meet with the Paragon group once every two weeks. Government partners will also be asked to give feedback during a midpoint presentation and a final presentation. Partners are generally responsible for guiding the overall direction of the research."
+          question = "What is the fellowship timeline?"
+          answer = "a. We have three cohorts every year—summer, fall and spring. The summer cohort begins in mid-June and ends mid-September. The fall cohort begins in late September and ends in December. The spring cohort begins in mid-February, with final presentations in early June."
+          />
+        <FAQuestion
+          question = "Is there a stipend given to fellows?"
+          answer = "a. Yes! Fellows in good standing will be paid $250 (once at midpoint, once after their final presentation) for a total of $500. Paragon will coordinate the stipend payments."
         />
         <FAQuestion
-          question="What can you expect to receive at the end?"
-          answer="a. Governments can expect a research or policy brief at the end of the program."
+          question = "Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
+          answer = "a. If you are not accepted as a project lead, you will still be considered as a fellow! The project lead application is largely the same as the fellow application, just with a few more questions."
         />
         <FAQuestion
-          question="Will students be compensated for the project?"
-          answer="a. Government partners will not need to compensate students. Students are supported by philanthropic grants via our sponsors at PIT UN and Responsible Youth Tech Power Fund."
+          question = "What are some past project examples?"
+          answer = "a. Our past cohorts have worked on the following topics: generative AI policies for state employees, technology for foreign language access of government services, combating deepfakes of government officials, combating manipulation of public feedback forms to the government, and tech procurement. You can find more information about our projects on the Past Projects page."
         />
         <FAQuestion
-          question="How are projects scoped?"
-          answer="a. Project proposals are brought by government partners according to their specific needs and refined in conjunction with the partnerships team. Our partnerships team works with you over the course of a few virtual meetings to understand your needs."
+          question = "How long do the projects run?"
+          answer = "a. Projects run for about 3 months each. However, government partners with longer term needs can explore recurring projects over the course of multiple cohorts."
         />
         <FAQuestion
-          question="How long do the projects run?"
-          answer="a. Projects run for about 3 months each. However, government partners with longer term needs can explore recurring projects over the course of multiple cohorts."
+          question = "How will fellows be matched with government partners?"
+          answer = "a. Since many of our government partners are excited to work with local students and we are seeking to build a strong student community, we will prioritize matching fellows with projects in their region. For government partners that don’t have regional preferences, we will match you based on your policy interests."
         />
         <FAQuestion
-          question="How many fellows typically work on a project?"
-          answer="a. Each project is supported by a dedicated team of 6-9 students from your area."
+          question = "Will the fellowship be remote?"
+          answer = "a. The fellowship will be largely remote. However, for most projects, students will be centralized in one geographic location. There will also be optional in-person social events throughout the fellowship!"
         />
         </div>
+        <FAQuestion
+          question = "What kind of student would be best suited for this fellowship? How much government experience is required?"
+          answer = "a. We encourage all students located in the US who are interested in making real-world impact via policy or government work to apply. This fellowship is geared both towards training those without much formal policy experience, but also towards more experienced students who want to exercise their analytical, writing and policy abilities. We encourage experienced candidates to apply to be project leads."
+        />
+        <FAQuestion
+          question = "I am an international student. Can I still be a fellow?"
+          answer = "a. Yes! International students are eligible for the fellowship and will also receive a stipend. However, all international fellows must reside in the U.S. during their time as a fellow."
+        />
       </Section>
       <Section>
         <Subheading className='flex justify-center text-center'>Ready to see what Paragon<br />can do for you?</Subheading>
