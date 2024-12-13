@@ -63,7 +63,7 @@ export default function About() {
       <TopBar />
       <div className="background-container">
         <BgGrid/>
-        <Text className='fade-in pt-[20%] pl-[12%] text-3xl max-w-[50%]'>Paragon offers <span className='font-semibold'>pro-bono tech policy research </span> for state and local governments.</Text>
+        <Text className='fade-in pt-[20%] pl-[12%] text-3xl max-w-[50%]'>Paragon works with state and local governments, <span className='font-semibold'>big and small</span>, from every jurisdiction across the country to provide <span className='font-semibold'>pro-bono tech policy research</span> to inform evidence-based policymaking.</Text>
         <Text className='fade-in text-right text-3xl ml-auto mr-20 max-w-[30%] mt-[10%]'>Interested in exploring a partnership with Paragon?</Text>
         <div className="flex justify-end pr-20 pt-10">
           <Button className="fade-in" style= "secondary" inNewTab url={"mailto:paragonfellowship@gmail.com"}>Interest Form</Button>
@@ -88,7 +88,7 @@ export default function About() {
       <Section id="projects">
         <Subheading className='text-5xl'>02 Past Projects</Subheading>
         <GrayDivider />
-        <Text>We&apos;ve worked with a multitude of governments and organizations to better tech policy</Text>
+        <Text>We&apos;ve worked with governments and organizations across the country to better science & tech policy processes. Our work ranges has ranged from writing GenAI policy with the State of Georgia, advising on deepfake policy for the City of San Jose, to writing accessibility guidelines for translation software for the City of Lebanon.</Text>
         <a href='/projects' className='text-blue-500'>
         <Carousel className='mt-10' speed={0.5}>
           {
@@ -153,7 +153,6 @@ export default function About() {
           <FooterLink href={""}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
-          <FooterLink href='/faq'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
 

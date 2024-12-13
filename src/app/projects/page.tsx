@@ -20,7 +20,7 @@ export default function Projects() {
         >
         <BgGrid lineCount={7} />
         <Text className='text-white pl-40 text-7xl pl-20 mt-60 font-semibold'>Project Portfolio</Text>
-        <Text className='text-3xl text-right pt-20 pr-20 max-w-[40%] ml-auto'>We&apos;ve been <span className='font-semibold'>hard at work</span> this year Check out what we&apos;ve been up to!</Text>
+        <Text className='text-3xl text-right pt-20 pr-20 max-w-[40%] ml-auto'>View our past fellows' work!</Text>
         <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
             <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
             <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
@@ -80,7 +80,6 @@ export default function Projects() {
           <FooterLink href={""}>Home</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
-          <FooterLink href='/faq'>FAQs</FooterLink>
         </FooterSection>
       </Footer>
 

@@ -23,7 +23,7 @@ import nycLogo from '@/assets/governments/NYC.png';
 import southCarolinaLogo from '@/assets/governments/SouthCarolina.png';
 import doeLogo from '@/assets/governments/DoE.png';
 import tempeLogo from '@/assets/governments/Tempe.png';
-import santaClaraLogo from '@/assets/governments/SantaClara.png';
+import santaClaraLogo from '@/assets/governments/Santa Clara.png';
 import sanJoseLogo from '@/assets/governments/SanJose.png';
 import lebanonLogo from '@/assets/governments/Lebanon.png';
 import { StaticImageData } from 'next/image';
@@ -34,10 +34,10 @@ export const governments: {
         logo: StaticImageData
     }
 } = {
-    maricopa: {
-        name: 'Maricopa',
-        logo: maricopaLogo
-    },
+    // maricopa: {
+    //     name: 'Maricopa',
+    //     logo: maricopaLogo
+    // },
     brownsville: {
         name: 'Brownsville',
         logo: brownsvilleLogo
@@ -66,10 +66,10 @@ export const governments: {
         name: 'Oakland',
         logo: oaklandLogo
     },
-    nyc: {
-        name: 'New York City',
-        logo: nycLogo
-    },
+    // nyc: {
+    //     name: 'New York City',
+    //     logo: nycLogo
+    // },
     southCarolina: {
         name: 'South Carolina',
         logo: southCarolinaLogo

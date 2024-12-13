@@ -135,7 +135,6 @@ export default async function Team() {
                 <FooterLink href='/'>Home</FooterLink>
                 <FooterLink href='/team'>Team Directory</FooterLink>
                 <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
-                <FooterLink href='/faq'>FAQs</FooterLink>
             </FooterSection>
         </Footer>
     </>
