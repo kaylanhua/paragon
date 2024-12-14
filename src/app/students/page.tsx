@@ -9,7 +9,7 @@ import GrayDivider from '@/components/GrayDivider';
 import FAQuestion from '@/components/FAQuestion';
 import Timeline from '@/components/Timeline';
 import Navbar from '@/components/Navbar';
-import {FA_APP_URL} from '@/app/constants';
+import {FA_APP_URL} from '@/constants';
 
 const sections = [
   { id: "expectations", title: "01 PROJECT EXPECTATIONS" },

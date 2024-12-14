@@ -1,7 +1,7 @@
 import { RiArrowDownLine } from "react-icons/ri";
 import { Text } from "./Typography";
 import Button from "./Button";
-import { MAIL_LIST_URL, FA_APP_URL } from "../app/constants";
+import { MAIL_LIST_URL, FA_APP_URL } from "../constants";
 
 const currentlyApplying = true;
 

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Paragon Policy Fellowship",
   description:
-    "a fellowship to connect students with tech policy opportunities",
+    "a national fellowship connecting students with tech policy opportunities",
 };
 
 export default function RootLayout({

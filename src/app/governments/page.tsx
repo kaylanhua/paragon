@@ -2,7 +2,7 @@ import Button from '@/components/Button';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar';
-import {governments} from '../constants';
+import {governments} from '../../constants';
 import {Subheading, Text } from '@/components/Typography';
 import Image from 'next/image';
 import BgGrid from '@/components/BgGrid';

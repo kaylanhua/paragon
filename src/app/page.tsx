@@ -5,7 +5,7 @@ import Carousel from '@/components/Carousel';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import TopBar from '@/components/TopBar';
-import {governments} from './constants';
+import {governments} from '../constants';
 import DynamicGrid from '@/components/DynamicGrid';
 import GrayDivider from '@/components/GrayDivider';
 import Testimonials from '@/components/Testimonials';
