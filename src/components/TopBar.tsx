@@ -9,7 +9,7 @@ export default function TopBar() {
     return <>
         <div className='fixed top-0 left-0 p-8 flex w-screen z-50 justify-between'>
             <div className='absolute bottom-0 left-0 w-full h-full -z-10 bg-gradient-to-b from-dark to-transparent' />
-            <Link href=''><Image src={HEADER_LOGO} alt="Paragon Fellowship" className='h-20 w-60 object-contain' /></Link>
+            <Link href='../app/page.tsx'><Image src={HEADER_LOGO} alt="Paragon Fellowship" className='h-20 w-60 object-contain' /></Link>
             <div className="space-x-8 uppercase text-white flex items-center justify-center">
                 <Link href="/">
                     <MedText>About</MedText>
