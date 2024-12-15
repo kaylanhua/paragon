@@ -58,14 +58,6 @@ export const governments: {
         name: 'Los Angeles',
         logo: losAngelesLogo
     },
-    // nyc: {
-    //     name: 'New York City',
-    //     logo: nycLogo
-    // },
-    southCarolina: {
-        name: 'South Carolina',
-        logo: southCarolinaLogo
-    },
     tempe: {
         name: 'Tempe',
         logo: tempeLogo
