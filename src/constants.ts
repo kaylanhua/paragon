@@ -21,7 +21,7 @@ import southBendLogo from '@/assets/governments/SouthBend.png';
 import oaklandLogo from '@/assets/governments/Oakland.png';
 // import nycLogo from '@/assets/governments/NYC.png';
 import southCarolinaLogo from '@/assets/governments/SouthCarolina.png';
-import doeLogo from '@/assets/governments/DoE.png';
+// import doeLogo from '@/assets/governments/DoE.png';
 import tempeLogo from '@/assets/governments/Tempe.png';
 import santaClaraLogo from '@/assets/governments/Santa Clara.png';
 import sanJoseLogo from '@/assets/governments/SanJose.png';
@@ -58,14 +58,6 @@ export const governments: {
         name: 'Los Angeles',
         logo: losAngelesLogo
     },
-    southBend: {
-        name: 'South Bend',
-        logo: southBendLogo
-    },
-    oakland: {
-        name: 'Oakland',
-        logo: oaklandLogo
-    },
     // nyc: {
     //     name: 'New York City',
     //     logo: nycLogo
@@ -73,10 +65,6 @@ export const governments: {
     southCarolina: {
         name: 'South Carolina',
         logo: southCarolinaLogo
-    },
-    doe: {
-        name: 'Department of Energy',
-        logo: doeLogo
     },
     tempe: {
         name: 'Tempe',
