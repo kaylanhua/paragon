@@ -79,7 +79,7 @@ export default function About() {
       <Section id="impact">
         <Subheading className='text-5xl'>01 Our Impact</Subheading>
         <GrayDivider />
-        <Text>Over the last year, Paragon has partnered with 16 governments across 11 states through 21 projects.</Text>
+        <Text>Over the last year, Paragon has partnered with 10 governments across 7 states through 20 projects.</Text>
         {/* <Text>Spring (5 new / 5 total): Boston; Lebanon, NH; Georgia; St. Louis, MO; San Jose, CA</Text>
         <Text>Summer (2 new / 7 total): CalHHS, Santa Clara</Text>
         <Text>Fall (5 new / 9 total): Brownsville, TX; Los Angeles, CA; Tempe, AZ</Text> */}
