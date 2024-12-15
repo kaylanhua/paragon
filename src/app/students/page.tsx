@@ -22,12 +22,12 @@ const sections = [
 
 const events = [
   {
-    date: "Feb. 1–3",
+    date: "Late January 2025",
     title: "Policy Bootcamp",
     description: "",
   },
   {
-    date: "March 03 – March 17",
+    date: "Mid March 2025",
     title: "Check-ins & Midpoint Review with Paragon Team",
     description: "",
   },
@@ -37,17 +37,17 @@ const events = [
     description: "",
   },
   {
-    date: "First week of May",
+    date: "Late April 2025",
     title: "Final Policy Brief Presentation",
     description: "",
   },
   {
-    date: "Mid May",
+    date: "First week of May",
     title: "Final Cohort Presentation & Wrap-Up",
     description: "",
   },
   {
-    date: "May 22nd",
+    date: "May 1st",
     title: "Cohort End",
     description: "",
   },
