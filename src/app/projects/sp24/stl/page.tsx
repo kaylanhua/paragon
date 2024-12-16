@@ -1,8 +1,9 @@
+import { FA_APP_URL } from '@/app/constants';
 import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
-import TopBar from '@/components/TopBar';
-import {Subheading, Text } from '@/components/Typography';
+import TopBar from '@/components/TopBar'; 
+import {Subheading, Text, SmallText } from '@/components/Typography'; 
 import Image from 'next/image';
 
 export default function STL() {
@@ -23,9 +24,23 @@ export default function STL() {
           <Subheading>SUMMARY</Subheading>
           <Text>
           St. Louis, Missouri is a city with a remarkable degree of demographic diversity. From a governmental perspective, this unique character has challenged the city’s ability to provide equitable service and an inclusive environment for individuals with limited English proficiency (LEP). Recently, digital tools for translation–including those powered by artificial intelligence (AI)–have expanded in number and scope, providing one route for governmental entities to efficiently improve their language access capabilities. However, the efficacy of these tools remains poorly demonstrated and robust, generalizable guidelines for their implementation are lacking. Consequently, any initiative to incorporate digital translation tools into governmental services will require an in-depth assessment of needs, opportunities, and costs. Herein, we explore the interface of digital tools and language access for the city of St. Louis and make two targeted recommendations to address current challenges.
+
           </Text>
-        </Section>
-  
+        </div>
+        <Image 
+          src={CAPITOL_LINEART} 
+          alt="Capitol Building" 
+          className="md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10" 
+        />
+      </Section>
+      <br />
+      <Section> 
+        <Subheading>SUMMARY</Subheading>
+        <Text>
+          St. Louis, Missouri is a city with a remarkable degree of demographic diversity. From a governmental perspective, this unique character has challenged the city’s ability to provide equitable service and an inclusive environment for individuals with limited English proficiency (LEP). Recently, digital tools for translation–including those powered by artificial intelligence (AI)–have expanded in number and scope, providing one route for governmental entities to efficiently improve their language access capabilities. However, the efficacy of these tools remains poorly demonstrated and robust, generalizable guidelines for their implementation are lacking. Consequently, any initiative to incorporate digital translation tools into governmental services will require an in-depth assessment of needs, opportunities, and costs. Herein, we explore the interface of digital tools and language access for the city of St. Louis and make two targeted recommendations to address current challenges.
+        </Text>
+      </Section>
+
         <Section>
           <Subheading>METHODOLOGY</Subheading>
           <Text>
@@ -87,3 +102,4 @@ export default function STL() {
       </>
     );
   }
+

@@ -57,6 +57,7 @@ const events = [
 
 const govLogos = Object.values(governments).map(government => government.logo);
 
+
 export default function About() {
   return (
     <>
@@ -150,7 +151,7 @@ export default function About() {
 
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={""}>Apply Now</FooterLink>
+          <FooterLink href={FA_APP_URL}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
         </FooterSection>

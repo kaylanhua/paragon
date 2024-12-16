@@ -160,7 +160,7 @@ export const AIRTABLE_API_KEY = `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77
 export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`
 
 export const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrfKG3W0XpO1L2tx"
-export const MAIL_LIST_URL = "https://airtable.com/appRhVSa7OpK9YsDn/pagFfGYZK9UoorY0A/form"
+export const MAIL_LIST_URL = "https://forms.gle/hAVRwpTkid44jAZY8"
 export const NEWSLETTER_URL = "https://paragonpolicyfellowship.substack.com/"
 export const FA_APP_URL = "https://airtable.com/appD9YuZjLzgT3p58/pagnaXfOC5ByK0hoY/form"
 
@@ -171,9 +171,10 @@ export type MenuOption = {
 }
 
 export const defaultMenuOptions: MenuOption[] = [
-    { name: 'Home', url: '/' },
+    //{ name: 'Home', url: '/' },
     { name: 'Past Projects', url: '/projects', topBar: true },
     { name: 'For Governments', url: '/governments', topBar: true },
     { name: 'Meet the Team', url: '/team', topBar: true },
+    { name: 'Advisors & Speakers', url: '/advisors', topBar: true },
     { name: 'Contact us', url: 'mailto:paragonfellowship@gmail.com' }
 ]

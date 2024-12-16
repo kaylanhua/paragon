@@ -9,7 +9,13 @@ import { Text } from "./Typography";
 export default function Menu({ openState, menuOptions = [] }: { openState: [boolean, Dispatch<SetStateAction<boolean>>], menuOptions?: MenuOption[] }) {
     return <div className={`fixed top-0 left-0 w-screen h-screen menu-gradient bg-opacity-95 z-50 flex justify-center items-center ${openState[0] ? 'menu-animate-active' : ''} menu-animate`}>
         <div className='flex flex-col space-y-4'>
-            <Image src={PARAGON_P} alt="Paragon Fellowship" className='md:h-24 h-16 aspect-square object-contain' />
+            <a href="./">
+                <Image 
+                    src={PARAGON_P} 
+                    alt="Paragon Fellowship" 
+                    className="md:h-24 h-16 aspect-square object-contain" 
+                />
+            </a>
             {(menuOptions.length > 0 ? menuOptions : defaultMenuOptions).map((option, i) => <a
                 key={i}
                 href={option.url}

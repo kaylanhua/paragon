@@ -62,12 +62,8 @@ import Footer, { FooterLink, FooterSection } from '@/components/Footer'
 import Image from "next/image"
 import { ElementType } from "react"
 import { RiLinkedinLine, RiLinksLine, RiMailLine } from "react-icons/ri"
-import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../../constants'
+import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, colleges } from '../constants'
 import TopBar from '@/components/TopBar'
-import BgGrid from "@/components/BgGrid"
-import { Heading } from "@/components/Typography"
-import { RiArrowDownLine } from "react-icons/ri"
-import GrayDivider from "@/components/GrayDivider"
 
 const NO_REGION = "";
 
@@ -103,34 +99,28 @@ function groupPeopleByRegion(people: PersonRecord[]) {
 }
 
 export default async function Team() {
-    const organizingTeam = await retrievePeople("Team Members");
-    const formerOrganizingTeam = await retrievePeople("Former Team Members");
+    const strategicAdvisors = await retrievePeople("Strategic Advisors");
+    const pastGuestSpeakers = await retrievePeople("Guest Speakers");  // Fetch Guest Speakers
 
-    const organizingByRegion = groupPeopleByRegion(organizingTeam);
-    const formerByRegion = groupPeopleByRegion(formerOrganizingTeam);
+    const advisorsByRegion = groupPeopleByRegion(strategicAdvisors);
+    const speakersByRegion = groupPeopleByRegion(pastGuestSpeakers);  // Group Past Guest Speakers by Region
 
     return <>
         <TopBar />
-        <div
-            className="background-container"
-            style={{ height: '60vh' }}
-        >
-        <BgGrid lineCount={7} />
-        <Heading className='fade-in text-white text-6xl text-center mt-60'>Meet the Team</Heading>
-        <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
-            <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-            <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
-      </div>
+        <div className="flex items-center justify-center mb-8 h-52 w-full relative">
+            <p className="text-5xl font-bold">Advisors & Guest Speakers</p>
+            <div className="h-full w-full bg-gradient-to-b from-primary to-transparent top-0 left-0 absolute -z-10" />
+        </div>
         <main className="m-8">
-            <TeamSection title="Organizing Team" peopleByRegion={organizingByRegion} />
             <TeamSection title="Strategic Advisors" peopleByRegion={advisorsByRegion} />
-            <TeamSection title="Organizing Team Alumni" peopleByRegion={formerByRegion} />
+            <TeamSection title="Guest Speakers" peopleByRegion={speakersByRegion} />  {/* New Section */}
         </main>
         <Footer>
             <FooterSection title='Our Organization'>
                 <FooterLink href='/'>Home</FooterLink>
                 <FooterLink href='/team'>Team Directory</FooterLink>
                 <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
+                <FooterLink href='/faq'>FAQs</FooterLink>
             </FooterSection>
         </Footer>
     </>
@@ -142,7 +132,6 @@ function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion:
     return (
         <section className="mb-10">
             <p className="text-3xl font-bold uppercase mb-5">{title}</p>
-            <GrayDivider />
             {Object.entries(peopleByRegion).map(([region, people], i) => (
                 <div key={i}>
                     <p className="text-2xl font-bold">{region}</p>
@@ -178,7 +167,7 @@ function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion:
 function IconButton({ icon: Icon, url }: { icon: ElementType, url: string }) {
     return (
         <a href={url} target="_blank" rel="noopener noreferrer">
-            <div className="flex items-center justify-center aspect-square h-10 border-2 border-gray-600 rounded-lg bg-primary hover:bg-secondary text-white transition hover:bg-opacity-60">
+            <div className="flex items-center justify-center aspect-square h-10 border-2 border-gray-600 rounded-lg bg-primary hover:bg-secondary transition hover:bg-opacity-60">
                 <Icon className="text-xl" />
             </div>
         </a>

@@ -1,3 +1,4 @@
+import { FA_APP_URL } from '@/app/constants';
 import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
@@ -13,7 +14,7 @@ export default function SJG() {
         <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-b from-secondary to-dark opacity-35 -z-30' />
       </>}>
         <div className="flex flex-col justify-end h-full pb-4">
-          <Text className='md:text-5xl text-3xl uppercase font-semibold'>San Jose, CA </Text>
+          <Text className='md:text-5xl text-3xl uppercase font-semibold'>San José, CA </Text>
           <Text className='md:text-2xl text-lg md:mt-4 mt-2 uppercase'>Protecting Government<br></br>  Communication from <br></br> AI Manipulation</Text>
         </div>
         <Image src={CAPITOL_LINEART} alt="Capitol Building" className='md:h-[650px] md:w-[650px] h-[280px] w-[280px] object-contain absolute md:-right-10 md:-top-24 right-0 -z-10' />
@@ -102,7 +103,7 @@ export default function SJG() {
 
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={""}>Apply Now</FooterLink>
+          <FooterLink href={FA_APP_URL}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
           <FooterLink href='/faq'>FAQs</FooterLink>

@@ -78,6 +78,7 @@ export default function Projects() {
       <Footer>
         <FooterSection title='Our Organization'>
           <FooterLink href={""}>Home</FooterLink>
+
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
         </FooterSection>
