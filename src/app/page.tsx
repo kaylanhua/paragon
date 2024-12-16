@@ -80,7 +80,7 @@ export default function Home() {
           <p className="text-xl font-semibold text-gray-500 mb-3 md:mb-5">Field Exposure</p>
           <p className="text-base md:text-lg font-light text-black">
             Introduce fellows to a diverse cohort of leaders in the technology policy
-            space from the public and private sectors and at all levels of
+            space from both public and private sectors and at all levels of
             government.
           </p>
         </div>
