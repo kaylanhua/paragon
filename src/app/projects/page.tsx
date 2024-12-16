@@ -19,8 +19,8 @@ export default function Projects() {
             style={{ height: '75vh' }}
         >
         <BgGrid lineCount={7} />
-        <Text className='text-white pl-40 text-7xl pl-20 mt-60 font-semibold'>Project Portfolio</Text>
-        <Text className="text-3xl text-right pt-20 pr-20 max-w-[40%] ml-auto">View our past fellows&apos; work!</Text>
+        <Text className='text-white pl-40 text-7xl pl-20 mt-40 md:mt-60 pb-10 md:pb-0 font-semibold'>Project Portfolio</Text>
+        <Text className="text-xl md:text-3xl md:text-right pt-0 md:pt-20 pr-20 max-w-[40%] ml-auto">View our past fellows&apos; work!</Text>
         <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
             <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
             <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />

@@ -177,7 +177,7 @@ function TeamSection({ title, peopleByRegion }: { title: string, peopleByRegion:
 function IconButton({ icon: Icon, url }: { icon: ElementType, url: string }) {
     return (
         <a href={url} target="_blank" rel="noopener noreferrer">
-            <div className="flex items-center justify-center aspect-square h-10 border-2 border-gray-600 rounded-lg bg-primary hover:bg-secondary transition hover:bg-opacity-60">
+            <div className="flex items-center justify-center aspect-square h-10 border-2 border-gray-600 rounded-lg bg-primary hover:bg-secondary transition hover:bg-opacity-60 text-white">
                 <Icon className="text-xl" />
             </div>
         </a>

@@ -31,7 +31,7 @@ type Section = {
             <button
               key={section.id}
               onClick={() => handleScroll(section.id)}
-              className="text-gray-500 hover:text-black font-semibold transition-colors"
+              className="max-lg:text-[2vw] text-md text-gray-500 hover:text-black font-semibold transition-colors"
             >
               {section.title}
             </button>

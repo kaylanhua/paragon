@@ -59,11 +59,25 @@ export default function About() {
       <TopBar />
       <div className="background-container">
         <BgGrid/>
-        <Text className='fade-in pt-[20%] pl-[12%] text-3xl max-w-[50%]'>Paragon offers semester-based tech policy projects (fall, spring, summer) for <span className='font-semibold'>university students and new grads</span> to work on real policy issues at the <span className='font-semibold'>state and local level.</span></Text>
-        <Text className='fade-in text-right text-3xl ml-auto mr-20 max-w-[30%] mt-[5%] mb-5'>Applications for the Spring 2025 cohort are now open.</Text>
-        <div className="flex justify-end pr-[6%]">
-          <Button className="fade-in" style= "secondary" inNewTab url={FA_APP_URL}>apply now</Button>
-        </div>
+        <div className="w-full px-4 md:px-0">
+
+  <Text className="fade-in pt-[30%] md:pt-[20%] pl-[5%] md:pl-[12%] text-2xl md:text-3xl max-w-[90%] md:max-w-[50%]">
+    Paragon offers semester-based tech policy projects (fall, spring, summer) for
+    <span className="font-semibold"> university students and new grads</span> to work on real policy issues at the
+    <span className="font-semibold"> state and local level.</span>
+  </Text>
+
+
+  <Text className="fade-in ml-60 text-right md:text-right text-2xl md:text-3xl mx-auto md:ml-auto md:mr-20 max-w-[90%] md:max-w-[30%] mt-20 md:mt-[5%] mb-20 md:mb-5">
+    Applications for the Spring 2025 cohort are now open.
+  </Text>
+
+  <div className="flex justify-center md:justify-end pr-0 md:pr-[6%]">
+    <Button className="fade-in " style="secondary" inNewTab url={FA_APP_URL}>
+      apply now
+    </Button>
+  </div>
+</div>
         
         <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
         <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />

@@ -12,9 +12,23 @@ export default function HeroSection() {
 
     return <section className="relative flex w-full md:py-10 py-10 h-[100svh] justify-center items-center">
         <div className={`md:w-[1350px] w-screen max-w-[85vw] mx-10 hero-text-fadein`}>
-            <div><Text className='w-full md:text-7xl text-5xl uppercase md:mb-0 mb-1 font-medium flex justify-center'>building the</Text></div>
-            <div><Text className='w-full md:text-7xl text-5xl uppercase md:mb-0 mb-1 font-medium flex justify-center'>next generation of</Text></div>
-            <div><Text className='w-full md:text-7xl text-5xl uppercase md:mb-0 mb-1 font-medium italic flex justify-center'>tech policy leaders</Text></div>
+        <div className="w-full">
+        <div>
+          <Text className="w-full text-[7vw] md:text-6xl lg:text-7xl uppercase md:mb-0 mb-[3vw] font-medium flex justify-center">
+            building the
+          </Text>
+        </div>
+        <div>
+          <Text className="w-full text-[7vw] md:text-6xl lg:text-7xl uppercase md:mb-0 mb-[3vw] font-medium flex justify-center">
+            next generation of
+          </Text>
+        </div>
+        <div>
+          <Text className="w-full text-[7vw] md:text-6xl lg:text-7xl uppercase md:mb-0 mb-[3vw] font-medium italic flex justify-center">
+            tech policy leaders
+          </Text>
+        </div>
+      </div>
             <div className='flex space-x-4 mt-4 justify-center'>
             {currentlyApplying && (
               <Button style="secondary" inNewTab url={FA_APP_URL}>APPLY FOR SPRING 2025</Button>
