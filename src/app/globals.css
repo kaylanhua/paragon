@@ -3,8 +3,18 @@
 @tailwind utilities;
 
 :root {
-  color: white;
+  color: rgb(102, 102, 102);
+  background-color: white;
   scroll-behavior: smooth;
+}
+
+.background-container {
+  position: relative; /* Ensures child elements can be positioned absolutely */
+  width: 100%;
+  height: 100vh; /* Adjust based on the desired size */
+  overflow: hidden; /* Prevent grid overflow if necessary */
+  color: white;
+  background-color: #1E2D5A;
 }
 
 .card {
@@ -42,6 +52,26 @@
 
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: var(--fade-duration, 1s); /* Default to 1s */
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: var(--fade-delay, 0s); /* Default to 0s */
+}
+
 .hero-text-fadein>div:nth-of-type(1) {
   opacity: 0;
   animation-name: fadeIn;
@@ -62,8 +92,18 @@
 
 .hero-text-fadein>div:nth-of-type(3) {
   opacity: 0;
-  animation: fadeIn 1s cubic-bezier(0, 0.97, 0.78, 0.99) forwards 2.5s, subtle-bounce-point 2s infinite;
+  animation: fadeIn 1s cubic-bezier(0, 0.97, 0.78, 0.99) forwards 2.5s;
 }
+
+.hero-text-fadein>div:nth-of-type(4) {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
 
 .menu-animate {
   clip-path: circle(0% at calc(100% - 2rem) 2rem);

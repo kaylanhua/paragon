@@ -36,8 +36,8 @@ export default function Carousel({ children, speed = 1, className = "", ...props
             <div className="flex items-center h-full flex-shrink-0">{children}</div>
             <div className="md:flex items-center h-full flex-shrink-0">{children}</div>
         </div>
-        <div className='absolute top-0 -right-3 w-24 h-full bg-gradient-to-r from-transparent to-dark' />
-        <div className='absolute top-0 -left-3 w-24 h-full bg-gradient-to-l from-transparent to-dark' />
+        <div className='absolute top-0 -right-3 w-24 h-full' />
+        <div className='absolute top-0 -left-3 w-24 h-full' />
     </div>
 }
 

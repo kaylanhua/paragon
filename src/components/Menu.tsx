@@ -1,4 +1,4 @@
-import { MenuOption, defaultMenuOptions } from "@/app/constants";
+import { MenuOption, defaultMenuOptions } from "@/constants";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
 import { RiCloseLine } from "react-icons/ri";
