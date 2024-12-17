@@ -63,54 +63,90 @@ export default function About() {
   return (
     <>
       <TopBar />
-      <div className="background-container">
-        <BgGrid/>
-        <Text className='fade-in pt-[20%] pl-[12%] text-3xl max-w-[50%]'>Paragon works with state and local governments, <span className='font-semibold'>big and small</span>, from every jurisdiction across the country to provide <span className='font-semibold'>pro-bono tech policy research</span> to inform evidence-based policymaking.</Text>
-        <Text className='fade-in text-right text-3xl ml-auto mr-20 max-w-[30%] mt-[10%]'>Interested in exploring a partnership with Paragon?</Text>
-        <div className="flex justify-end pr-20 pt-10">
-          <Button className="fade-in" style= "secondary" inNewTab url={"mailto:paragonfellowship@gmail.com"}>Interest Form</Button>
-          <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
-            <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-            <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
-        </div>
-        
-      </div>
-      <Section>
-        <Navbar sections={sections} />
-      </Section>
-      <Section id="impact">
-        <Subheading className='text-5xl'>01 Our Impact</Subheading>
-        <GrayDivider />
-        <Text>Over the last year, Paragon has partnered with 10 governments across 7 states through 20 projects.</Text>
-        {/* <Text>Spring (5 new / 5 total): Boston; Lebanon, NH; Georgia; St. Louis, MO; San Jose, CA</Text>
-        <Text>Summer (2 new / 7 total): CalHHS, Santa Clara</Text>
-        <Text>Fall (5 new / 9 total): Brownsville, TX; Los Angeles, CA; Tempe, AZ</Text> */}
-      </Section>
+<div className="background-container min-h-[100svh] flex flex-col">
+  <BgGrid/>
+  <div className="w-full px-4 md:px-0 flex-1 flex flex-col md:block">
+    <div className="flex-1 flex flex-col justify-center md:block">
+      <Text className='fade-in md:pt-[10%] px-4 md:pl-[12%] text-xl md:text-3xl max-w-full md:max-w-[50%] text-center md:text-left'>
+        Paragon works with state and local governments, <span className='font-semibold'>big and small</span>, from every jurisdiction across the country to provide <span className='font-semibold'>pro-bono tech policy research</span> to inform evidence-based policymaking.
+      </Text>
 
-      <Section id="projects">
-        <Subheading className='text-5xl'>02 Past Projects</Subheading>
-        <GrayDivider />
-        <Text>We&apos;ve worked with governments and organizations across the country to better science & tech policy processes. Our work ranges has ranged from writing GenAI policy with the State of Georgia, advising on deepfake policy for the City of San Jose, to writing accessibility guidelines for translation software for the City of Lebanon.</Text>
-        <a href='/projects' className='text-blue-500'>
-        <Carousel className='mt-10' speed={0.5}>
-          {
-            govLogos.map((logo, index) => (
-              <Image key={index} src={logo} alt="Logo" className='h-full md:mr-14 mr-10 md:w-32 w-24 object-contain' />
-            ))
-          }
-        </Carousel>
-        </a>
-      </Section>
-      <Section id="testimonials">
-        <Subheading>03 Testimonials</Subheading>
-        <GrayDivider/>
-        <Testimonials/>
-      </Section>
-      <Section id="timeline">
-        <Subheading>04 Project Scoping &amp; Timeline</Subheading>
-        <GrayDivider/>
-        <Timeline events={events} />
-      </Section>
+      <Text className='fade-in text-xl md:text-3xl max-w-full md:max-w-[30%] mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20'>
+        Interested in exploring a partnership with Paragon?
+      </Text>
+
+      <div className="flex justify-center md:justify-end md:pr-20 pt-4 md:pt-10 mb-20 md:mb-0">
+        <Button 
+          className="fade-in"
+          style="secondary"
+          inNewTab 
+          url="mailto:internal@paragonfellowship.org"
+        >
+          Interest Form
+        </Button>
+      </div>
+    </div>
+  </div>
+
+  <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7vh] left-0 z-10 w-full flex justify-center text-4xl">
+    <RiArrowDownLine />
+  </div>
+
+  {/* Gradient overlay - desktop only */}
+  <div className="absolute -bottom-1 left-0 w-full h-1/5 bg-gradient-to-b from-transparent to-dark md:block hidden" />
+  
+  {/* Background overlay */}
+  <div className="absolute top-0 left-0 w-full h-full bg-[#050022] md:bg-opacity-65 bg-opacity-40 -z-10" />
+</div>
+
+<Section className="w-full overflow-x-hidden">
+  <Navbar sections={sections} />
+</Section>
+
+<Section id="impact">
+  <Subheading className='text-3xl md:text-5xl mb-4'>01 Our Impact</Subheading>
+  <GrayDivider />
+  <Text className="text-base md:text-lg">
+    Over the last year, Paragon has partnered with 11 governments across 8 states through 21 projects.
+  </Text>
+  {/* <Text>Spring (5 new / 5 total): Boston; Lebanon, NH; Georgia; St. Louis, MO; San Jose, CA</Text>
+   <Text>Summer (2 new / 7 total): CalHHS, Santa Clara</Text>
+   <Text>Fall (5 new / 9 total): Brownsville, TX; Los Angeles, CA; Tempe, AZ</Text> */}
+</Section>
+
+<Section id="projects">
+  <Subheading className='text-3xl md:text-5xl mb-4'>02 Past Projects</Subheading>
+  <GrayDivider />
+  <Text className="text-base md:text-lg">
+    We&apos;ve worked with governments and organizations across the country to better science & tech policy processes. Our work ranges has ranged from writing GenAI policy with the State of Georgia, advising on deepfake policy for the City of San Jose, to writing accessibility guidelines for translation software for the City of Lebanon.
+  </Text>
+  
+  <a href='/projects' className='text-blue-500 block w-full overflow-hidden'>
+    <Carousel className='mt-6 md:mt-10' speed={0.5}>
+      {govLogos.map((logo, index) => (
+        <Image 
+          key={index} 
+          src={logo} 
+          alt="Logo" 
+          className='h-full md:mr-14 mr-6 md:w-32 w-20 object-contain' 
+        />
+      ))}
+    </Carousel>
+  </a>
+</Section>
+
+<Section id="testimonials">
+  <Subheading className='text-3xl md:text-5xl mb-4'>03 Testimonials</Subheading>
+  <GrayDivider/>
+  <Testimonials/>
+</Section>
+
+<Section id="timeline">
+  <Subheading className='text-3xl md:text-5xl mb-4'>04 Project Scoping &amp; Timeline</Subheading>
+  <GrayDivider/>
+  <Text className="text-base md:text-lg mb-6">Our typical project timeline:</Text>
+  <Timeline events={events} />
+</Section>
       <Section id="faq">
         <Subheading>05 FAQ</Subheading>
         <GrayDivider/>
@@ -152,7 +188,6 @@ export default function About() {
 
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={FA_APP_URL}>Apply Now</FooterLink>
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
         </FooterSection>
