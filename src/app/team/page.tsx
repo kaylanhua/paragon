@@ -105,8 +105,10 @@ function groupPeopleByRegion(people: PersonRecord[]) {
 export default async function Team() {
     const organizingTeam = await retrievePeople("Team Members");
     const formerOrganizingTeam = await retrievePeople("Former Team Members");
+    const strategicAdvisors = await retrievePeople("Strategic Advisors");
 
     const organizingByRegion = groupPeopleByRegion(organizingTeam);
+    const advisorsByRegion = groupPeopleByRegion(strategicAdvisors);
     const formerByRegion = groupPeopleByRegion(formerOrganizingTeam);
 
     return <>
