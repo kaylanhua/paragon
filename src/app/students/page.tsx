@@ -55,91 +55,107 @@ const events = [
 
 export default function About() {
   return (
-    <>
+    <div className="relative w-full overflow-x-hidden">
       <TopBar />
-      <div className="background-container">
-        <BgGrid/>
-        <div className="w-full px-4 md:px-0">
+      <div className="background-container min-h-[100svh] flex flex-col">
+        <BgGrid />
+        <div className="w-full px-4 md:px-0 flex-1 flex flex-col md:block">
+          <div className="flex-1 flex flex-col justify-center md:block">
+            <Text className="fade-in md:pt-[20%] px-4 md:pl-[12%] text-xl md:text-3xl max-w-full md:max-w-[50%] text-center md:text-left">
+              Paragon offers semester-based tech policy projects (fall, spring, summer) for
+              <span className="font-semibold"> university students and new grads</span> to work on real policy issues at the
+              <span className="font-semibold"> state and local level.</span>
+            </Text>
 
-  <Text className="fade-in pt-[30%] md:pt-[20%] pl-[5%] md:pl-[12%] text-2xl md:text-3xl max-w-[90%] md:max-w-[50%]">
-    Paragon offers semester-based tech policy projects (fall, spring, summer) for
-    <span className="font-semibold"> university students and new grads</span> to work on real policy issues at the
-    <span className="font-semibold"> state and local level.</span>
-  </Text>
+            <Text className="fade-in text-xl md:text-3xl max-w-full md:max-w-[30%] mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20">
+              Applications for the Spring 2025 cohort are now open.
+            </Text>
 
+            <div className="flex justify-center md:justify-end md:pr-[6%] mb-20 md:mb-0">
+              <Button 
+                className="fade-in"
+                style="secondary" 
+                inNewTab 
+                url={FA_APP_URL}
+              >
+                apply now
+              </Button>
+            </div>
+          </div>
+        </div>
 
-  <Text className="fade-in ml-60 text-right md:text-right text-2xl md:text-3xl mx-auto md:ml-auto md:mr-20 max-w-[90%] md:max-w-[30%] mt-20 md:mt-[5%] mb-20 md:mb-5">
-    Applications for the Spring 2025 cohort are now open.
-  </Text>
+        <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7vh] left-0 z-10 w-full flex justify-center text-4xl">
+          <RiArrowDownLine />
+        </div>
 
-  <div className="flex justify-center md:justify-end pr-0 md:pr-[6%]">
-    <Button className="fade-in " style="secondary" inNewTab url={FA_APP_URL}>
-      apply now
-    </Button>
-  </div>
-</div>
+        <div className="absolute -bottom-1 left-0 w-full h-1/5 bg-gradient-to-b from-transparent to-dark md:block hidden" />
         
-        <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
-        <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-        <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
+        <div className="absolute top-0 left-0 w-full h-full bg-[#050022] md:bg-opacity-65 bg-opacity-40 -z-10" />
       </div>
+      
       <Section>
         <Navbar sections={sections} />
       </Section>
-      <Section id="expectations">
-        <Subheading className='text-5xl'>01 Project Expectations</Subheading>
-        <GrayDivider />
-        <Text>The Paragon Policy Fellowship connects students and recent graduates with opportunities in the science and tech policy space. Fellows typically spend 5-10 hours a week researching and writing a policy brief on key issues for their state and local governments, with topics ranging from broadband infrastructure, renewable energy, to AI procurement. The fellowship is meant to be a community, and project-based experience engage on an issue designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement. </Text>
-        <br></br>
-        <Text className='font-semibold'>Fellows in good standing will be compensated with a $500 stipend.</Text>
-      </Section>
 
-      <Section id="eligibility">
-        <Subheading className='text-5xl'>02 Eligibility</Subheading>
-        <GrayDivider />  
-        <Text>This fellowship is an entry-level opportunity geared towards undergraduate/graduate students and recent graduates based in the U.S. interested in entering the tech policy space. As such, we are not expecting applicants to have extensive experience in tech policy and will be evaluating applications based on demonstrated interest in the tech policy sphere (whether it be through relevant coursework, extracurricular activities, or other lived experiences). We enthusiastically welcome applications from those of all backgrounds and are open to accepting prospective fellows from a wide range of educational backgrounds (ie., not restricted to any specific major).</Text>
-        <Text className='text-gray font-normal text-3xl pt-10 pb-5'>Minimum Qualifications</Text>
-        <ul className='list-disc list-inside text-xl'>
-          <li>Currently enrolled students (including undergraduate and graduate students) or recent graduates (graduated from a degree program within the last year)</li>
-          <li>Ability to consistently commit ~10 hours of honest, focused work per week</li>
-          <li>Ability to consistently e-meet with teammates 1-2 times per week and complete work asynchronously</li>
-          <li>Must reside in the United States during the fellowship</li>
-          <li>Own a US-based bank account</li>
-        </ul>
-        <Text className='pt-10'>We currently offer two tracks – one for project leads and one for fellows. </Text>
-        <Text className='text-gray font-normal text-3xl pt-10 pb-5'>Track 1 - Project Leads</Text>
-        <Text>We are seeking project leads with prior managerial or policy experience. Project leads serve as key liaisons between the project teams and government partners, facilitating communication and cooperation to ensure the alignment of project goals and government expectations. Leads will work closely with the government partners and the organizing team to provide support and direction to the team of fellows. Past candidates have shown a strong ability to steer the project&apos;s direction and navigate ambiguity. </Text>
-        <Text className='text-gray font-normal text-3xl pt-10 pb-5'>Track 2 - Fellows</Text>
-        <Text>For the initial application, the essays are the most important component. While previous experiences and education will help round out an application, we care the most about a potential fellow’s passion and interest in the tech policy/public service space. Fellows work with their team, project lead, and government partner to complete their assigned policy project.</Text>
-      </Section>
-      <Section id="process">
-        <Subheading>03 APPLICATION PROCESS</Subheading>
-        <GrayDivider/>
-        <Text>Following the initial application round, we select a group of finalists to interview in a group setting. At this stage, students will be organized into teams of 5-8 and tasked to complete a mock policy assignment over the course of one week. From there, we will select fellows based on their demonstrated effort, engagement with the rest of the team, and ability to collaborate asynchronously. We will select project leads based on their leadership qualities, problem-solving ability, and effectiveness in organizing and managing projects.</Text>
-        <br></br>
-        <Text>If you are only applying to a fellow position, we do not expect any previous policy expertise and will not evaluate your fit based on the deliverable. Instead, we will focus on how you approach this assignment and work as a team. If you are applying to be a project lead, we will be particularly interested in how you navigate challenges and motivate team members to complete the project.</Text>
-      </Section>
-      <Section id="timeline">
-        <Subheading>04 TIMELINE</Subheading>
-        <GrayDivider/>
-        <Text>Below is a timeline example from the spring 2024 cohort.</Text>
-        <Timeline events={events} />
-      </Section>
-      <Section id="dates">
-        <Subheading>05 Important Dates</Subheading>
-        <GrayDivider/>
-        <Text>
-          We offer semester-based tech policy projects 3 times a year – fall, spring, and summer. The fall fellowship will be expected to run from mid August to late November and the spring fellowship will be expected to run from late January to early May. Our Summer program runs from late May to early August. Applications for each cohort will be expected to open 1-2 months in advance.
-        </Text>
-        <br></br>
-        <Text>
-          Applications are now open for the spring 2025 cohort. The spring 2025 fellowship will run from <span className="font-semibold underline">January 22 to May 1, 2025</span>.
-        </Text>
-        <br></br>
-        <Text>
-          Apps for the fall 2025 cohort will be expected to open at a later date. Join our <a href="mailto:paragonfellowship@gmail.com" className="underline">mailing list</a> to be notified when apps open.
-        </Text>
-      </Section>
+      <Section id="expectations">
+  <Subheading className='text-3xl md:text-5xl mb-4'>01 Project Expectations</Subheading>
+  <GrayDivider />
+  <Text className="text-base md:text-lg">The Paragon Policy Fellowship connects students and recent graduates with opportunities in the science and tech policy space. Fellows typically spend 5–10 hours a week researching and writing a policy brief on key issues for their state or local governments. Our fellows work on pressing tech policy issues such as broadband infrastructure, renewable energy, and AI procurement. The fellowship is meant to create a community of future tech policy leaders, and our project-based experiences are designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
+  <Text className='font-semibold mt-6'>Fellows in good standing will be compensated with a $500 stipend.</Text>
+</Section>
+
+<Section id="eligibility">
+  <Subheading className='text-3xl md:text-5xl mb-4'>02 Eligibility</Subheading>
+  <GrayDivider />  
+  <Text className="text-base md:text-lg">This fellowship is an entry-level opportunity geared towards undergraduate/graduate students and recent graduates based in the U.S. interested in entering the tech policy space. As such, we are not expecting applicants to have extensive experience in tech policy and will be evaluating applications based on demonstrated interest in the tech policy sphere (whether it be through relevant coursework, extracurricular activities, or other lived experiences). We enthusiastically welcome applications from those of all backgrounds and are open to accepting prospective fellows from a wide range of educational backgrounds (i.e., not restricted to any specific major).</Text>
+  
+  <Text className='text-gray font-normal text-2xl md:text-3xl mt-8 mb-4'>Minimum Qualifications</Text>
+  <ul className='list-disc list-inside text-base md:text-xl space-y-2 ml-4'>
+    <li>Currently enrolled students (including undergraduate and graduate students) or recent graduates (graduated from a degree program within the last year)</li>
+    <li>Ability to consistently commit ~10 hours of honest, focused work per week</li>
+    <li>Ability to consistently e-meet with teammates 1-2 times per week and complete work asynchronously</li>
+    <li>Must reside in the United States during the fellowship</li>
+    <li>Own a US-based bank account</li>
+  </ul>
+  
+  <Text className='mt-8'>We currently offer two tracks – one for fellows and one for project leads.</Text>
+
+  <Text className='text-gray font-normal text-2xl md:text-3xl mt-8 mb-4'>Track 1 - Fellows</Text>
+  <Text className="text-base md:text-lg">For the initial application, the essays are the most important component. While previous experiences and education will help round out an application, we care the most about a potential fellow&apos;s passion and interest in the tech policy/public service space. Fellows work with their team, project lead, and government partner to complete their assigned policy project.</Text>
+  
+  <Text className='text-gray font-normal text-2xl md:text-3xl mt-8 mb-4'>Track 2 - Project Leads</Text>
+  <Text className="text-base md:text-lg">We are seeking project leads with prior managerial or policy experience. Project leads serve as key liaisons between the project teams and government partners, facilitating communication and cooperation to ensure the alignment of project goals and government expectations. Leads will work closely with the government partners and the organizing team to provide support and direction to the team of fellows. Past candidates have shown a strong ability to steer the project&apos;s direction and navigate ambiguity.</Text>
+  
+</Section>
+
+<Section id="process">
+  <Subheading className='text-3xl md:text-5xl mb-4'>03 APPLICATION PROCESS</Subheading>
+  <GrayDivider/>
+  <Text className="text-base md:text-lg">Following the initial application round, we select a group of finalists to interview in a group setting. At this stage, students will be organized into teams of 5-8 and tasked to complete a mock policy assignment over the course of one week. From there, we will select fellows based on their demonstrated effort, engagement with the rest of the team, and ability to collaborate asynchronously. We will select project leads based on their leadership qualities, problem-solving ability, and effectiveness in organizing and managing projects.</Text>
+  <Text className="text-base md:text-lg mt-6">If you are only applying to a fellow position, we do not expect any previous policy expertise and will not evaluate your fit based on the deliverable. Instead, we will focus on how you approach this assignment and work as a team. If you are applying to be a project lead, we will be particularly interested in how you navigate challenges and motivate team members to complete the project.</Text>
+</Section>
+
+<Section id="timeline">
+  <Subheading className='text-3xl md:text-5xl mb-4'>04 TIMELINE</Subheading>
+  <GrayDivider/>
+  <Text className="text-base md:text-lg mb-6">Below is a timeline example from the spring 2024 cohort.</Text>
+  <Timeline events={events} />
+</Section>
+
+<Section id="dates">
+  <Subheading className='text-3xl md:text-5xl mb-4'>05 Important Dates</Subheading>
+  <GrayDivider/>
+  <Text className="text-base md:text-lg">
+    We offer semester-based tech policy projects 3 times a year – fall, spring, and summer. The fall fellowship will be expected to run from mid August to late November and the spring fellowship will be expected to run from late January to early May. Our Summer program runs from late May to early August. Applications for each cohort will be expected to open 1-2 months in advance.
+  </Text>
+  <Text className="text-base md:text-lg mt-6">
+    Applications are now open for the spring 2025 cohort. The spring 2025 fellowship will run from <span className="font-semibold underline">January 22 to May 1, 2025</span>.
+  </Text>
+  <Text className="text-base md:text-lg mt-6">
+    Apps for the fall 2025 cohort will be expected to open at a later date. Join our <a href="mailto:paragonfellowship@gmail.com" className="underline">mailing list</a> to be notified when apps open.
+  </Text>
+</Section>
+
       <Section id="faq">
         <Subheading>06 FAQ</Subheading>
         <GrayDivider/>
@@ -183,7 +199,7 @@ export default function About() {
         />
       </Section>
       <Section>
-        <Subheading className='flex justify-center text-center'>Ready to see what Paragon<br />can do for you?</Subheading>
+        <Subheading className='flex justify-center text-center'>What impact will you<br />make with Paragon?</Subheading>
         <div className='flex justify-center'>
           <Button url={FA_APP_URL} className='mt-4 justify-center'>Apply Now</Button>
         </div>
@@ -199,6 +215,6 @@ export default function About() {
         </FooterSection>
       </Footer>
 
-    </>
+    </div>
   );
 }

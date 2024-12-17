@@ -15,17 +15,31 @@ export default function Projects() {
     <>
       <TopBar />
       <div
-            className="background-container"
-            style={{ height: '75vh' }}
-        >
+        className="background-container relative flex flex-col md:block"
+        style={{ height: '75vh' }}
+      >
         <BgGrid lineCount={7} />
-        <Text className='text-white pl-40 text-7xl pl-20 mt-40 md:mt-60 pb-10 md:pb-0 font-semibold'>Project Portfolio</Text>
-        <Text className="text-xl md:text-3xl md:text-right pt-0 md:pt-20 pr-20 max-w-[40%] ml-auto">View our past fellows&apos; work!</Text>
-        <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7svh] left-0 z-10 w-full flex justify-center text-4xl"><RiArrowDownLine /></div>
-            <div className='absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark' />
-            <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
+        
+        <div className="flex-1 flex flex-col justify-center md:block">
+          <Text className='text-white text-4xl pl-4 md:text-7xl md:pl-20 md:mt-60 pb-10 md:pb-0 font-semibold text-center md:text-left'>
+            Project Portfolio
+          </Text>
+          
+          <Text className="text-xl md:text-3xl md:text-right pt-0 md:pt-20 max-w-full px-4 md:max-w-[40%] md:ml-auto md:pr-20 text-center md:text-right">
+            View our past fellows&apos; work!
+          </Text>
+        </div>
+
+        <div className="animate-bounce absolute md:bottom-[8vh] bottom-[7vh] left-0 z-10 w-full flex justify-center text-4xl">
+          <RiArrowDownLine />
+        </div>
+
+        {/* Gradient overlay - desktop only */}
+        <div className="absolute -bottom-1 left-0 w-full h-[20%] bg-gradient-to-b from-transparent to-dark md:block hidden" />
+        
+        {/* Background overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[#050022] md:bg-opacity-65 bg-opacity-40 -z-10" />
       </div>
-      
 
       <Section>
       <Text className='md:text-4xl text-2xl uppercase font-semibold pb-5'>Our Projects </Text> 
@@ -77,8 +91,6 @@ export default function Projects() {
 
       <Footer>
         <FooterSection title='Our Organization'>
-          <FooterLink href={""}>Home</FooterLink>
-
           <FooterLink href='/team'>Team Directory</FooterLink>
           <FooterLink href='mailto:paragonfellowship@gmail.com'>Contact Us</FooterLink>
         </FooterSection>

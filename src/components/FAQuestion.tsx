@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 const FAQuestion = ({ question, answer }: { question: string; answer: string }) => {
-  const [expanded, setExpanded] = useState(true); // Default to expanded
+  const [expanded, setExpanded] = useState(false); // Default to not expanded
 
   const toggleExpand = () => {
     setExpanded(!expanded);

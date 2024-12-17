@@ -23,15 +23,35 @@ export default function Home() {
         <HeroSection />
       </div>
       <Section className='overflow-y-hidden'>
-        <Text className='text-black text-4xl'>Paragon is a national organization that connects <span className="font-semibold">university students and new grads</span> opportunities to work on science and tech policy issues at <span className="font-semibold">state and local level.</span> </Text>
-        <br/>
-        <br/>
-        <Text className='text-2xl text-black font-light max-w-[65%] ml-auto'>Paragon is supported by the <a href="https://pitcases.org/2024-network-challenge-grantee-reveal/" className="underline">2024 PIT-UN Network Challenge</a>, a project of the Public Interest Technology University Network, the <a href="https://www.rtyouthpower.org" className="underline">Responsible Tech Youth Power Fund</a>, and the <a href="https://fas.org" className="underline">Federation of American Scientists</a>.</Text>
-      </Section>
-      <Section className='overflow-y-hidden'>
-        <Subheading>Our Reach</Subheading>
-        <GrayDivider />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full py-8 md:py-16 px-4">
+      <div className="text-black text-2xl md:text-4xl text-left">
+        Paragon is a national organization that connects{' '}
+        <span className="font-semibold">university students and new grads</span>{' '}
+        with opportunities to work on science and tech policy issues at the{' '}
+        <span className="font-semibold">state and local level.</span>
+      </div>
+
+      <br></br>
+      <br></br>
+      <div className="text-black text-lg md:text-2xl font-light w-full md:max-w-[65%] text-left mt-4">
+        Paragon is supported by the{' '}
+        <a href="https://pitcases.org/2024-network-challenge-grantee-reveal/" className="underline">
+          2024 PIT-UN Network Challenge
+        </a>
+        , a project of the Public Interest Technology University Network, the{' '}
+        <a href="https://www.rtyouthpower.org" className="underline">
+          Responsible Tech Youth Power Fund
+        </a>
+        , and the{' '}
+        <a href="https://fas.org" className="underline">
+          Federation of American Scientists
+        </a>
+        .
+      </div>
+    </Section>
+      <Section className="overflow-y-hidden">
+      <Subheading>Our Reach</Subheading>
+      <GrayDivider />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full py-8 md:py-16 px-4">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <TickText text={140} className="text-5xl md:text-7xl font-bold text-black" />
           <p className="text-base md:text-xl text-black mt-2">
@@ -48,7 +68,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <TickText text={7500} suffix="+" className="text-5xl md:text-7xl font-bold text-black" />
+          <TickText text={7500} className="text-5xl md:text-7xl font-bold text-black" />
           <p className="text-base md:text-xl text-black mt-2">
             hours <span className="font-bold">volunteered</span> towards tech policy research
           </p>
@@ -61,7 +81,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      </Section>
+    </Section>
       <Section className='overflow-y-hidden'>
         <Subheading>Our Program</Subheading>
         <GrayDivider/>
@@ -70,7 +90,7 @@ export default function Home() {
         <div className="flex flex-col items-start max-w-full md:max-w-[30%]">
           <p className="text-xl font-semibold text-gray-500 mb-3 md:mb-5">Talent Pipeline</p>
           <p className="text-base md:text-lg font-light text-black">
-            Fellows contribute 5-10 hours per week for ten weeks to the project; this
+            Fellows contribute 5-10 hours per week for twelve weeks to the project; this
             provides a similar time commitment to a college course while building
             early-career policy experience that prepares them to join the public
             service workforce.
