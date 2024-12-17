@@ -27,7 +27,7 @@ export default function Navbar({ sections }: { sections: Section[] }) {
       
       {/* Navbar */}
       <nav className="flex flex-wrap justify-center md:space-x-8 py-4 px-2">
-        {sections.map((section, index) => (
+        {sections.map((section) => (
           <div key={section.id} className="w-1/2 md:w-auto p-2 md:p-0">
             <button
               onClick={() => handleScroll(section.id)}

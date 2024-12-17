@@ -121,7 +121,7 @@ export default function About() {
   <Text className='mt-8'>We currently offer two tracks – one for fellows and one for project leads.</Text>
 
   <Text className='text-gray font-normal text-2xl md:text-3xl mt-8 mb-4'>Track 1 - Fellows</Text>
-  <Text className="text-base md:text-lg">For the initial application, the essays are the most important component. While previous experiences and education will help round out an application, we care the most about a potential fellow's passion and interest in the tech policy/public service space. Fellows work with their team, project lead, and government partner to complete their assigned policy project.</Text>
+  <Text className="text-base md:text-lg">For the initial application, the essays are the most important component. While previous experiences and education will help round out an application, we care the most about a potential fellow&apos;s passion and interest in the tech policy/public service space. Fellows work with their team, project lead, and government partner to complete their assigned policy project.</Text>
   
   <Text className='text-gray font-normal text-2xl md:text-3xl mt-8 mb-4'>Track 2 - Project Leads</Text>
   <Text className="text-base md:text-lg">We are seeking project leads with prior managerial or policy experience. Project leads serve as key liaisons between the project teams and government partners, facilitating communication and cooperation to ensure the alignment of project goals and government expectations. Leads will work closely with the government partners and the organizing team to provide support and direction to the team of fellows. Past candidates have shown a strong ability to steer the project&apos;s direction and navigate ambiguity.</Text>

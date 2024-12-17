@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const testimonials = [
   // Government Partner Testimonials
   {
-    text: "While Georgia now has an AI policy in effect, the massive boom of generative AI has brought with it specific challenges. This Spring, Paragon fellows worked with the GTA to recommend enforcement and education mechanisms to address generative AI’s potential effect on government operations at the state level. The work produced by Paragon will help inform a GenAI policy that contains guidelines for the use of generative AI by all 40,000 state employees.",
+    text: "While Georgia now has an AI policy in effect, the massive boom of generative AI has brought with it specific challenges. This Spring, Paragon fellows worked with the GTA to recommend enforcement and education mechanisms to address generative AI&apos;s potential effect on government operations at the state level. The work produced by Paragon will help inform a GenAI policy that contains guidelines for the use of generative AI by all 40,000 state employees.",
     author: "— Nikhil Deshpande, Chief Digital and AI Officer, Georgia Technology Authority",
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
 
   // Fellow Testimonials
   {
-    text: "I have been able to find community in a place that I never thought I would. I've made lifelong connections here and learned so much about the ins and outs of how city government works — all while grappling with some of the biggest issues of today's age. It’s rewarding to be charting what feels like the forefront of a movement.",
+    text: "I have been able to find community in a place that I never thought I would. I&apos;ve made lifelong connections here and learned so much about the ins and outs of how city government works — all while grappling with some of the biggest issues of today&apos;s age. It&apos;s rewarding to be charting what feels like the forefront of a movement.",
     author: "— Sofia Rodriguez, Boston Fellow (Wellesley/Hunter College undergraduate)",
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
     author: "— Isabelle Anzabi, San Jose Fellow (Stanford graduate)",
   },
   {
-    text: "Local governments are heavily understaffed. Some of these offices don’t have the resources to learn about future technologies, so any opportunity to get students involved is really great. These fellows didn’t just bridge this gap—they provided a creative, academic perspective that only students could bring to the table.",
+    text: "Local governments are heavily understaffed. Some of these offices don&apos;t have the resources to learn about future technologies, so any opportunity to get students involved is really great. These fellows didn&apos;t just bridge this gap—they provided a creative, academic perspective that only students could bring to the table.",
     author: "— Jude Miller, Paragon Project Lead (Saint Louis University / Washington University in St. Louis graduate)",
   },
 ];
@@ -79,7 +79,7 @@ export default function Testimonials() {
           fade ? "opacity-0" : "opacity-100"
         }`}
       >
-        "{testimonials[currentIndex].text}"
+        &ldquo;{testimonials[currentIndex].text}&rdquo;
       </p>
 
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">

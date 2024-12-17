@@ -13,7 +13,6 @@ import Testimonials from '@/components/Testimonials';
 import FAQuestion from '@/components/FAQuestion';
 import Timeline from '@/components/Timeline';
 import Navbar from '@/components/Navbar';
-import { FA_APP_URL } from '@/app/constants';
 
 const sections = [
   { id: "impact", title: "01 OUR IMPACT" },
