@@ -75,6 +75,12 @@ export default function Projects() {
                   projectTitle="ST. LOUIS STUDENTS EXAMINE TECH-POWERED Cultural DIVERSITY" 
                 />
             </Link>
+            <Link href="/projects/summer24/stcl" passHref>
+                <ProjectCard 
+                  timeline='2024 cohort'
+                  projectTitle="Santa Clara County" 
+                />
+            </Link>
         </div>
         <SmallText className='text-xs pt-5'>We&apos;re working on adding the rest of our portfolio, stay tuned for a complete collection!</SmallText>
       </Section>
