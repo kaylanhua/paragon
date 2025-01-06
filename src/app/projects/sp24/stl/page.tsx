@@ -2,7 +2,7 @@ import CAPITOL_LINEART from '@/assets/capitol-lineart.png';
 import Footer, { FooterLink, FooterSection } from '@/components/Footer';
 import Section from "@/components/Section";
 import TopBar from '@/components/TopBar'; 
-import { Subheading, Text} from '@/components/Typography'; 
+import {SmallText, Subheading, Text} from '@/components/Typography'; 
 import Image from 'next/image';
 
 export default function STL() {
@@ -71,17 +71,24 @@ export default function STL() {
 
       {/* Team Section */}
       <Section>
-        <Subheading>TEAM</Subheading>
-        <ul className='list-disc pl-5 text-lg'>
-          <li>Lucas Fluegel (team lead)</li>
-          <li>Rachel Arnold (fellow)</li>
-          <li>Rhea Banerjee (fellow)</li>
-          <li>Wil Czeschin (fellow)</li>
-          <li>Devashri Khadke (fellow)</li>
-          <li>Deepali Paasham (fellow)</li>
-          <li>Eman Teshome (fellow)</li>
-          <li>Marvel Zhou (fellow)</li>
-        </ul>
+        <Subheading>Contributors</Subheading>
+        <div className='grid md:grid-cols-3 sm:grid-cols-2 gap-4'>
+          {[
+            { name: 'Lucas Fluegel', role: 'Project Lead' },
+            { name: 'Rachel Arnold', role: 'Fellow' },
+            { name: 'Rhea Banerjee', role: 'Fellow' },
+            { name: 'Wil Czeschin', role: 'Fellow' },
+            { name: 'Devashri Khadke', role: 'Fellow' },
+            { name: 'Deepali Paasham', role: 'Fellow' },
+            { name: 'Eman Teshome', role: 'Fellow' },
+            { name: 'Marvel Zhou', role: 'Fellow' }
+          ].map((contributor, index) => (
+            <div key={index} className='border border-gray-300 p-4 rounded-lg flex flex-col items-center justify-center'>
+              <Text className='text-center font-semibold'>{contributor.name}</Text>
+              <SmallText className='text-center'>{contributor.role}</SmallText>
+            </div>
+          ))}
+        </div>
       </Section>
 
       {/* Footer */}

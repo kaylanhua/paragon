@@ -74,11 +74,17 @@ export default function Projects() {
                   timeline='2024 cohort'
                   projectTitle="ST. LOUIS STUDENTS EXAMINE TECH-POWERED Cultural DIVERSITY" 
                 />
-            </Link>
+            </Link> 
             <Link href="/projects/summer24/stcl" passHref>
                 <ProjectCard 
                   timeline='2024 cohort'
-                  projectTitle="Santa Clara County" 
+                  projectTitle="Cybersecurity Risk Prioritization in Santa Clara County" 
+                />
+            </Link>
+            <Link href="/projects/sp24/stl2" passHref>
+                <ProjectCard 
+                  timeline='2024 cohort'
+                  projectTitle="AI-Driven Language Access for St. Louis" 
                 />
             </Link>
         </div>
