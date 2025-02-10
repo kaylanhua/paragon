@@ -22,10 +22,17 @@ import oaklandLogo from '@/assets/governments/Oakland.png';
 // import nycLogo from '@/assets/governments/NYC.png';
 import southCarolinaLogo from '@/assets/governments/SouthCarolina.png';
 import doeLogo from '@/assets/governments/DoE.png';
-import tempeLogo from '@/assets/governments/Tempe.png';
+import tempeLogo from '@/assets/governments/Tempe.png'; 
 import santaClaraLogo from '@/assets/governments/Santa Clara.png';
-import sanJoseLogo from '@/assets/governments/SanJose.png';
+import sanJoseLogo from '@/assets/governments/SanJose.png'; 
 import lebanonLogo from '@/assets/governments/Lebanon.png';
+import AlbuquerqueLogo from '@/assets/governments/Albuquerque Logo.png';
+import AlexandriaLogo from '@/assets/governments/Alexandria Logo.png';
+import CDIILogo from '@/assets/governments/CDII Logo.png';
+import FortlauderdaleLogo from '@/assets/governments/Fort Lauderdale.png';
+import MadisonLogo from '@/assets/governments/Madison.png';
+import MissoulaLogo from '@/assets/governments/Missoula.png';
+import MontanaSITSDLogo from '@/assets/governments/Montana SITSD.png';
 import { StaticImageData } from 'next/image';
 
 export const governments: {
@@ -93,7 +100,35 @@ export const governments: {
     lebanon: {
         name: 'Lebanon',
         logo: lebanonLogo
-    }
+    },
+    Albequerque: {
+        name: 'Albequerque',
+        logo: AlbuquerqueLogo
+    }, 
+    Alexandria: {
+        name: 'Alexandria',
+        logo: AlexandriaLogo
+    },
+    CDII: {
+        name: 'CDII',
+        logo: CDIILogo
+    },
+    Fortlauderdale: {
+        name: 'Fortlauderdale',
+        logo: FortlauderdaleLogo
+    },
+    Madison: {
+        name: 'Madison',
+        logo: MadisonLogo
+    },
+    Missoula: {
+        name: 'Missoula',
+        logo: MissoulaLogo
+    },
+    MontanaSITSD: {
+        name: 'MontanaSITSD',
+        logo: MontanaSITSDLogo
+    },
 };
 
 export const colleges: {
