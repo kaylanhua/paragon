@@ -124,8 +124,8 @@ export default async function Team() {
             <div className='absolute top-0 left-0 w-full h-full bg-[#050022] bg-opacity-65 -z-10' />
       </div>
         <main className="m-8">
-            <TeamSection title="Organizing Team" peopleByRegion={organizingByRegion} />
             <TeamSection title="Strategic Advisors" peopleByRegion={advisorsByRegion} />
+            <TeamSection title="Organizing Team" peopleByRegion={organizingByRegion} />
             <TeamSection title="Organizing Team Alumni" peopleByRegion={formerByRegion} />
         </main>
         <Footer>
