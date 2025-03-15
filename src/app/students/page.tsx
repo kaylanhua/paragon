@@ -152,7 +152,7 @@ export default function About() {
     Applications are now open for the spring 2025 cohort. The spring 2025 fellowship will run from <span className="font-semibold underline">January 22 to May 1, 2025</span>.
   </Text>
   <Text className="text-base md:text-lg mt-6">
-    Apps for the fall 2025 cohort will be expected to open at a later date. Join our <a href="mailto:paragonfellowship@gmail.com" className="underline">mailing list</a> to be notified when apps open.
+    Apps for the fall 2025 cohort will be expected to open at a later date. Join our <a href="https://paragonpolicyfellowship.substack.com/" className="underline">mailing list</a> to be notified when apps open.
   </Text>
 </Section>
 
