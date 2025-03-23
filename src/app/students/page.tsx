@@ -166,7 +166,7 @@ export default function About() {
           />
         <FAQuestion
           question = "Is there a stipend given to fellows?"
-          answer = "a. Yes! Fellows in good standing will be paid $250 (once at midpoint, once after their final presentation) for a total of $500. Paragon will coordinate the stipend payments."
+          answer = "a. Yes! Fellows in good standing will receive a $500 stipend after the cohort's midpoint. Paragon will coordinate the stipend payments."
         />
         <FAQuestion
           question = "Can I apply to both the Fellow and Project Lead positions? What happens if I'm not accepted as a project lead?"
