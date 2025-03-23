@@ -166,10 +166,10 @@ export const colleges: {
     }
 }
 
-export const AIRTABLE_API_KEY = `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77f8737b4d61e679345b33804f29385d8ed16` // i realize this is bad practice but this key can only read from only the people table (which is public) so im not concerned
-export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`
+export const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
+export const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
 
-export const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrfKG3W0XpO1L2tx"
+export const AIRTABLE_URL = process.env.AIRTABLE_URL;
 export const MAIL_LIST_URL = "https://forms.gle/qgg7bEUfSvVr9p4m7"
 export const NEWSLETTER_URL = "https://paragonpolicyfellowship.substack.com/"
 export const FA_APP_URL = "https://airtable.com/appD9YuZjLzgT3p58/pagnaXfOC5ByK0hoY/form"
