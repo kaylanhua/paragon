@@ -79,7 +79,7 @@ export default function Testimonials() {
     <div className="relative p-4 md:p-8">
       {/* Testimonial Text */}
       <p
-        className={`text-lg md:text-2xl italic text-black pb-3 md:pb-5 transition-opacity duration-300 max-w-[85%] md:max-w-full mx-auto text-center ${
+        className={`h-60 text-lg md:text-2xl italic text-black pb-3 md:pb-5 transition-opacity duration-300 max-w-[85%] md:max-w-full mx-auto text-center ${
           fade ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -109,7 +109,7 @@ export default function Testimonials() {
 
         {/* Author */}
         <p
-          className={`text-base md:text-lg font-semibold text-gray-600 transition-opacity duration-300 mb-2 md:mb-0 ${
+          className={`h-8 text-base md:text-lg font-semibold text-gray-600 transition-opacity duration-300 mb-2 md:mb-0 ${
             fade ? "opacity-0" : "opacity-100"
           }`}
         >
