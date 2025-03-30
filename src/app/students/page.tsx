@@ -7,51 +7,51 @@ import BgGrid from '@/components/BgGrid';
 import { RiArrowDownLine } from 'react-icons/ri';
 import GrayDivider from '@/components/GrayDivider';
 import FAQuestion from '@/components/FAQuestion';
-import Timeline from '@/components/Timeline';
+//import Timeline from '@/components/Timeline';
 import Navbar from '@/components/Navbar';
 import {FA_APP_URL} from '@/constants';
 
 const sections = [
-  { id: "expectations", title: "01 PROJECT EXPECTATIONS" },
-  { id: "eligibility", title: "02 ELIGIBILITY" },
-  { id: "process", title: "03 APP PROCESS" },
-  { id: "timeline", title: "04 TIMELINE" },
-  { id: "dates", title: "05 IMPORTANT DATES" },
-  { id: "faq", title: "06 FAQ" },
+  { id: "expectations", title: "PROJECT EXPECTATIONS" },
+  { id: "eligibility", title: "ELIGIBILITY" },
+  { id: "process", title: "APP PROCESS" },
+  //{ id: "timeline", title: "TIMELINE" },
+  { id: "dates", title: "IMPORTANT DATES" },
+  { id: "faq", title: "FAQ" },
 ];
 
-const events = [
-  {
-    date: "Late January 2025",
-    title: "Policy Bootcamp",
-    description: "",
-  },
-  {
-    date: "Mid March 2025",
-    title: "Check-ins & Midpoint Review with Paragon Team",
-    description: "",
-  },
-  {
-    date: "Last week of March",
-    title: "Midpoint Presentation",
-    description: "",
-  },
-  {
-    date: "Late April 2025",
-    title: "Final Policy Brief Presentation",
-    description: "",
-  },
-  {
-    date: "First week of May",
-    title: "Final Cohort Presentation & Wrap-Up",
-    description: "",
-  },
-  {
-    date: "May 1st",
-    title: "Cohort End",
-    description: "",
-  },
-];
+// const events = [
+//   {
+//     date: "Late January 2025",
+//     title: "Policy Bootcamp",
+//     description: "",
+//   },
+//   {
+//     date: "Mid March 2025",
+//     title: "Check-ins & Midpoint Review with Paragon Team",
+//     description: "",
+//   },
+//   {
+//     date: "Last week of March",
+//     title: "Midpoint Presentation",
+//     description: "",
+//   },
+//   {
+//     date: "Late April 2025",
+//     title: "Final Policy Brief Presentation",
+//     description: "",
+//   },
+//   {
+//     date: "First week of May",
+//     title: "Final Cohort Presentation & Wrap-Up",
+//     description: "",
+//   },
+//   {
+//     date: "May 1st",
+//     title: "Cohort End",
+//     description: "",
+//   },
+// ];
 
 export default function About() {
   return (
@@ -98,14 +98,14 @@ export default function About() {
       </Section>
 
       <Section id="expectations">
-  <Subheading className='text-3xl md:text-5xl mb-4'>01 Project Expectations</Subheading>
+  <Subheading className='text-3xl md:text-5xl mb-4'>Project Expectations</Subheading>
   <GrayDivider />
   <Text className="text-base md:text-lg">The Paragon Policy Fellowship connects students and recent graduates with opportunities in the science and tech policy space. Fellows typically spend 5–10 hours a week researching and writing a policy brief on key issues for their state or local governments. Our fellows work on pressing tech policy issues such as broadband infrastructure, renewable energy, and AI procurement. The fellowship is meant to create a community of future tech policy leaders, and our project-based experiences are designed to introduce students to the tech policy landscape and grow their network and impact through local community engagement.</Text>
   <Text className='font-semibold mt-6'>Fellows in good standing will be compensated with a $500 stipend.</Text>
 </Section>
 
 <Section id="eligibility">
-  <Subheading className='text-3xl md:text-5xl mb-4'>02 Eligibility</Subheading>
+  <Subheading className='text-3xl md:text-5xl mb-4'>Eligibility</Subheading>
   <GrayDivider />  
   <Text className="text-base md:text-lg">This fellowship is an entry-level opportunity geared towards undergraduate/graduate students and recent graduates based in the U.S. interested in entering the tech policy space. As such, we are not expecting applicants to have extensive experience in tech policy and will be evaluating applications based on demonstrated interest in the tech policy sphere (whether it be through relevant coursework, extracurricular activities, or other lived experiences). We enthusiastically welcome applications from those of all backgrounds and are open to accepting prospective fellows from a wide range of educational backgrounds (i.e., not restricted to any specific major).</Text>
   
@@ -129,21 +129,21 @@ export default function About() {
 </Section>
 
 <Section id="process">
-  <Subheading className='text-3xl md:text-5xl mb-4'>03 APPLICATION PROCESS</Subheading>
+  <Subheading className='text-3xl md:text-5xl mb-4'>APPLICATION PROCESS</Subheading>
   <GrayDivider/>
   <Text className="text-base md:text-lg">Following the initial application round, we select a group of finalists to interview in a group setting. At this stage, students will be organized into teams of 5-8 and tasked to complete a mock policy assignment over the course of one week. From there, we will select fellows based on their demonstrated effort, engagement with the rest of the team, and ability to collaborate asynchronously. We will select project leads based on their leadership qualities, problem-solving ability, and effectiveness in organizing and managing projects.</Text>
   <Text className="text-base md:text-lg mt-6">If you are only applying to a fellow position, we do not expect any previous policy expertise and will not evaluate your fit based on the deliverable. Instead, we will focus on how you approach this assignment and work as a team. If you are applying to be a project lead, we will be particularly interested in how you navigate challenges and motivate team members to complete the project.</Text>
 </Section>
 
-<Section id="timeline">
-  <Subheading className='text-3xl md:text-5xl mb-4'>04 TIMELINE</Subheading>
+{/* <Section id="timeline">
+  <Subheading className='text-3xl md:text-5xl mb-4'>TIMELINE</Subheading>
   <GrayDivider/>
   <Text className="text-base md:text-lg mb-6">Below is a timeline example from the spring 2024 cohort.</Text>
   <Timeline events={events} />
-</Section>
+</Section> */}
 
 <Section id="dates">
-  <Subheading className='text-3xl md:text-5xl mb-4'>05 Important Dates</Subheading>
+  <Subheading className='text-3xl md:text-5xl mb-4'>Important Dates</Subheading>
   <GrayDivider/>
   <Text className="text-base md:text-lg">
     We offer semester-based tech policy projects 3 times a year – fall, spring, and summer. The fall fellowship will be expected to run from mid August to late November and the spring fellowship will be expected to run from late January to early May. Our Summer program runs from late May to early August. Applications for each cohort will be expected to open 1-2 months in advance.
@@ -157,7 +157,7 @@ export default function About() {
 </Section>
 
       <Section id="faq">
-        <Subheading>06 FAQ</Subheading>
+        <Subheading>FAQ</Subheading>
         <GrayDivider/>
         <div>
         <FAQuestion
