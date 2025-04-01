@@ -8,13 +8,6 @@ export default function Footer({ children }: { children: React.ReactNode }) {
         <div className='flex flex-col items-center text-center mb-8 md:mb-0'>
           <Image src={HeaderLogo} alt="Paragon Logo" width={250} height={60} />
           <p className='text-gray-400 mt-2'>© 2024 The Paragon Policy Fellowship</p>
-          <p className='text-gray-400'>
-            Made by{' '}
-            <a href="https://georgeparks.me" className="hover:text-gray-300">George</a>,{' '}
-            <a href="https://www.linkedin.com/in/will-varner/" className="hover:text-gray-300">Will</a>,{' '}
-            &{' '}
-            <a href="https://www.sammjung.com" className="hover:text-gray-300">Sam</a>
-          </p>
         </div>
         
         <div className='hidden md:block w-px h-full bg-gray-600 mx-14'></div>
