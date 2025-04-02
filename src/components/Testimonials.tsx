@@ -79,7 +79,7 @@ export default function Testimonials() {
     <div className="relative p-4 md:p-8">
       {/* Testimonial Text */}
       <p
-        className={`h-60 text-lg md:text-2xl italic text-black pb-3 md:pb-5 transition-opacity duration-300 max-w-[85%] md:max-w-full mx-auto text-center ${
+        className={`min-h-64 h-auto text-lg md:text-2xl italic text-black pb-3 md:pb-5 transition-opacity duration-300 max-w-[85%] md:max-w-full mx-auto text-center ${
           fade ? "opacity-0" : "opacity-100"
         }`}
       >
