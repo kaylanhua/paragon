@@ -11,66 +11,66 @@ import GrayDivider from '@/components/GrayDivider';
 import Carousel from '@/components/Carousel';
 import Testimonials from '@/components/Testimonials';
 import FAQuestion from '@/components/FAQuestion';
-import Timeline from '@/components/Timeline';
+//import Timeline from '@/components/Timeline';
 import Navbar from '@/components/Navbar';
 
 const sections = [
-  { id: "impact", title: "01 OUR IMPACT" },
-  { id: "projects", title: "02 PAST PROJECTS" },
-  { id: "testimonials", title: "03 TESTIMONIALS" },
-  { id: "timeline", title: "04 PROJECT SCOPING & TIMELINE" },
-  { id: "faq", title: "05 FAQ" },
+  { id: "impact", title: "OUR IMPACT" },
+  // { id: "projects", title: "02 PAST PROJECTS" },
+  { id: "testimonials", title: "TESTIMONIALS" },
+  //{ id: "timeline", title: "03 PROJECT SCOPING & TIMELINE" },
+  { id: "faq", title: "FAQ" },
 ];
 
-const events = [
-  {
-    date: "Late January 2025",
-    title: "Policy Bootcamp",
-    description: "",
-  },
-  {
-    date: "Mid March 2025",
-    title: "Check-ins & Midpoint Review with Paragon Team",
-    description: "",
-  },
-  {
-    date: "Late March 2025",
-    title: "Midpoint Presentation",
-    description: "",
-  },
-  {
-    date: "Late April 2025",
-    title: "Final Policy Brief Presentation",
-    description: "",
-  },
-  {
-    date: "End of April 2025",
-    title: "Final Cohort Presentation & Wrap-Up",
-    description: "",
-  },
-  {
-    date: "May 1st 2025",
-    title: "Cohort End",
-    description: "",
-  },
-];
+// const events = [
+//   {
+//     date: "Late January 2025",
+//     title: "Policy Bootcamp",
+//     description: "",
+//   },
+//   {
+//     date: "Mid March 2025",
+//     title: "Check-ins & Midpoint Review with Paragon Team",
+//     description: "",
+//   },
+//   {
+//     date: "Late March 2025",
+//     title: "Midpoint Presentation",
+//     description: "",
+//   },
+//   {
+//     date: "Late April 2025",
+//     title: "Final Policy Brief Presentation",
+//     description: "",
+//   },
+//   {
+//     date: "End of April 2025",
+//     title: "Final Cohort Presentation & Wrap-Up",
+//     description: "",
+//   },
+//   {
+//     date: "May 1st 2025",
+//     title: "Cohort End",
+//     description: "",
+//   },
+// ];
 
 const govLogos = Object.values(governments).map(government => government.logo);
 
 
 export default function About() {
   return (
-    <>
-      <TopBar />
+<div className="relative w-full overflow-x-hidden">
+  <TopBar />
 <div className="background-container min-h-[100svh] flex flex-col">
   <BgGrid/>
-  <div className="w-full px-4 md:px-0 flex-1 flex flex-col md:block">
+  <div className="w-full px-4 md:px-0 flex-1 flex flex-row md:block">
     <div className="flex-1 flex flex-col justify-center md:block">
-      <Text className='fade-in md:pt-[10%] px-4 md:pl-[12%] text-xl md:text-3xl max-w-full md:max-w-[50%] text-center md:text-left'>
+      <Text className='fade-in md:pt-[20%] px-4 md:pl-[12%] text-xl md:text-3xl text-center md:text-left'>
         Paragon works with state and local governments, <span className='font-semibold'>big and small</span>, from every jurisdiction across the country to provide <span className='font-semibold'>pro-bono tech policy research</span> to inform evidence-based policymaking.
       </Text>
 
-      <Text className='fade-in text-xl md:text-3xl max-w-full md:max-w-[30%] mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20'>
+      <Text className='fade-in text-xl md:text-3xl mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20'>
         Interested in exploring a partnership with Paragon?
       </Text>
 
@@ -103,19 +103,19 @@ export default function About() {
 </Section>
 
 <Section id="impact">
-  <Subheading className='text-3xl md:text-5xl mb-4'>01 Our Impact</Subheading>
-  <GrayDivider />
+  <Subheading className='text-3xl md:text-5xl mb-4'>Our Impact</Subheading>
+  {/* <GrayDivider /> */}
   <Text className="text-base md:text-lg">
     Over the last year, Paragon has partnered with 11 governments across 8 states through 21 projects.
   </Text>
   {/* <Text>Spring (5 new / 5 total): Boston; Lebanon, NH; Georgia; St. Louis, MO; San Jose, CA</Text>
    <Text>Summer (2 new / 7 total): CalHHS, Santa Clara</Text>
    <Text>Fall (5 new / 9 total): Brownsville, TX; Los Angeles, CA; Tempe, AZ</Text> */}
-</Section>
+{/* </Section> */}
 
-<Section id="projects">
+{/* <Section id="projects">
   <Subheading className='text-3xl md:text-5xl mb-4'>02 Past Projects</Subheading>
-  <GrayDivider />
+  <GrayDivider /> */}
   <Text className="text-base md:text-lg">
     We&apos;ve worked with governments and organizations across the country to better science & tech policy processes. Our work ranges has ranged from writing GenAI policy with the State of Georgia, advising on deepfake policy for the City of San Jose, to writing accessibility guidelines for translation software for the City of Lebanon.
   </Text>
@@ -135,19 +135,19 @@ export default function About() {
 </Section>
 
 <Section id="testimonials">
-  <Subheading className='text-3xl md:text-5xl mb-4'>03 Testimonials</Subheading>
+  <Subheading className='text-3xl md:text-5xl mb-4'>Testimonials</Subheading>
   <GrayDivider/>
   <Testimonials/>
 </Section>
 
-<Section id="timeline">
-  <Subheading className='text-3xl md:text-5xl mb-4'>04 Project Scoping &amp; Timeline</Subheading>
+{/* <Section id="timeline">
+  <Subheading className='text-3xl md:text-5xl mb-4'>03 Project Scoping &amp; Timeline</Subheading>
   <GrayDivider/>
   <Text className="text-base md:text-lg mb-6">Our typical project timeline:</Text>
   <Timeline events={events} />
-</Section>
+</Section> */}
       <Section id="faq">
-        <Subheading>05 FAQ</Subheading>
+        <Subheading>FAQ</Subheading>
         <GrayDivider/>
         <div>
         <FAQuestion
@@ -192,6 +192,6 @@ export default function About() {
         </FooterSection>
       </Footer>
 
-    </>
+    </div>
   );
 }

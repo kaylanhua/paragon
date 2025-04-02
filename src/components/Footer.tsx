@@ -12,7 +12,7 @@ export default function Footer({ children }: { children: React.ReactNode }) {
         
         <div className='hidden md:block w-px h-full bg-gray-600 mx-14'></div>
         
-        <div className='flex flex-col md:flex-row items-center md:items-start'>
+        <div className='pt-5 flex flex-col md:flex-row items-center md:items-start'>
           {children}
         </div>
       </div>

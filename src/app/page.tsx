@@ -53,11 +53,11 @@ export default function Home() {
       <GrayDivider />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 w-full py-8 md:py-16 px-4">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <TickText text={140} className="text-5xl md:text-7xl font-bold text-black" />
+          <TickText text={202} className="text-5xl md:text-7xl font-bold text-black" />
           <p className="text-base md:text-xl text-black mt-2">
             <span className="font-bold">fellows</span> placed on{" "}
-            <span className="font-bold">13 projects</span> from{" "}
-            <span className="font-bold">90+</span> colleges and universities nationally
+            <span className="font-bold">28 projects</span> from{" "}
+            <span className="font-bold">80+</span> colleges and universities nationally
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
@@ -74,10 +74,10 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <TickText text={15} className="text-5xl md:text-7xl font-bold text-black" />
+          <TickText text={17} className="text-5xl md:text-7xl font-bold text-black" />
           <p className="text-base md:text-xl text-black mt-2">
             established partnerships with state and local governments across{" "}
-            <span className="font-bold">10 U.S. states</span>
+            <span className="font-bold">11 U.S. states</span>
           </p>
         </div>
       </div>

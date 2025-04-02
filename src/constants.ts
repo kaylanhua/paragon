@@ -21,6 +21,13 @@ import tempeLogo from '@/assets/governments/Tempe.png';
 import santaClaraLogo from '@/assets/governments/Santa Clara.png';
 import sanJoseLogo from '@/assets/governments/SanJose.png';
 import lebanonLogo from '@/assets/governments/Lebanon.png';
+import alexandriaLogo from '@/assets/governments/Alexandria Logo.png';
+import albuquerqueLogo from '@/assets/governments/Albuquerque Logo.png';
+import cdiiLogo from '@/assets/governments/CDII Logo.png';
+import madisonLogo from '@/assets/governments/Madison.png';
+import missoulaLogo from '@/assets/governments/Missoula.png';
+import montanaSITSDLogo from '@/assets/governments/Montana SITSD.png';
+import usStateLogo from '@/assets/governments/US State Logo.png';
 import { StaticImageData } from 'next/image';
 
 export const governments: {
@@ -68,6 +75,34 @@ export const governments: {
     lebanon: {
         name: 'Lebanon',
         logo: lebanonLogo
+    },
+    alexandria: {
+        name: 'Alexandria',
+        logo: alexandriaLogo
+    },
+    cdii: {
+        name: 'CDII',
+        logo: cdiiLogo
+    },
+    albuquerque: {
+        name: 'Albuquerque',
+        logo: albuquerqueLogo
+    },
+    madison: {
+        name: 'Madison',
+        logo: madisonLogo
+    },
+    missoula: {
+        name: 'Missoula',
+        logo: missoulaLogo
+    },
+    montanaSITSD: {
+        name: 'Montana SITSD',
+        logo: montanaSITSDLogo
+    },
+    usState: {
+        name: 'US Department of State',
+        logo: usStateLogo
     }
 };
 
@@ -131,10 +166,10 @@ export const colleges: {
     }
 }
 
-export const AIRTABLE_API_KEY = `patUaz6OGg90PIjOT.a3a57483b5bb0c36b546a85441b77f8737b4d61e679345b33804f29385d8ed16` // i realize this is bad practice but this key can only read from only the people table (which is public) so im not concerned
-export const AIRTABLE_BASE_ID = `appItWRxWaZWa1qhj`
+export const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
+export const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
 
-export const AIRTABLE_URL = "https://airtable.com/appItWRxWaZWa1qhj/shrfKG3W0XpO1L2tx"
+export const AIRTABLE_URL = process.env.AIRTABLE_URL;
 export const MAIL_LIST_URL = "https://forms.gle/qgg7bEUfSvVr9p4m7"
 export const NEWSLETTER_URL = "https://paragonpolicyfellowship.substack.com/"
 export const FA_APP_URL = "https://airtable.com/appD9YuZjLzgT3p58/pagnaXfOC5ByK0hoY/form"
