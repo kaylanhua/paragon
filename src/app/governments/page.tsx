@@ -60,17 +60,17 @@ const govLogos = Object.values(governments).map(government => government.logo);
 
 export default function About() {
   return (
-    <>
-      <TopBar />
+<div className="relative w-full overflow-x-hidden">
+  <TopBar />
 <div className="background-container min-h-[100svh] flex flex-col">
   <BgGrid/>
-  <div className="w-full px-4 md:px-0 flex-1 flex flex-col md:block">
+  <div className="w-full px-4 md:px-0 flex-1 flex flex-row md:block">
     <div className="flex-1 flex flex-col justify-center md:block">
-      <Text className='fade-in md:pt-[10%] px-4 md:pl-[12%] text-xl md:text-3xl max-w-full md:max-w-[50%] text-center md:text-left'>
+      <Text className='fade-in md:pt-[20%] px-4 md:pl-[12%] text-xl md:text-3xl text-center md:text-left'>
         Paragon works with state and local governments, <span className='font-semibold'>big and small</span>, from every jurisdiction across the country to provide <span className='font-semibold'>pro-bono tech policy research</span> to inform evidence-based policymaking.
       </Text>
 
-      <Text className='fade-in text-xl md:text-3xl max-w-full md:max-w-[30%] mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20'>
+      <Text className='fade-in text-xl md:text-3xl mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20'>
         Interested in exploring a partnership with Paragon?
       </Text>
 
@@ -192,6 +192,6 @@ export default function About() {
         </FooterSection>
       </Footer>
 
-    </>
+    </div>
   );
 }

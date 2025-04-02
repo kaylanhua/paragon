@@ -59,15 +59,15 @@ export default function About() {
       <TopBar />
       <div className="background-container min-h-[100svh] flex flex-col">
         <BgGrid />
-        <div className="w-full px-4 md:px-0 flex-1 flex flex-col md:block">
+        <div className="w-full px-4 md:px-0 flex-1 flex flex-row md:block">
           <div className="flex-1 flex flex-col justify-center md:block">
-            <Text className="fade-in md:pt-[20%] px-4 md:pl-[12%] text-xl md:text-3xl max-w-full md:max-w-[50%] text-center md:text-left">
+            <Text className="fade-in md:pt-[20%] px-4 md:pl-[12%] text-xl md:text-3xl text-center md:text-left">
               Paragon offers semester-based tech policy projects (fall, spring, summer) for
               <span className="font-semibold"> university students and new grads</span> to work on real policy issues at the
               <span className="font-semibold"> state and local level.</span>
             </Text>
 
-            <Text className="fade-in text-xl md:text-3xl max-w-full md:max-w-[30%] mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20">
+            <Text className="fade-in text-xl md:text-3xl mt-16 md:mt-[5%] mb-12 md:mb-5 text-center md:text-right md:ml-auto md:mr-20">
               Applications for the Spring 2025 cohort are now open.
             </Text>
 
